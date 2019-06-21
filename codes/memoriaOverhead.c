@@ -1,6 +1,7 @@
 #define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <errno.h>
 #include <unistd.h>
 #include <sched.h>
@@ -8,8 +9,8 @@
 
 #define DEPTH_STACK 100
 
-void doNothing() {
-    return;
+int doNothing() {
+    return 0;
 }
 
 void expandMemory(int depth, char syscall[]) {
@@ -33,7 +34,7 @@ void expandMemory(int depth, char syscall[]) {
             threads, constantes (nesse caso, CLONE_VFORK define que
             o processo pai deve esperar os filhos terminarem a execução
             para continuar a execução), e ponteiro para argumentos.*/
-            clone(*doNothing, NULL, CLONE_VFORK, NULL);
+            clone(&doNothing, NULL, CLONE_VFORK, NULL);
         } else if(strcmp(syscall, "posix_spawnp") == 0) {
             pid_t pid;
             char *argv[] = {""};
