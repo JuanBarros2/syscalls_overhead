@@ -16,7 +16,6 @@ void expandMemory(int depth, char syscall[]) {
     pid_t pid;
     long auxMemory[depth][depth];
     if (depth == 0) {
-        system("")
         if (strcmp(syscall, "fork") == 0){
             /* Cria uma cópia do processo atual e continua a execução
             dos dois processos.*/
