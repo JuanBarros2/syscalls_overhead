@@ -1,0 +1,10 @@
+FROM alpine
+
+COPY ./codes/memoriaOverhead.c /program.c
+
+RUN apk update &&\
+    apk add build-base &&\
+    apk add strace &&\
+    gcc -o /program /program.c
+
+CMD ["strace", "/program"]
