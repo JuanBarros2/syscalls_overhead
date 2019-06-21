@@ -6,22 +6,26 @@
 #include <sched.h>
 #include <spawn.h>
 
-#define DEPTH_STACK 50
+#define DEPTH_STACK 100
 
 void doNothing() {
     return;
 }
 
 void expandMemory(int depth, char syscall[]) {
+    pid_t pid;
     long auxMemory[depth][depth];
     if (depth == 0) {
         if (strcmp(syscall, "fork") == 0){
             /* Cria uma cópia do processo atual e continua a execução
             dos dois processos.*/
             fork();
-        } else if(strcmp(syscall, "execv") == 0) {
-            char args[] = "";
-            execv(*args, *args);
+        } else if(strcmp(syscall, "execvp") == 0) {
+            char *argv[] = {""};
+            /* Substitui a imagem do processo atual por um novo
+            processo. Recebe o nome da imagem a ser pesquisada e um
+            array de argumentos a ser passado. */
+            int erro = execvp("ls", argv);
         } else if(strcmp(syscall, "clone") == 0) {
             /* Cria uma thread de execução para o processo atual.
             Recebe um ponteiro de uma função que rodará na execução
@@ -30,8 +34,10 @@ void expandMemory(int depth, char syscall[]) {
             o processo pai deve esperar os filhos terminarem a execução
             para continuar a execução), e ponteiro para argumentos.*/
             clone(*doNothing, NULL, CLONE_VFORK, NULL);
-        } else if(strcmp(syscall, "spawn") == 0) {
-            posix_spawnp();
+        } else if(strcmp(syscall, "posix_spawnp") == 0) {
+            pid_t pid;
+            char *argv[] = {""};
+            posix_spawnp(&pid, "ls", NULL, NULL, argv, NULL);
         }
     } else {
         expandMemory(depth - 1, syscall);
@@ -43,7 +49,6 @@ int main(int argc, char *argv[]) {
     if (argc == 1) {
         printf("É preciso ter mais argumentos");
     } else {
-        printf("Syscall: %s\n", argv[1]);
         expandMemory(DEPTH_STACK, argv[1]);
     }
 
