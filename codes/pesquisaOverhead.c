@@ -30,5 +30,5 @@ int main(int argc, char *argv[]) {
         doSyscall(argv[1]);
     }
 
-   return 0;
+    return 0;
 }
