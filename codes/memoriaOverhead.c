@@ -7,8 +7,6 @@
 #include <sched.h>
 #include <spawn.h>
 
-#define DEPTH_STACK 100
-
 int doNothing() {
     return 0;
 }
@@ -38,6 +36,7 @@ void expandMemory(int depth, char syscall[]) {
         } else if(strcmp(syscall, "posix_spawnp") == 0) {
             pid_t pid;
             posix_spawnp(&pid, argv[0], NULL, NULL, argv, NULL);
+            exit(0);
         }
     } else {
         expandMemory(depth - 1, syscall);
@@ -46,10 +45,10 @@ void expandMemory(int depth, char syscall[]) {
 
 
 int main(int argc, char *argv[]) {
-    if (argc == 1) {
-        printf("É preciso ter mais argumentos");
+    if (argc != 3) {
+        printf("Numero de argumentos incorreto");
     } else {
-        expandMemory(DEPTH_STACK, argv[1]);
+        expandMemory(atoi(argv[2]), argv[1]);
     }
 
    return 0;

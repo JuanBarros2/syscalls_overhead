@@ -1,7 +1,0 @@
-#/bin/bash
-docker build -t projso/strace:1.0 .
-
-for syscall in fork execvp clone posix_spawnp
-do
-    docker run -it projso/strace:1.0 strace -c ./memoriaOverhead $syscall > ./reports/hip1/memoria_$syscall
-done

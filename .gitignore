@@ -1,4 +1,2 @@
 .vscode
 */*.o
-reports/*
-codes/*!*.c
