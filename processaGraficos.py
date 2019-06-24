@@ -1,7 +1,9 @@
 import os
+import pandas as pd
 
 def main():
-    print(hip4())
+    pd.DataFrame.from_dict(hip1()).to_csv('reports/hip1/result.csv', index=False)
+    pd.DataFrame.from_dict(hip4()).to_csv('reports/hip4/result.csv', index=False)
 
 def hip1():
     perfPath = "reports/hip1/perf"
