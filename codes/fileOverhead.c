@@ -6,8 +6,11 @@
 #include <unistd.h>
 #include <sched.h>
 #include <spawn.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
 
-#define FILE_NAME "files/text"
+#define PATH_NAME "files/"
 
 
 int doNothing() {
@@ -19,11 +22,15 @@ void createFiles(int files, char syscall[]) {
 
     char* argv[] = { "sleep" , "0", NULL};
 
+    struct stat st = {0};
+
+    if(stat(PATH_NAME, &st) == -1){
+        mkdir(PATH_NAME, 0700);
+    }
+
     for(int i = 0; i<files; i++){
-        char x [100] = FILE_NAME;
-        // strcat(x, itoa(i));
-        // strcat(x, ".txt");
-        sprintf(x, "%s%d.txt", FILE_NAME, i);
+        char x [100] = PATH_NAME;
+        sprintf(x, "%sfile%d.txt", PATH_NAME, i);
         FILE* file_ptr = fopen(x, "w");
         fclose(file_ptr);
     }
