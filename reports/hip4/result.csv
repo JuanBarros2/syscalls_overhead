@@ -1,0 +1,9 @@
+time,syscall,tool
+0.000630205,execv,perf
+0.000660809,execvp,perf
+0.000514032,posix_spawn,perf
+0.000777213,posix_spawnp,perf
+0.0,execv,strace
+0.0,execvp,strace
+0.000111,posix_spawn,strace
+8.3e-05,posix_spawnp,strace
