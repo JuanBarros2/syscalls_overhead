@@ -1,0 +1,17 @@
+time,syscall,tool,depth
+0.000419608,fork,perf,10
+0.000548094,fork,perf,100
+0.004119272,execvp,perf,10
+0.000793574,execvp,perf,100
+0.006733189,posix_spawnp,perf,10
+0.000637312,posix_spawnp,perf,100
+0.000391537,clone,perf,10
+0.000495599,clone,perf,100
+0.0,fork,strace,10
+0.0,fork,strace,100
+0.000267,execvp,strace,10
+0.0,execvp,strace,100
+0.0,posix_spawnp,strace,10
+0.0,posix_spawnp,strace,100
+0.0,clone,strace,10
+0.0,clone,strace,100
