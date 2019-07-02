@@ -1,0 +1,14 @@
+
+ Performance counter stats for './memoriaOverhead fork 100':
+
+          0.385153      task-clock (msec)         #    0.721 CPUs utilized          
+                 0      context-switches          #    0.000 K/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+               159      page-faults               #    0.413 M/sec                  
+           1539518      cycles                    #    3.997 GHz                    
+           1000669      instructions              #    0.65  insn per cycle         
+            189084      branches                  #  490.932 M/sec                  
+              6487      branch-misses             #    3.43% of all branches        
+
+       0.000534234 seconds time elapsed
+

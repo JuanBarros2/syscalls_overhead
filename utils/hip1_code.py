@@ -2,6 +2,7 @@ import os
 import process_data as pr
 import numpy as np
 import matplotlib.pyplot as plt
+import re
 
 def process_hip1():
     perfPath = "reports/hip1/perf"
@@ -12,14 +13,27 @@ def process_hip1():
     for syscall in perfChildPaths:
         fileNames = os.listdir(perfPath + "/" + syscall)
         for fileName in fileNames:
-            pr.getResultPerf(df, perfPath + "/" + syscall + "/"+ fileName, syscall)
-            df['depth'].append(fileName.split(".txt")[0])
+            filePath= perfPath + "/" + syscall + "/" + fileName
+            fileStream = open(filePath, "r")
+            lines = fileStream.readlines()
+            fileStream.close()
+            df['time'].append(pr.getTimeFromTextPerf(lines, syscall))
+            df['tool'].append('perf')
+            df['syscall'].append(syscall)
+            df['depth'].append(re.findall("\d+", fileName)[0])
 
     for syscall in straceChildPaths:
         fileNames = os.listdir(stracePath + "/" + syscall)
         for fileName in fileNames:
-            pr.getResultStrace(df, stracePath + "/" + syscall + "/"+ fileName, syscall)
-            df['depth'].append(fileName.split(".txt")[0])
+            filePath= stracePath + "/" + syscall + "/" + fileName
+            fileStream = open(filePath, "r")
+            lines = fileStream.readlines()
+            fileStream.close()
+            time = pr.getTimeFromTextStrace(lines, syscall)
+            df['time'].append(time)
+            df['tool'].append('strace')
+            df['syscall'].append(syscall)
+            df['depth'].append(re.findall("\d+", fileName)[0])
     return df
 
 def make_chart_hip1(df):

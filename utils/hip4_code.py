@@ -13,10 +13,25 @@ def process_hip4():
     straceChildPaths.sort()
     df = { 'time' : [], 'syscall': [], 'tool': []}
     for syscall in perfChildPaths:
-        pr.getResultPerf(df, perfPath + "/" + syscall, syscall[:-4])
+        filePath= perfPath + "/" + syscall
+        fileStream = open(filePath, "r")
+        lines = fileStream.readlines()
+        fileStream.close()
+        syscallName = syscall.split("-")[0]
+        df['time'].append(pr.getTimeFromTextPerf(lines, syscallName))
+        df['tool'].append('perf')
+        df['syscall'].append(syscallName)
 
     for syscall in straceChildPaths:
-        pr.getResultStrace(df, stracePath + "/" + syscall, syscall[:-4])
+        filePath= stracePath + "/" + syscall
+        fileStream = open(filePath, "r")
+        lines = fileStream.readlines()
+        fileStream.close()
+        syscallName = syscall.split("-")[0]
+        time = pr.getTimeFromTextStrace(lines, syscallName)
+        df['time'].append(time)
+        df['tool'].append('strace')
+        df['syscall'].append(syscallName)
     return df
 
 def make_chart_hip4(df):
