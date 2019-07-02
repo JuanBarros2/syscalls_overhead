@@ -1,14 +1,58 @@
-
- Performance counter stats for './memoriaOverhead execvp 100':
-
-          0.636757      task-clock (msec)         #    0.683 CPUs utilized          
-                 1      context-switches          #    0.002 M/sec                  
-                 0      cpu-migrations            #    0.000 K/sec                  
-               177      page-faults               #    0.278 M/sec                  
-           2471901      cycles                    #    3.882 GHz                    
-           1514995      instructions              #    0.61  insn per cycle         
-            288321      branches                  #  452.796 M/sec                  
-             11182      branch-misses             #    3.88% of all branches        
-
-       0.000932928 seconds time elapsed
-
+         ? (     ?   ): memoriaOverhea/7  ... [[33mcontinued[m]: execve()) = 0
+     0.019 ( 0.001 ms): memoriaOverhea/7 brk(                                                                  ) = 0x55f438aff000
+     0.032 ( 0.005 ms): memoriaOverhea/7 access(filename: 0x66ea94e7                                           ) = -1 ENOENT No such file or directory
+     0.040 ( 0.002 ms): memoriaOverhea/7 access(filename: 0x66eabc70, mode: R                                  ) = -1 ENOENT No such file or directory
+     0.046 ( 0.004 ms): memoriaOverhea/7 open(filename: 0x66ea9988, flags: CLOEXEC                             ) = 3
+     0.051 ( 0.001 ms): memoriaOverhea/7 fstat(fd: 3, statbuf: 0x7ffc81041ee0                                  ) = 0
+     0.054 ( 0.003 ms): memoriaOverhea/7 mmap(len: 13580, prot: READ, flags: PRIVATE, fd: 3                    ) = 0x7f7e670ab000
+     0.058 ( 0.001 ms): memoriaOverhea/7 close(fd: 3                                                           ) = 0
+     0.061 ( 0.002 ms): memoriaOverhea/7 access(filename: 0x66ea94e7                                           ) = -1 ENOENT No such file or directory
+     0.065 ( 0.005 ms): memoriaOverhea/7 open(filename: 0x670b1d68, flags: CLOEXEC                             ) = 3
+     0.072 ( 0.002 ms): memoriaOverhea/7 read(fd: 3, buf: 0x7ffc81042088, count: 832                           ) = 832
+     0.075 ( 0.001 ms): memoriaOverhea/7 fstat(fd: 3, statbuf: 0x7ffc81041f20                                  ) = 0
+     0.078 ( 0.002 ms): memoriaOverhea/7 mmap(len: 8192, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS, fd: -1    ) = 0x7f7e670a9000
+     0.083 ( 0.003 ms): memoriaOverhea/7 mmap(len: 3795296, prot: EXEC|READ, flags: PRIVATE|DENYWRITE, fd: 3   ) = 0x7f7e66aed000
+     0.087 ( 0.004 ms): memoriaOverhea/7 mprotect(start: 0x7f7e66c82000, len: 2097152                          ) = 0
+     0.093 ( 0.004 ms): memoriaOverhea/7 mmap(addr: 0x7f7e66e82000, len: 24576, prot: READ|WRITE, flags: PRIVATE|DENYWRITE|FIXED, fd: 3, off: 1658880) = 0x7f7e66e82000
+     0.101 ( 0.003 ms): memoriaOverhea/7 mmap(addr: 0x7f7e66e88000, len: 14688, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS|FIXED, fd: -1) = 0x7f7e66e88000
+     0.109 ( 0.001 ms): memoriaOverhea/7 close(fd: 3                                                           ) = 0
+     0.119 ( 0.001 ms): memoriaOverhea/7 arch_prctl(option: 4098, arg2: 140180871357504                        ) = 0
+     0.162 ( 0.004 ms): memoriaOverhea/7 mprotect(start: 0x7f7e66e82000, len: 16384, prot: READ                ) = 0
+     0.169 ( 0.003 ms): memoriaOverhea/7 mprotect(start: 0x55f436cd5000, len: 4096, prot: READ                 ) = 0
+     0.174 ( 0.003 ms): memoriaOverhea/7 mprotect(start: 0x7f7e670af000, len: 4096, prot: READ                 ) = 0
+     0.178 ( 0.004 ms): memoriaOverhea/7 munmap(addr: 0x7f7e670ab000, len: 13580                               ) = 0
+     0.336 ([33m 0.020 ms[m): memoriaOverhea/7 execve(filename: 0x80da96c0, argv: 0x7ffc80da97e0, envp: 0x7ffc81042a18) = -2
+     0.357 ( 0.004 ms): memoriaOverhea/7 execve(filename: 0x80da96c0, argv: 0x7ffc80da97e0, envp: 0x7ffc81042a18) = -2
+     0.363 ( 0.004 ms): memoriaOverhea/7 execve(filename: 0x80da96c0, argv: 0x7ffc80da97e0, envp: 0x7ffc81042a18) = -2
+     0.368 ( 0.004 ms): memoriaOverhea/7 execve(filename: 0x80da96c0, argv: 0x7ffc80da97e0, envp: 0x7ffc81042a18) = -2
+     0.373 ( 0.004 ms): memoriaOverhea/7 execve(filename: 0x80da96c0, argv: 0x7ffc80da97e0, envp: 0x7ffc81042a18) = -2
+     0.378 ([33m 0.011 ms[m): memoriaOverhea/7 execve(filename: 0x80da96c0, argv: 0x7ffc80da97e0, envp: 0x7ffc81042a18) = -2
+     0.391 ([33m 0.100 ms[m): sleep/7 execve(filename: 0x80da96c0, argv: 0x7ffc80da97e0, envp: 0x7ffc81042a18) = 0
+     0.502 ( 0.001 ms): sleep/7 brk(                                                                  ) = 0x557da9cda000
+     0.514 ( 0.003 ms): sleep/7 access(filename: 0xce48f4e7                                           ) = -1 ENOENT No such file or directory
+     0.518 ( 0.003 ms): sleep/7 access(filename: 0xce491c70, mode: R                                  ) = -1 ENOENT No such file or directory
+     0.524 ( 0.003 ms): sleep/7 open(filename: 0xce48f988, flags: CLOEXEC                             ) = 3
+     0.529 ( 0.002 ms): sleep/7 fstat(fd: 3, statbuf: 0x7ffeaf24dc50                                  ) = 0
+     0.531 ( 0.003 ms): sleep/7 mmap(len: 13580, prot: READ, flags: PRIVATE, fd: 3                    ) = 0x7fe3ce691000
+     0.535 ( 0.001 ms): sleep/7 close(fd: 3                                                           ) = 0
+     0.539 ( 0.002 ms): sleep/7 access(filename: 0xce48f4e7                                           ) = -1 ENOENT No such file or directory
+     0.542 ( 0.004 ms): sleep/7 open(filename: 0xce697d68, flags: CLOEXEC                             ) = 3
+     0.547 ( 0.002 ms): sleep/7 read(fd: 3, buf: 0x7ffeaf24ddf8, count: 832                           ) = 832
+     0.550 ( 0.001 ms): sleep/7 fstat(fd: 3, statbuf: 0x7ffeaf24dc90                                  ) = 0
+     0.553 ( 0.002 ms): sleep/7 mmap(len: 8192, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS, fd: -1    ) = 0x7fe3ce68f000
+     0.558 ( 0.003 ms): sleep/7 mmap(len: 3795296, prot: EXEC|READ, flags: PRIVATE|DENYWRITE, fd: 3   ) = 0x7fe3ce0d3000
+     0.562 ( 0.004 ms): sleep/7 mprotect(start: 0x7fe3ce268000, len: 2097152                          ) = 0
+     0.567 ( 0.004 ms): sleep/7 mmap(addr: 0x7fe3ce468000, len: 24576, prot: READ|WRITE, flags: PRIVATE|DENYWRITE|FIXED, fd: 3, off: 1658880) = 0x7fe3ce468000
+     0.575 ( 0.003 ms): sleep/7 mmap(addr: 0x7fe3ce46e000, len: 14688, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS|FIXED, fd: -1) = 0x7fe3ce46e000
+     0.583 ( 0.001 ms): sleep/7 close(fd: 3                                                           ) = 0
+     0.594 ( 0.001 ms): sleep/7 arch_prctl(option: 4098, arg2: 140616397292672                        ) = 0
+     0.636 ( 0.004 ms): sleep/7 mprotect(start: 0x7fe3ce468000, len: 16384, prot: READ                ) = 0
+     0.645 ( 0.003 ms): sleep/7 mprotect(start: 0x557da9063000, len: 4096, prot: READ                 ) = 0
+     0.650 ( 0.002 ms): sleep/7 mprotect(start: 0x7fe3ce695000, len: 4096, prot: READ                 ) = 0
+     0.654 ( 0.004 ms): sleep/7 munmap(addr: 0x7fe3ce691000, len: 13580                               ) = 0
+     0.702 ( 0.002 ms): sleep/7 brk(                                                                  ) = 0x557da9cda000
+     0.705 ( 0.002 ms): sleep/7 brk(brk: 0x557da9cfb000                                               ) = 0x557da9cfb000
+     0.724 ([33m 0.061 ms[m): sleep/7 nanosleep(rqtp: 0x7ffeaf24e5a0                                        ) = 0
+     0.797 ( 0.001 ms): sleep/7 close(fd: 1                                                           ) = 0
+     0.800 ( 0.001 ms): sleep/7 close(fd: 2                                                           ) = 0
+     0.806 (     ?   ): sleep/7 exit_group(                                                           )

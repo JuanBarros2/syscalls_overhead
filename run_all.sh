@@ -2,6 +2,8 @@
 echo "Construindo imagem docker..."
 docker build -t projso/docker:1.0 .
 
+IT=30
+
 if [ ! -d "./reports" ] 
 then
     echo "Criando pasta para resultados..."
@@ -28,11 +30,11 @@ do
     echo ".......Rodando analise para" $syscall 
     for memoryLevel in 10 100
     do
-        for count in $(seq 1 25);
+        for count in $(seq 1 $IT);
         do
-            echo ".............." $memoryLevel "niveis de pilha"
+            echo ".............. Gerando resultado $count para $memoryLevel de niveis de pilha"
             docker run -it projso/docker:1.0 strace -f -T -a 120 ./memoriaOverhead $syscall $memoryLevel > ./reports/hip1/strace/$syscall/$memoryLevel-$count.txt
-            docker run -it --privileged projso/docker:1.0 perf stat ./memoriaOverhead $syscall $memoryLevel > ./reports/hip1/perf/$syscall/$memoryLevel-$count.txt
+            docker run -it --privileged projso/docker:1.0 perf trace ./memoriaOverhead $syscall $memoryLevel > ./reports/hip1/perf/$syscall/$memoryLevel-$count.txt
         done
     done
 done
@@ -42,11 +44,11 @@ echo "Gerando dados para hipotese 4 - Path do binário influencia no tempo"
 ## Hipotese 4 - 
 for syscall in execv execvp posix_spawn posix_spawnp
 do
-    for count in $(seq 1 25);
+    for count in $(seq 1 $IT);
         do
-        echo ".......Rodando analise para" $syscall 
+        echo ".......Rodando analise $count para $syscall" 
         docker run -it projso/docker:1.0 strace -f -T -a 120 ./pesquisaOverhead $syscall  > ./reports/hip4/strace/$syscall-$count.txt
-        docker run --privileged -it projso/docker:1.0 perf stat ./pesquisaOverhead $syscall  > ./reports/hip4/perf/$syscall-$count.txt
+        docker run --privileged -it projso/docker:1.0 perf trace ./pesquisaOverhead $syscall  > ./reports/hip4/perf/$syscall-$count.txt
     done
 done
 

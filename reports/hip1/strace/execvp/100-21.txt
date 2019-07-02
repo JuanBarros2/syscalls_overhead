@@ -1,57 +1,57 @@
-execve("./memoriaOverhead", ["./memoriaOverhead", "execvp", "100"], [/* 4 vars */])                                     = 0 <0.000107>
-brk(NULL)                                                                                                               = 0x5565c0c71000 <0.000011>
-access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000010>
+execve("./memoriaOverhead", ["./memoriaOverhead", "execvp", "100"], [/* 4 vars */])                                     = 0 <0.000087>
+brk(NULL)                                                                                                               = 0x55e84dafd000 <0.000005>
+access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000011>
+access("/etc/ld.so.preload", R_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000008>
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC)                                                                            = 3 <0.000009>
+fstat(3, {st_mode=S_IFREG|0644, st_size=13580, ...})                                                                    = 0 <0.000006>
+mmap(NULL, 13580, PROT_READ, MAP_PRIVATE, 3, 0)                                                                         = 0x7f0b3426a000 <0.000009>
+close(3)                                                                                                                = 0 <0.000007>
+access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000009>
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC)                                                             = 3 <0.000011>
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832)                                       = 832 <0.000008>
+fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...})                                                                  = 0 <0.000009>
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0)                                                = 0x7f0b34268000 <0.000008>
+mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0)                                               = 0x7f0b33cac000 <0.000010>
+mprotect(0x7f0b33e41000, 2097152, PROT_NONE)                                                                            = 0 <0.000012>
+mmap(0x7f0b34041000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000)                     = 0x7f0b34041000 <0.000013>
+mmap(0x7f0b34047000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0)                           = 0x7f0b34047000 <0.000008>
+close(3)                                                                                                                = 0 <0.000006>
+arch_prctl(ARCH_SET_FS, 0x7f0b34269440)                                                                                 = 0 <0.000006>
+mprotect(0x7f0b34041000, 16384, PROT_READ)                                                                              = 0 <0.000010>
+mprotect(0x55e84c0b4000, 4096, PROT_READ)                                                                               = 0 <0.000008>
+mprotect(0x7f0b3426e000, 4096, PROT_READ)                                                                               = 0 <0.000007>
+munmap(0x7f0b3426a000, 13580)                                                                                           = 0 <0.000012>
+execve("/usr/local/sbin/sleep", ["sleep", "0"], [/* 4 vars */])                                                         = -1 ENOENT (No such file or directory) <0.000032>
+execve("/usr/local/bin/sleep", ["sleep", "0"], [/* 4 vars */])                                                          = -1 ENOENT (No such file or directory) <0.000021>
+execve("/usr/sbin/sleep", ["sleep", "0"], [/* 4 vars */])                                                               = -1 ENOENT (No such file or directory) <0.000019>
+execve("/usr/bin/sleep", ["sleep", "0"], [/* 4 vars */])                                                                = -1 ENOENT (No such file or directory) <0.000012>
+execve("/sbin/sleep", ["sleep", "0"], [/* 4 vars */])                                                                   = -1 ENOENT (No such file or directory) <0.000028>
+execve("/bin/sleep", ["sleep", "0"], [/* 4 vars */])                                                                    = 0 <0.000163>
+brk(NULL)                                                                                                               = 0x56057256f000 <0.000006>
+access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000009>
 access("/etc/ld.so.preload", R_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000007>
 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC)                                                                            = 3 <0.000010>
-fstat(3, {st_mode=S_IFREG|0644, st_size=13580, ...})                                                                    = 0 <0.000010>
-mmap(NULL, 13580, PROT_READ, MAP_PRIVATE, 3, 0)                                                                         = 0x7f2dd7ae1000 <0.000010>
-close(3)                                                                                                                = 0 <0.000009>
-access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000013>
-open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC)                                                             = 3 <0.000014>
-read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832)                                       = 832 <0.000007>
-fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...})                                                                  = 0 <0.000008>
-mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0)                                                = 0x7f2dd7adf000 <0.000011>
-mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0)                                               = 0x7f2dd7523000 <0.000010>
-mprotect(0x7f2dd76b8000, 2097152, PROT_NONE)                                                                            = 0 <0.000012>
-mmap(0x7f2dd78b8000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000)                     = 0x7f2dd78b8000 <0.000014>
-mmap(0x7f2dd78be000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0)                           = 0x7f2dd78be000 <0.000012>
-close(3)                                                                                                                = 0 <0.000007>
-arch_prctl(ARCH_SET_FS, 0x7f2dd7ae0440)                                                                                 = 0 <0.000006>
-mprotect(0x7f2dd78b8000, 16384, PROT_READ)                                                                              = 0 <0.000013>
-mprotect(0x5565bfd16000, 4096, PROT_READ)                                                                               = 0 <0.000011>
-mprotect(0x7f2dd7ae5000, 4096, PROT_READ)                                                                               = 0 <0.000008>
-munmap(0x7f2dd7ae1000, 13580)                                                                                           = 0 <0.000012>
-execve("/usr/local/sbin/sleep", ["sleep", "0"], [/* 4 vars */])                                                         = -1 ENOENT (No such file or directory) <0.000022>
-execve("/usr/local/bin/sleep", ["sleep", "0"], [/* 4 vars */])                                                          = -1 ENOENT (No such file or directory) <0.000018>
-execve("/usr/sbin/sleep", ["sleep", "0"], [/* 4 vars */])                                                               = -1 ENOENT (No such file or directory) <0.000014>
-execve("/usr/bin/sleep", ["sleep", "0"], [/* 4 vars */])                                                                = -1 ENOENT (No such file or directory) <0.000011>
-execve("/sbin/sleep", ["sleep", "0"], [/* 4 vars */])                                                                   = -1 ENOENT (No such file or directory) <0.000058>
-execve("/bin/sleep", ["sleep", "0"], [/* 4 vars */])                                                                    = 0 <0.000220>
-brk(NULL)                                                                                                               = 0x55dfaf170000 <0.000008>
-access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000011>
-access("/etc/ld.so.preload", R_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000007>
-open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC)                                                                            = 3 <0.000011>
-fstat(3, {st_mode=S_IFREG|0644, st_size=13580, ...})                                                                    = 0 <0.000006>
-mmap(NULL, 13580, PROT_READ, MAP_PRIVATE, 3, 0)                                                                         = 0x7f706612b000 <0.000009>
+fstat(3, {st_mode=S_IFREG|0644, st_size=13580, ...})                                                                    = 0 <0.000008>
+mmap(NULL, 13580, PROT_READ, MAP_PRIVATE, 3, 0)                                                                         = 0x7fec3c626000 <0.000008>
 close(3)                                                                                                                = 0 <0.000006>
-access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000008>
+access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000007>
 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC)                                                             = 3 <0.000011>
 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832)                                       = 832 <0.000007>
-fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...})                                                                  = 0 <0.000007>
-mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0)                                                = 0x7f7066129000 <0.000008>
-mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0)                                               = 0x7f7065b6d000 <0.000008>
-mprotect(0x7f7065d02000, 2097152, PROT_NONE)                                                                            = 0 <0.000010>
-mmap(0x7f7065f02000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000)                     = 0x7f7065f02000 <0.000010>
-mmap(0x7f7065f08000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0)                           = 0x7f7065f08000 <0.000008>
-close(3)                                                                                                                = 0 <0.000007>
-arch_prctl(ARCH_SET_FS, 0x7f706612a480)                                                                                 = 0 <0.000006>
-mprotect(0x7f7065f02000, 16384, PROT_READ)                                                                              = 0 <0.000010>
-mprotect(0x55dfae4ed000, 4096, PROT_READ)                                                                               = 0 <0.000007>
-mprotect(0x7f706612f000, 4096, PROT_READ)                                                                               = 0 <0.000008>
-munmap(0x7f706612b000, 13580)                                                                                           = 0 <0.000011>
-brk(NULL)                                                                                                               = 0x55dfaf170000 <0.000006>
-brk(0x55dfaf191000)                                                                                                     = 0x55dfaf191000 <0.000007>
-nanosleep({tv_sec=0, tv_nsec=0}, NULL)                                                                                  = 0 <0.000061>
+fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...})                                                                  = 0 <0.000006>
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0)                                                = 0x7fec3c624000 <0.000007>
+mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0)                                               = 0x7fec3c068000 <0.000007>
+mprotect(0x7fec3c1fd000, 2097152, PROT_NONE)                                                                            = 0 <0.000009>
+mmap(0x7fec3c3fd000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000)                     = 0x7fec3c3fd000 <0.000010>
+mmap(0x7fec3c403000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0)                           = 0x7fec3c403000 <0.000008>
+close(3)                                                                                                                = 0 <0.000006>
+arch_prctl(ARCH_SET_FS, 0x7fec3c625480)                                                                                 = 0 <0.000006>
+mprotect(0x7fec3c3fd000, 16384, PROT_READ)                                                                              = 0 <0.000009>
+mprotect(0x5605722d4000, 4096, PROT_READ)                                                                               = 0 <0.000008>
+mprotect(0x7fec3c62a000, 4096, PROT_READ)                                                                               = 0 <0.000008>
+munmap(0x7fec3c626000, 13580)                                                                                           = 0 <0.000010>
+brk(NULL)                                                                                                               = 0x56057256f000 <0.000006>
+brk(0x560572590000)                                                                                                     = 0x560572590000 <0.000007>
+nanosleep({tv_sec=0, tv_nsec=0}, NULL)                                                                                  = 0 <0.000097>
 close(1)                                                                                                                = 0 <0.000006>
 close(2)                                                                                                                = 0 <0.000005>
 exit_group(0)                                                                                                           = ?

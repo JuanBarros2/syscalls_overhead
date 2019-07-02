@@ -20,10 +20,34 @@ def getTimeFromTextStrace(lines, syscall):
     elif syscall == "posix_spawn" or syscall == "posix_spawnp":
         time = 0
         for line in lines:
-            if re.search('clone resumed> child_stack=.*, flags=CLONE_VM', line) is not None or re.search('execve\("/.*, NULL.*<\d+\.\d+>', line) is not None or re.search(' execve resumed>', line) is not None:
+            #if re.search('clone resumed> child_stack=.*, flags=CLONE_VM', line) is not None 
+            #    time += float(re.findall("<\d+\.\d+>", line)[0][1:-1])
+            if re.search('execve\("/.*, NULL.*<\d+\.\d+>', line) is not None or re.search(' execve resumed>', line) is not None:
                 time += float(re.findall("<\d+\.\d+>", line)[0][1:-1])
         return time
 
 
-def getTimeFromTextPerf(text, syscall):
-    return 0
+def getTimeFromTextPerf(lines, syscall):
+    if syscall == "fork":
+        for line in lines:
+            if re.search("clone\(clone_flags: 18874385, child_tidptr:", line) is not None:
+                return float(re.findall("m \d+\.\d+ ms", line)[0][2:-3])* 10**-3
+    elif syscall == "execvp" or syscall == "execv":
+        time = 0
+        for line in lines:
+            if re.search('execve\(filename: ', line) is not None:
+                time += float(re.findall("( \d+\.\d+ ms)", line)[0][2:-3])* 10**-3
+        return time
+    elif syscall == "clone":
+        for line in lines:
+            if re.search('clone\(clone_flags: 16384, ', line) is not None:
+                return float(re.findall("m \d+\.\d+ ms", line)[0][2:-3])* 10**-3
+    elif syscall == "posix_spawn" or syscall == "posix_spawnp":
+        time = 0
+        for line in lines:
+            if re.search('clone\(clone_flags: 16657, ', line):
+                time += float(re.findall("m \d+\.\d+ ms", line)[0][2:-3])* 10**-3
+            if re.search('execve\(filename: ', line):
+                if not re.search('sleep', line):
+                    time += float(re.findall("( \d+\.\d+ ms)", line)[0][2:-3])* 10**-3
+        return time

@@ -1,14 +1,27 @@
-
- Performance counter stats for './memoriaOverhead fork 100':
-
-          0.380446      task-clock (msec)         #    0.703 CPUs utilized          
-                 0      context-switches          #    0.000 K/sec                  
-                 0      cpu-migrations            #    0.000 K/sec                  
-               156      page-faults               #    0.410 M/sec                  
-           1521024      cycles                    #    3.998 GHz                    
-            991019      instructions              #    0.65  insn per cycle         
-            187399      branches                  #  492.577 M/sec                  
-              6559      branch-misses             #    3.50% of all branches        
-
-       0.000540945 seconds time elapsed
-
+         ? (     ?   ): memoriaOverhea/6  ... [[33mcontinued[m]: execve()) = 0
+     0.018 ( 0.001 ms): memoriaOverhea/6 brk(                                                                  ) = 0x555a8e96d000
+     0.029 ( 0.003 ms): memoriaOverhea/6 access(filename: 0x842884e7                                           ) = -1 ENOENT No such file or directory
+     0.036 ( 0.002 ms): memoriaOverhea/6 access(filename: 0x8428ac70, mode: R                                  ) = -1 ENOENT No such file or directory
+     0.041 ( 0.004 ms): memoriaOverhea/6 open(filename: 0x84288988, flags: CLOEXEC                             ) = 3
+     0.046 ( 0.003 ms): memoriaOverhea/6 fstat(fd: 3, statbuf: 0x7ffcd5829e50                                  ) = 0
+     0.049 ( 0.002 ms): memoriaOverhea/6 mmap(len: 13580, prot: READ, flags: PRIVATE, fd: 3                    ) = 0x7ff98448a000
+     0.052 ( 0.001 ms): memoriaOverhea/6 close(fd: 3                                                           ) = 0
+     0.055 ( 0.001 ms): memoriaOverhea/6 access(filename: 0x842884e7                                           ) = -1 ENOENT No such file or directory
+     0.059 ( 0.004 ms): memoriaOverhea/6 open(filename: 0x84490d68, flags: CLOEXEC                             ) = 3
+     0.063 ( 0.002 ms): memoriaOverhea/6 read(fd: 3, buf: 0x7ffcd5829ff8, count: 832                           ) = 832
+     0.066 ( 0.001 ms): memoriaOverhea/6 fstat(fd: 3, statbuf: 0x7ffcd5829e90                                  ) = 0
+     0.068 ( 0.002 ms): memoriaOverhea/6 mmap(len: 8192, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS, fd: -1    ) = 0x7ff984488000
+     0.073 ( 0.002 ms): memoriaOverhea/6 mmap(len: 3795296, prot: EXEC|READ, flags: PRIVATE|DENYWRITE, fd: 3   ) = 0x7ff983ecc000
+     0.076 ( 0.004 ms): memoriaOverhea/6 mprotect(start: 0x7ff984061000, len: 2097152                          ) = 0
+     0.081 ( 0.003 ms): memoriaOverhea/6 mmap(addr: 0x7ff984261000, len: 24576, prot: READ|WRITE, flags: PRIVATE|DENYWRITE|FIXED, fd: 3, off: 1658880) = 0x7ff984261000
+     0.086 ( 0.002 ms): memoriaOverhea/6 mmap(addr: 0x7ff984267000, len: 14688, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS|FIXED, fd: -1) = 0x7ff984267000
+     0.093 ( 0.001 ms): memoriaOverhea/6 close(fd: 3                                                           ) = 0
+     0.101 ( 0.001 ms): memoriaOverhea/6 arch_prctl(option: 4098, arg2: 140709642933312                        ) = 0
+     0.142 ( 0.003 ms): memoriaOverhea/6 mprotect(start: 0x7ff984261000, len: 16384, prot: READ                ) = 0
+     0.147 ( 0.002 ms): memoriaOverhea/6 mprotect(start: 0x555a8e91d000, len: 4096, prot: READ                 ) = 0
+     0.151 ( 0.002 ms): memoriaOverhea/6 mprotect(start: 0x7ff98448e000, len: 4096, prot: READ                 ) = 0
+     0.154 ( 0.003 ms): memoriaOverhea/6 munmap(addr: 0x7ff98448a000, len: 13580                               ) = 0
+     0.276 ([33m 0.166 ms[m): memoriaOverhea/6 clone(clone_flags: 18874385, child_tidptr: 0x7ff984489710, tls: 140709642933312) = 7 (memoriaOverhead)
+     0.463 (     ?   ): memoriaOverhea/6 exit_group(                                                           )
+         ? (     ?   ): memoriaOverhea/7  ... [[33mcontinued[m]: clone()
+     0.504 (     ?   ): memoriaOverhea/7 exit_group(                                                           )
