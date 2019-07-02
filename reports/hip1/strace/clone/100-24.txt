@@ -1,0 +1,32 @@
+execve("./memoriaOverhead", ["./memoriaOverhead", "clone", "100"], [/* 4 vars */])                                      = 0 <0.000081>
+brk(NULL)                                                                                                               = 0x556ca71dd000 <0.000009>
+access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000010>
+access("/etc/ld.so.preload", R_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000008>
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC)                                                                            = 3 <0.000013>
+fstat(3, {st_mode=S_IFREG|0644, st_size=13580, ...})                                                                    = 0 <0.000006>
+mmap(NULL, 13580, PROT_READ, MAP_PRIVATE, 3, 0)                                                                         = 0x7f872094d000 <0.000008>
+close(3)                                                                                                                = 0 <0.000007>
+access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000009>
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC)                                                             = 3 <0.000013>
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832)                                       = 832 <0.000008>
+fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...})                                                                  = 0 <0.000006>
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0)                                                = 0x7f872094b000 <0.000007>
+mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0)                                               = 0x7f872038f000 <0.000008>
+mprotect(0x7f8720524000, 2097152, PROT_NONE)                                                                            = 0 <0.000009>
+mmap(0x7f8720724000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000)                     = 0x7f8720724000 <0.000015>
+mmap(0x7f872072a000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0)                           = 0x7f872072a000 <0.000009>
+close(3)                                                                                                                = 0 <0.000013>
+arch_prctl(ARCH_SET_FS, 0x7f872094c440)                                                                                 = 0 <0.000006>
+mprotect(0x7f8720724000, 16384, PROT_READ)                                                                              = 0 <0.000014>
+mprotect(0x556ca5268000, 4096, PROT_READ)                                                                               = 0 <0.000009>
+mprotect(0x7f8720951000, 4096, PROT_READ)                                                                               = 0 <0.000007>
+munmap(0x7f872094d000, 13580)                                                                                           = 0 <0.000010>
+mmap(NULL, 1052672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0)                                             = 0x7f872084a000 <0.000009>
+clone(strace: Process 9 attached
+ <unfinished ...>
+[pid     9] exit_group(0)                                                                                               = ?
+[pid     9] +++ exited with 0 +++
+<... clone resumed> child_stack=0x7f872094a000, flags=CLONE_VFORK)                                                      = 9 <0.000150>
+exit_group(0)                                                                                                           = ?
++++ exited with 0 +++
+strace: Exit of unknown pid 9 ignored

@@ -1,14 +1,14 @@
 
  Performance counter stats for './memoriaOverhead posix_spawnp 10':
 
-          0.579048      task-clock (msec)         #    0.655 CPUs utilized          
-                 2      context-switches          #    0.003 M/sec                  
-                 1      cpu-migrations            #    0.002 M/sec                  
-                65      page-faults               #    0.112 M/sec                  
-           2287610      cycles                    #    3.951 GHz                    
-            894601      instructions              #    0.39  insn per cycle         
-            171027      branches                  #  295.359 M/sec                  
-              9094      branch-misses             # [33m   5.32%[m of all branches        
+          0.490886      task-clock (msec)         #    0.738 CPUs utilized          
+                 1      context-switches          #    0.002 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+                59      page-faults               #    0.120 M/sec                  
+           1952032      cycles                    #    3.977 GHz                    
+            881128      instructions              #    0.45  insn per cycle         
+            167546      branches                  #  341.313 M/sec                  
+              9014      branch-misses             # [33m   5.38%[m of all branches        
 
-       0.000884600 seconds time elapsed
+       0.000665305 seconds time elapsed
 

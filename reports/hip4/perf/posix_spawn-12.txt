@@ -1,0 +1,14 @@
+
+ Performance counter stats for './pesquisaOverhead posix_spawn':
+
+          0.378649      task-clock (msec)         #    0.678 CPUs utilized          
+                 2      context-switches          #    0.005 M/sec                  
+                 1      cpu-migrations            #    0.003 M/sec                  
+                57      page-faults               #    0.151 M/sec                  
+           1509179      cycles                    #    3.986 GHz                    
+            796009      instructions              #    0.53  insn per cycle         
+            151070      branches                  #  398.971 M/sec                  
+              9234      branch-misses             # [33m   6.11%[m of all branches        
+
+       0.000558755 seconds time elapsed
+

@@ -1,0 +1,14 @@
+
+ Performance counter stats for './pesquisaOverhead execvp':
+
+          0.399757      task-clock (msec)         #    0.597 CPUs utilized          
+                 1      context-switches          #    0.003 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+                86      page-faults               #    0.215 M/sec                  
+           1550280      cycles                    #    3.878 GHz                    
+           1161532      instructions              #    0.75  insn per cycle         
+            224783      branches                  #  562.299 M/sec                  
+             10593      branch-misses             #    4.71% of all branches        
+
+       0.000669964 seconds time elapsed
+

@@ -28,7 +28,7 @@ do
     echo ".......Rodando analise para" $syscall 
     for memoryLevel in 10 100
     do
-        for count in $(seq 1 5);
+        for count in $(seq 1 25);
         do
             echo ".............." $memoryLevel "niveis de pilha"
             docker run -it projso/docker:1.0 strace -f -T -a 120 ./memoriaOverhead $syscall $memoryLevel > ./reports/hip1/strace/$syscall/$memoryLevel-$count.txt
@@ -42,7 +42,7 @@ echo "Gerando dados para hipotese 4 - Path do binário influencia no tempo"
 ## Hipotese 4 - 
 for syscall in execv execvp posix_spawn posix_spawnp
 do
-    for count in $(seq 1 5);
+    for count in $(seq 1 25);
         do
         echo ".......Rodando analise para" $syscall 
         docker run -it projso/docker:1.0 strace -f -T -a 120 ./pesquisaOverhead $syscall  > ./reports/hip4/strace/$syscall-$count.txt

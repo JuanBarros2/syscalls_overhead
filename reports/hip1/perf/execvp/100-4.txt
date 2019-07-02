@@ -1,14 +1,14 @@
 
  Performance counter stats for './memoriaOverhead execvp 100':
 
-          0.565639      task-clock (msec)         #    0.642 CPUs utilized          
+          0.520552      task-clock (msec)         #    0.656 CPUs utilized          
                  1      context-switches          #    0.002 M/sec                  
                  0      cpu-migrations            #    0.000 K/sec                  
-               173      page-faults               #    0.306 M/sec                  
-           2194079      cycles                    #    3.879 GHz                    
-           1478763      instructions              #    0.67  insn per cycle         
-            281047      branches                  #  496.866 M/sec                  
-             11007      branch-misses             #    3.92% of all branches        
+               176      page-faults               #    0.338 M/sec                  
+           2019475      cycles                    #    3.879 GHz                    
+           1521866      instructions              #    0.75  insn per cycle         
+            289442      branches                  #  556.029 M/sec                  
+             10917      branch-misses             #    3.77% of all branches        
 
-       0.000881063 seconds time elapsed
+       0.000793777 seconds time elapsed
 

@@ -1,9 +1,9 @@
 syscall,tool,time
 execv,perf,0.0
-execv,strace,0.000164
+execv,strace,0.000144
 execvp,perf,0.0
-execvp,strace,0.00022200000000000003
+execvp,strace,0.000246
 posix_spawn,perf,0.0
-posix_spawn,strace,0.004564
+posix_spawn,strace,0.00477
 posix_spawnp,perf,0.0
-posix_spawnp,strace,0.004427
+posix_spawnp,strace,0.004689

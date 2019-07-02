@@ -1,0 +1,14 @@
+
+ Performance counter stats for './memoriaOverhead clone 10':
+
+          0.267822      task-clock (msec)         #    0.538 CPUs utilized          
+                 1      context-switches          #    0.004 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+                57      page-faults               #    0.213 M/sec                  
+           1025841      cycles                    #    3.830 GHz                    
+            697560      instructions              #    0.68  insn per cycle         
+            135888      branches                  #  507.382 M/sec                  
+              7662      branch-misses             # [33m   5.64%[m of all branches        
+
+       0.000497742 seconds time elapsed
+
