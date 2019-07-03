@@ -8,7 +8,7 @@ if [ ! -d "./reports" ]
 then
     echo "Criando pasta para resultados..."
     mkdir reports
-    for hip in hip1 hip4
+    for hip in hip1 hip3 hip4
     do
         mkdir ./reports/$hip
         mkdir ./reports/$hip/perf
@@ -39,6 +39,28 @@ do
     done
 done
 
+## Hipotese 3 - Número de arquivos abertos na memória
+echo "Gerando dados para hipotese 3 - Memoria número de arquivos abertos"
+for syscall in fork execvp clone posix_spawnp
+do
+    for tool in strace perf
+    do
+        if [ ! -d "./reports/hip3/$tool/$syscall" ] 
+        then
+            mkdir ./reports/hip3/$tool/$syscall
+        fi
+    done
+    echo ".......Rodando analise para" $syscall 
+    for memoryLevel in 10 100
+    do
+        for count in $(seq 1 $IT);
+        do
+            echo ".............. Gerando resultado $count para $memoryLevel de niveis de pilha"
+            docker run -it projso/docker:1.0 strace -f -T -a 120 ./fileOverhead $syscall $memoryLevel > ./reports/hip3/strace/$syscall/$memoryLevel-$count.txt
+            docker run -it --privileged projso/docker:1.0 perf trace ./fileOverhead $syscall $memoryLevel > ./reports/hip3/perf/$syscall/$memoryLevel-$count.txt
+        done
+    done
+done
 
 echo "Gerando dados para hipotese 4 - Path do binário influencia no tempo"
 ## Hipotese 4 - 

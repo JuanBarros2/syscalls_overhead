@@ -20,7 +20,7 @@ int doNothing() {
 
 void createFiles(int files, char syscall[]) {
     pid_t pid;
-
+    FILE* array[100];
     char* argv[] = { "sleep" , "0", NULL};
 
     struct stat st = {0};
@@ -33,8 +33,7 @@ void createFiles(int files, char syscall[]) {
     for(int i = 0; i<files; i++){
         char x [100] = PATH_NAME;
         sprintf(x, "%sfile%d.txt", PATH_NAME, i);
-        FILE* file_ptr = fopen(x, "w");
-        fclose(file_ptr);
+        array[i] = fopen(x, "w");        
     }
 
     if (strcmp(syscall, "fork") == 0){
@@ -58,6 +57,10 @@ void createFiles(int files, char syscall[]) {
         pid_t pid;
         posix_spawnp(&pid, argv[0], NULL, NULL, argv, NULL);
         exit(0);
+    }
+    printf("Fechando arquivos\n");
+    for(int i = 0; i<files; i++){
+        fclose(array[i]);
     }
 
     printf("Syscall executada!\n");   
