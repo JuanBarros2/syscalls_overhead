@@ -1,14 +1,170 @@
-
- Performance counter stats for './pesquisaOverhead posix_spawn':
-
-          0.458182      task-clock (msec)         #    0.722 CPUs utilized          
-                 2      context-switches          #    0.004 M/sec                  
-                 1      cpu-migrations            #    0.002 M/sec                  
-                57      page-faults               #    0.124 M/sec                  
-           1821527      cycles                    #    3.976 GHz                    
-            801070      instructions              #    0.44  insn per cycle         
-            151570      branches                  #  330.807 M/sec                  
-              8881      branch-misses             # [33m   5.86%[m of all branches        
-
-       0.000634904 seconds time elapsed
-
+         ? (     ?   ): pesquisaOverhe/7  ... [[33mcontinued[m]: execve()) = 0
+     0.019 ( 0.001 ms): pesquisaOverhe/7 brk(                                                                  ) = 0x5600c143a000
+     0.029 ( 0.003 ms): pesquisaOverhe/7 access(filename: 0xab4c74e7                                           ) = -1 ENOENT No such file or directory
+     0.035 ( 0.002 ms): pesquisaOverhe/7 access(filename: 0xab4c9c70, mode: R                                  ) = -1 ENOENT No such file or directory
+     0.040 ( 0.003 ms): pesquisaOverhe/7 open(filename: 0xab4c7988, flags: CLOEXEC                             ) = 3
+     0.044 ( 0.001 ms): pesquisaOverhe/7 fstat(fd: 3, statbuf: 0x7fff1862f220                                  ) = 0
+     0.046 ( 0.002 ms): pesquisaOverhe/7 mmap(len: 13580, prot: READ, flags: PRIVATE, fd: 3                    ) = 0x7f95ab6c9000
+     0.049 ( 0.001 ms): pesquisaOverhe/7 close(fd: 3                                                           ) = 0
+     0.053 ( 0.001 ms): pesquisaOverhe/7 access(filename: 0xab4c74e7                                           ) = -1 ENOENT No such file or directory
+     0.056 ( 0.004 ms): pesquisaOverhe/7 open(filename: 0xab6cfd68, flags: CLOEXEC                             ) = 3
+     0.061 ( 0.002 ms): pesquisaOverhe/7 read(fd: 3, buf: 0x7fff1862f3c8, count: 832                           ) = 832
+     0.063 ( 0.001 ms): pesquisaOverhe/7 fstat(fd: 3, statbuf: 0x7fff1862f260                                  ) = 0
+     0.065 ( 0.002 ms): pesquisaOverhe/7 mmap(len: 8192, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS, fd: -1    ) = 0x7f95ab6c7000
+     0.071 ( 0.002 ms): pesquisaOverhe/7 mmap(len: 3795296, prot: EXEC|READ, flags: PRIVATE|DENYWRITE, fd: 3   ) = 0x7f95ab10b000
+     0.074 ( 0.003 ms): pesquisaOverhe/7 mprotect(start: 0x7f95ab2a0000, len: 2097152                          ) = 0
+     0.079 ( 0.003 ms): pesquisaOverhe/7 mmap(addr: 0x7f95ab4a0000, len: 24576, prot: READ|WRITE, flags: PRIVATE|DENYWRITE|FIXED, fd: 3, off: 1658880) = 0x7f95ab4a0000
+     0.085 ( 0.002 ms): pesquisaOverhe/7 mmap(addr: 0x7f95ab4a6000, len: 14688, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS|FIXED, fd: -1) = 0x7f95ab4a6000
+     0.091 ( 0.001 ms): pesquisaOverhe/7 close(fd: 3                                                           ) = 0
+     0.100 ( 0.001 ms): pesquisaOverhe/7 arch_prctl(option: 4098, arg2: 140280802870336                        ) = 0
+     0.137 ( 0.003 ms): pesquisaOverhe/7 mprotect(start: 0x7f95ab4a0000, len: 16384, prot: READ                ) = 0
+     0.142 ( 0.002 ms): pesquisaOverhe/7 mprotect(start: 0x5600bffb8000, len: 4096, prot: READ                 ) = 0
+     0.146 ( 0.002 ms): pesquisaOverhe/7 mprotect(start: 0x7f95ab6cd000, len: 4096, prot: READ                 ) = 0
+     0.149 ( 0.003 ms): pesquisaOverhe/7 munmap(addr: 0x7f95ab6c9000, len: 13580                               ) = 0
+     0.170 ( 0.003 ms): pesquisaOverhe/7 pipe2(fildes: 0x7fff1862f960, flags: CLOEXEC                          ) = 0
+     0.174 ( 0.002 ms): pesquisaOverhe/7 mmap(len: 36864, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS|STACK, fd: -1) = 0x7f95ab6be000
+     0.177 ( 0.001 ms): pesquisaOverhe/7 rt_sigprocmask(how: BLOCK, nset: 0x7fff1862f8e0, oset: 0x7fff1862f968, sigsetsize: 8) = 0
+         ? (     ?   ): pesquisaOverhe/8  ... [[33mcontinued[m]: clone()
+     0.180 ([33m 0.143 ms[m): pesquisaOverhe/7 clone(clone_flags: 16657, newsp: 140280802865136, parent_tidptr: 0xffffffffffffffff, child_tidptr: 0x5600bfdb8a36) ...
+     0.322 ( 0.001 ms): pesquisaOverhe/8 close(fd: 3                                                           ) = 0
+     0.325 ( 0.001 ms): pesquisaOverhe/8 rt_sigprocmask(how: BLOCK, oset: 0x7f95ab6c6ea0, sigsetsize: 8        ) = 0
+     0.327 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: HUP, oact: 0x7f95ab6c6db0, sigsetsize: 8            ) = 0
+     0.330 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: HUP, act: 0x7f95ab6c6d10, sigsetsize: 8             ) = 0
+     0.332 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: INT, oact: 0x7f95ab6c6db0, sigsetsize: 8            ) = 0
+     0.334 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: INT, act: 0x7f95ab6c6d10, sigsetsize: 8             ) = 0
+     0.336 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: QUIT, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.338 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: QUIT, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.340 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: ILL, oact: 0x7f95ab6c6db0, sigsetsize: 8            ) = 0
+     0.342 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: ILL, act: 0x7f95ab6c6d10, sigsetsize: 8             ) = 0
+     0.344 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: TRAP, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.346 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: TRAP, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.348 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: ABRT, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.350 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: ABRT, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.352 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: BUS, oact: 0x7f95ab6c6db0, sigsetsize: 8            ) = 0
+     0.354 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: BUS, act: 0x7f95ab6c6d10, sigsetsize: 8             ) = 0
+     0.356 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: FPE, oact: 0x7f95ab6c6db0, sigsetsize: 8            ) = 0
+     0.358 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: FPE, act: 0x7f95ab6c6d10, sigsetsize: 8             ) = 0
+     0.360 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: USR1, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.362 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: USR1, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.364 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: SEGV, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.366 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: SEGV, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.368 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: USR2, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.370 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: USR2, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.372 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: PIPE, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.374 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: PIPE, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.375 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: ALRM, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.377 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: ALRM, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.379 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: TERM, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.381 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: TERM, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.383 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: STKFLT, oact: 0x7f95ab6c6db0, sigsetsize: 8         ) = 0
+     0.385 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: STKFLT, act: 0x7f95ab6c6d10, sigsetsize: 8          ) = 0
+     0.387 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: CHLD, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.388 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: CHLD, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.390 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: CONT, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.392 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: CONT, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.394 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: TSTP, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.396 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: TSTP, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.398 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: TTIN, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.400 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: TTIN, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.402 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: TTOU, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.404 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: TTOU, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.406 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: URG, oact: 0x7f95ab6c6db0, sigsetsize: 8            ) = 0
+     0.408 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: URG, act: 0x7f95ab6c6d10, sigsetsize: 8             ) = 0
+     0.409 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: XCPU, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.412 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: XCPU, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.414 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: XFSZ, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.416 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: XFSZ, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.418 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: VTALRM, oact: 0x7f95ab6c6db0, sigsetsize: 8         ) = 0
+     0.420 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: VTALRM, act: 0x7f95ab6c6d10, sigsetsize: 8          ) = 0
+     0.422 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: PROF, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.424 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: PROF, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.426 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: WINCH, oact: 0x7f95ab6c6db0, sigsetsize: 8          ) = 0
+     0.428 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: WINCH, act: 0x7f95ab6c6d10, sigsetsize: 8           ) = 0
+     0.430 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: IO, oact: 0x7f95ab6c6db0, sigsetsize: 8             ) = 0
+     0.431 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: IO, act: 0x7f95ab6c6d10, sigsetsize: 8              ) = 0
+     0.433 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: PWR, oact: 0x7f95ab6c6db0, sigsetsize: 8            ) = 0
+     0.435 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: PWR, act: 0x7f95ab6c6d10, sigsetsize: 8             ) = 0
+     0.437 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: SYS, oact: 0x7f95ab6c6db0, sigsetsize: 8            ) = 0
+     0.439 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: SYS, act: 0x7f95ab6c6d10, sigsetsize: 8             ) = 0
+     0.441 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x20, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.443 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x21, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.445 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x22, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.447 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x22, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.449 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x23, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.451 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x23, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.453 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x24, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.455 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x24, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.457 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x25, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.459 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x25, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.461 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x26, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.462 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x26, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.464 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x27, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.466 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x27, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.468 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x28, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.470 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x28, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.472 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x29, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.474 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x29, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.476 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x2a, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.478 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x2a, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.480 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x2b, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.482 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x2b, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.484 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x2c, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.486 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x2c, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.488 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x2d, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.490 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x2d, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.492 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x2e, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.494 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x2e, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.497 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x2f, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.499 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x2f, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.501 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x30, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.503 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x30, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.505 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x31, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.507 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x31, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.509 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x32, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.510 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x32, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.513 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x33, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.515 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x33, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.517 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x34, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.519 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x34, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.521 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x35, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.523 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x35, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.525 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x36, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.527 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x36, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.529 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x37, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.531 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x37, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.533 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x38, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.535 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x38, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.537 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x39, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.539 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x39, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.541 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x3a, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.543 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x3a, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.545 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x3b, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.547 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x3b, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.549 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x3c, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.551 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x3c, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.553 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x3d, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.555 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x3d, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.557 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x3e, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.559 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x3e, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.562 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x3f, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.564 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x3f, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.565 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x40, oact: 0x7f95ab6c6db0, sigsetsize: 8           ) = 0
+     0.567 ( 0.001 ms): pesquisaOverhe/8 rt_sigaction(sig: 0x40, act: 0x7f95ab6c6d10, sigsetsize: 8            ) = 0
+     0.569 ( 0.001 ms): pesquisaOverhe/8 rt_sigprocmask(how: SETMASK, nset: 0x7fff1862f968, sigsetsize: 8      ) = 0
+     0.180 ([33m 0.456 ms[m): pesquisaOverhe/7  ... [[33mcontinued[m]: clone()) = 8 (pesquisaOverhea)
+     0.575 ([33m 0.063 ms[m): pesquisaOverhe/8 execve(filename: 0xbfdb8a36, argv: 0x7fff1862fc10                     ) ...
+     0.638 ( 0.001 ms): pesquisaOverhe/7 close(fd: 4                                                           ) = 0
+     0.641 ( 0.002 ms): pesquisaOverhe/7 read(fd: 3, buf: 0x7fff1862f8d8, count: 4                             ) = 0
+     0.644 ( 0.005 ms): pesquisaOverhe/7 munmap(addr: 0x7f95ab6be000, len: 36864                               ) = 0
+     0.650 ( 0.001 ms): pesquisaOverhe/7 close(fd: 3                                                           ) = 0
+     0.655 ( 0.001 ms): pesquisaOverhe/7 rt_sigprocmask(how: SETMASK, nset: 0x7fff1862f968, sigsetsize: 8      ) = 0
+     0.663 (     ?   ): pesquisaOverhe/7 exit_group(                                                           )
+     0.575 ([33m 0.093 ms[m): sleep/8  ... [[33mcontinued[m]: execve()) = 0
+     0.683 ( 0.001 ms): sleep/8 brk(                                                                  ) = 0x55b8043b9000
+     0.696 ( 0.005 ms): sleep/8 access(filename: 0x71d844e7                                           ) = -1 ENOENT No such file or directory
+     0.703 ( 0.002 ms): sleep/8 access(filename: 0x71d86c70, mode: R                                  ) = -1 ENOENT No such file or directory
+     0.708 ( 0.004 ms): sleep/8 open(filename: 0x71d84988, flags: CLOEXEC                             ) = 3
+     0.713 ( 0.002 ms): sleep/8 fstat(fd: 3, statbuf: 0x7fffc013da10                                  ) = 0
+     0.716 ( 0.003 ms): sleep/8 mmap(len: 13580, prot: READ, flags: PRIVATE, fd: 3                    ) = 0x7fc171f86000
+     0.720 ( 0.002 ms): sleep/8 close(fd: 3                                                           ) = 0
+     0.720 ( 0.009 ms): sleep/8  ... [[33mcontinued[m]: access()) = -1 ENOENT No such file or directory

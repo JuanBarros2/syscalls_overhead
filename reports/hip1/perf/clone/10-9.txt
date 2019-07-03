@@ -1,14 +1,28 @@
-
- Performance counter stats for './memoriaOverhead clone 10':
-
-          0.277046      task-clock (msec)         #    0.522 CPUs utilized          
-                 1      context-switches          #    0.004 M/sec                  
-                 0      cpu-migrations            #    0.000 K/sec                  
-                56      page-faults               #    0.202 M/sec                  
-           1062822      cycles                    #    3.836 GHz                    
-            711496      instructions              #    0.67  insn per cycle         
-            138222      branches                  #  498.914 M/sec                  
-              7836      branch-misses             # [33m   5.67%[m of all branches        
-
-       0.000531050 seconds time elapsed
-
+         ? (     ?   ): memoriaOverhea/7  ... [[33mcontinued[m]: execve()) = 0
+     0.019 ( 0.001 ms): memoriaOverhea/7 brk(                                                                  ) = 0x555c19cfb000
+     0.030 ( 0.004 ms): memoriaOverhea/7 access(filename: 0xfa6ef4e7                                           ) = -1 ENOENT No such file or directory
+     0.037 ( 0.003 ms): memoriaOverhea/7 access(filename: 0xfa6f1c70, mode: R                                  ) = -1 ENOENT No such file or directory
+     0.041 ( 0.003 ms): memoriaOverhea/7 open(filename: 0xfa6ef988, flags: CLOEXEC                             ) = 3
+     0.046 ( 0.002 ms): memoriaOverhea/7 fstat(fd: 3, statbuf: 0x7ffdb6410630                                  ) = 0
+     0.048 ( 0.002 ms): memoriaOverhea/7 mmap(len: 13580, prot: READ, flags: PRIVATE, fd: 3                    ) = 0x7f7dfa8f1000
+     0.051 ( 0.001 ms): memoriaOverhea/7 close(fd: 3                                                           ) = 0
+     0.055 ( 0.001 ms): memoriaOverhea/7 access(filename: 0xfa6ef4e7                                           ) = -1 ENOENT No such file or directory
+     0.058 ( 0.004 ms): memoriaOverhea/7 open(filename: 0xfa8f7d68, flags: CLOEXEC                             ) = 3
+     0.063 ( 0.002 ms): memoriaOverhea/7 read(fd: 3, buf: 0x7ffdb64107d8, count: 832                           ) = 832
+     0.066 ( 0.001 ms): memoriaOverhea/7 fstat(fd: 3, statbuf: 0x7ffdb6410670                                  ) = 0
+     0.068 ( 0.002 ms): memoriaOverhea/7 mmap(len: 8192, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS, fd: -1    ) = 0x7f7dfa8ef000
+     0.072 ( 0.002 ms): memoriaOverhea/7 mmap(len: 3795296, prot: EXEC|READ, flags: PRIVATE|DENYWRITE, fd: 3   ) = 0x7f7dfa333000
+     0.075 ( 0.004 ms): memoriaOverhea/7 mprotect(start: 0x7f7dfa4c8000, len: 2097152                          ) = 0
+     0.080 ( 0.003 ms): memoriaOverhea/7 mmap(addr: 0x7f7dfa6c8000, len: 24576, prot: READ|WRITE, flags: PRIVATE|DENYWRITE|FIXED, fd: 3, off: 1658880) = 0x7f7dfa6c8000
+     0.087 ( 0.002 ms): memoriaOverhea/7 mmap(addr: 0x7f7dfa6ce000, len: 14688, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS|FIXED, fd: -1) = 0x7f7dfa6ce000
+     0.093 ( 0.001 ms): memoriaOverhea/7 close(fd: 3                                                           ) = 0
+     0.101 ( 0.001 ms): memoriaOverhea/7 arch_prctl(option: 4098, arg2: 140179051316288                        ) = 0
+     0.137 ( 0.003 ms): memoriaOverhea/7 mprotect(start: 0x7f7dfa6c8000, len: 16384, prot: READ                ) = 0
+     0.142 ( 0.002 ms): memoriaOverhea/7 mprotect(start: 0x555c198a0000, len: 4096, prot: READ                 ) = 0
+     0.145 ( 0.002 ms): memoriaOverhea/7 mprotect(start: 0x7f7dfa8f5000, len: 4096, prot: READ                 ) = 0
+     0.148 ( 0.003 ms): memoriaOverhea/7 munmap(addr: 0x7f7dfa8f1000, len: 13580                               ) = 0
+     0.188 ( 0.002 ms): memoriaOverhea/7 mmap(len: 1052672, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS, fd: -1 ) = 0x7f7dfa7ee000
+     0.193 ([33m 0.214 ms[m): memoriaOverhea/7 clone(clone_flags: 16384, newsp: 140179051307008, parent_tidptr: 0xffffffffffffffff) = 8 (memoriaOverhead)
+     0.422 (     ?   ): memoriaOverhea/7 exit_group(                                                           )
+         ? (     ?   ): memoriaOverhea/8  ... [[33mcontinued[m]: clone()
+     0.371 (     ?   ): memoriaOverhea/8 exit_group(                                                           )

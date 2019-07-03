@@ -44,6 +44,7 @@ def make_chart_hip1(df):
     barWidth = 0.30
     palette = plt.get_cmap('Set1')
     num = 1
+    max_interval = df['time'].max()
 
     for tool in tools:
         plt.subplot(1, len(tools), num)
@@ -53,6 +54,7 @@ def make_chart_hip1(df):
         for dep in depths:
             df_filtered = df.loc[(df.depth == dep) & (df.tool == tool)]
             syscalls = df_filtered.syscall
+            plt.ylim(0, max_interval*1.05)
             plt.bar(
             [x + width for x in ind],
             df_filtered.time,

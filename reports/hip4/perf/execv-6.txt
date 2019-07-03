@@ -1,14 +1,52 @@
-
- Performance counter stats for './pesquisaOverhead execv':
-
-          0.925866      task-clock (msec)         #    0.609 CPUs utilized          
-                 1      context-switches          #    0.001 M/sec                  
-                 0      cpu-migrations            #    0.000 K/sec                  
-                83      page-faults               #    0.090 M/sec                  
-           3584780      cycles                    #    3.872 GHz                    
-           1081392      instructions              #    0.30  insn per cycle         
-            208465      branches                  #  225.157 M/sec                  
-             10880      branch-misses             # [33m   5.22%[m of all branches        
-
-       0.001520370 seconds time elapsed
-
+         ? (     ?   ): pesquisaOverhe/6  ... [[33mcontinued[m]: execve()) = 0
+     0.021 ( 0.001 ms): pesquisaOverhe/6 brk(                                                                  ) = 0x55d7c60be000
+     0.035 ( 0.004 ms): pesquisaOverhe/6 access(filename: 0xe90304e7                                           ) = -1 ENOENT No such file or directory
+     0.041 ( 0.002 ms): pesquisaOverhe/6 access(filename: 0xe9032c70, mode: R                                  ) = -1 ENOENT No such file or directory
+     0.046 ( 0.004 ms): pesquisaOverhe/6 open(filename: 0xe9030988, flags: CLOEXEC                             ) = 3
+     0.051 ( 0.001 ms): pesquisaOverhe/6 fstat(fd: 3, statbuf: 0x7ffd189eb370                                  ) = 0
+     0.054 ( 0.003 ms): pesquisaOverhe/6 mmap(len: 13580, prot: READ, flags: PRIVATE, fd: 3                    ) = 0x7fd4e9232000
+     0.058 ( 0.001 ms): pesquisaOverhe/6 close(fd: 3                                                           ) = 0
+     0.062 ( 0.002 ms): pesquisaOverhe/6 access(filename: 0xe90304e7                                           ) = -1 ENOENT No such file or directory
+     0.066 ( 0.005 ms): pesquisaOverhe/6 open(filename: 0xe9238d68, flags: CLOEXEC                             ) = 3
+     0.072 ( 0.002 ms): pesquisaOverhe/6 read(fd: 3, buf: 0x7ffd189eb518, count: 832                           ) = 832
+     0.076 ( 0.001 ms): pesquisaOverhe/6 fstat(fd: 3, statbuf: 0x7ffd189eb3b0                                  ) = 0
+     0.078 ( 0.002 ms): pesquisaOverhe/6 mmap(len: 8192, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS, fd: -1    ) = 0x7fd4e9230000
+     0.084 ( 0.003 ms): pesquisaOverhe/6 mmap(len: 3795296, prot: EXEC|READ, flags: PRIVATE|DENYWRITE, fd: 3   ) = 0x7fd4e8c74000
+     0.088 ( 0.004 ms): pesquisaOverhe/6 mprotect(start: 0x7fd4e8e09000, len: 2097152                          ) = 0
+     0.093 ( 0.004 ms): pesquisaOverhe/6 mmap(addr: 0x7fd4e9009000, len: 24576, prot: READ|WRITE, flags: PRIVATE|DENYWRITE|FIXED, fd: 3, off: 1658880) = 0x7fd4e9009000
+     0.101 ( 0.003 ms): pesquisaOverhe/6 mmap(addr: 0x7fd4e900f000, len: 14688, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS|FIXED, fd: -1) = 0x7fd4e900f000
+     0.109 ( 0.001 ms): pesquisaOverhe/6 close(fd: 3                                                           ) = 0
+     0.119 ( 0.001 ms): pesquisaOverhe/6 arch_prctl(option: 4098, arg2: 140552421184576                        ) = 0
+     0.162 ( 0.004 ms): pesquisaOverhe/6 mprotect(start: 0x7fd4e9009000, len: 16384, prot: READ                ) = 0
+     0.168 ( 0.003 ms): pesquisaOverhe/6 mprotect(start: 0x55d7c4c09000, len: 4096, prot: READ                 ) = 0
+     0.174 ( 0.002 ms): pesquisaOverhe/6 mprotect(start: 0x7fd4e9236000, len: 4096, prot: READ                 ) = 0
+     0.177 ( 0.004 ms): pesquisaOverhe/6 munmap(addr: 0x7fd4e9232000, len: 13580                               ) = 0
+     0.200 ([33m 0.115 ms[m): sleep/6 execve(filename: 0xc4a09a36, argv: 0x7ffd189ebd60, envp: 0x7ffd189ebea0) = 0
+     0.329 ( 0.001 ms): sleep/6 brk(                                                                  ) = 0x562b534ec000
+     0.341 ( 0.003 ms): sleep/6 access(filename: 0x97b3a4e7                                           ) = -1 ENOENT No such file or directory
+     0.348 ( 0.002 ms): sleep/6 access(filename: 0x97b3cc70, mode: R                                  ) = -1 ENOENT No such file or directory
+     0.354 ( 0.003 ms): sleep/6 open(filename: 0x97b3a988, flags: CLOEXEC                             ) = 3
+     0.358 ( 0.002 ms): sleep/6 fstat(fd: 3, statbuf: 0x7ffd09c2de00                                  ) = 0
+     0.361 ( 0.003 ms): sleep/6 mmap(len: 13580, prot: READ, flags: PRIVATE, fd: 3                    ) = 0x7f0b97d3c000
+     0.365 ( 0.001 ms): sleep/6 close(fd: 3                                                           ) = 0
+     0.369 ( 0.002 ms): sleep/6 access(filename: 0x97b3a4e7                                           ) = -1 ENOENT No such file or directory
+     0.373 ( 0.004 ms): sleep/6 open(filename: 0x97d42d68, flags: CLOEXEC                             ) = 3
+     0.378 ( 0.002 ms): sleep/6 read(fd: 3, buf: 0x7ffd09c2dfa8, count: 832                           ) = 832
+     0.381 ( 0.001 ms): sleep/6 fstat(fd: 3, statbuf: 0x7ffd09c2de40                                  ) = 0
+     0.384 ( 0.002 ms): sleep/6 mmap(len: 8192, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS, fd: -1    ) = 0x7f0b97d3a000
+     0.390 ( 0.003 ms): sleep/6 mmap(len: 3795296, prot: EXEC|READ, flags: PRIVATE|DENYWRITE, fd: 3   ) = 0x7f0b9777e000
+     0.394 ( 0.005 ms): sleep/6 mprotect(start: 0x7f0b97913000, len: 2097152                          ) = 0
+     0.400 ( 0.005 ms): sleep/6 mmap(addr: 0x7f0b97b13000, len: 24576, prot: READ|WRITE, flags: PRIVATE|DENYWRITE|FIXED, fd: 3, off: 1658880) = 0x7f0b97b13000
+     0.408 ( 0.003 ms): sleep/6 mmap(addr: 0x7f0b97b19000, len: 14688, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS|FIXED, fd: -1) = 0x7f0b97b19000
+     0.416 ( 0.001 ms): sleep/6 close(fd: 3                                                           ) = 0
+     0.426 ( 0.001 ms): sleep/6 arch_prctl(option: 4098, arg2: 139687768601728                        ) = 0
+     0.468 ( 0.004 ms): sleep/6 mprotect(start: 0x7f0b97b13000, len: 16384, prot: READ                ) = 0
+     0.476 ( 0.003 ms): sleep/6 mprotect(start: 0x562b533dc000, len: 4096, prot: READ                 ) = 0
+     0.481 ( 0.002 ms): sleep/6 mprotect(start: 0x7f0b97d40000, len: 4096, prot: READ                 ) = 0
+     0.485 ( 0.004 ms): sleep/6 munmap(addr: 0x7f0b97d3c000, len: 13580                               ) = 0
+     0.536 ( 0.001 ms): sleep/6 brk(                                                                  ) = 0x562b534ec000
+     0.539 ( 0.002 ms): sleep/6 brk(brk: 0x562b5350d000                                               ) = 0x562b5350d000
+     0.557 ([33m 0.060 ms[m): sleep/6 nanosleep(rqtp: 0x7ffd09c2e750                                        ) = 0
+     0.625 ( 0.001 ms): sleep/6 close(fd: 1                                                           ) = 0
+     0.628 ( 0.001 ms): sleep/6 close(fd: 2                                                           ) = 0
+     0.634 (     ?   ): sleep/6 exit_group(                                                           )
