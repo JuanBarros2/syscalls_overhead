@@ -6,29 +6,24 @@
 #include <unistd.h>
 #include <sched.h>
 #include <spawn.h>
+#include <unistd.h>
 
 int doNothing() {
     return 0;
 }
 
-int a = 1;
-
-int processoQualquer() {
-    int x = 0;
-    while (a) {
-        x++;
-    }
-}
-
 void expandProcessos(int depth, char syscall[]) {
     pid_t pid;
 
-    char* argv2[] = { "sleep" , "5", NULL};
-    
+    pid_t child_pid;
     for (int i = 0; i < depth; i++) {
-        execvp(argv2[0], argv2);
+        child_pid = fork();
+        if (child_pid == 0) {
+            sleep(2);
+            return;
+        }
     }
-    
+
     char* argv[] = { "sleep" , "0", NULL};
     if (strcmp(syscall, "fork") == 0){
         /* Cria uma cópia do processo atual e continua a execução
@@ -57,7 +52,6 @@ void expandProcessos(int depth, char syscall[]) {
         posix_spawnp(&pid, argv[0], NULL, NULL, argv, NULL);
         exit(0);
     }
-    a = 0;
 }
 
 

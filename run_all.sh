@@ -51,18 +51,18 @@ do
         fi
     done
     echo ".......Rodando analise para" $syscall 
-    for procNumbers in 10 100
+    for procNumbers in 10 100 1000
     do
         for count in $(seq 1 $IT);
         do
             echo ".............. Gerando resultado $count para $procNumbers processos"
-            docker run -it projso/docker:1.0 strace -f -T -a 120 ./processosOverhead $syscall $procNumbers > ./reports/hip2/strace/$syscall/$procNumbers-$count.txt
-            docker run -it --privileged projso/docker:1.0 perf trace ./processosOverhead $syscall $procNumbers > ./reports/hip2/perf/$syscall/$procNumbers-$count.txt
+            docker run --security-opt seccomp:unconfined -it projso/docker:1.0 strace -f -T -a 120 ./processosOverhead $syscall $procNumbers > ./reports/hip2/strace/$syscall/$procNumbers-$count.txt
+            docker run --security-opt seccomp:unconfined -it --privileged projso/docker:1.0 perf trace ./processosOverhead $syscall $procNumbers > ./reports/hip2/perf/$syscall/$procNumbers-$count.txt
         done
     done
 done
 
-## Hipotese 3 - Número de arquivos abertos na memória
+# Hipotese 3 - Número de arquivos abertos na memória
 echo "Gerando dados para hipotese 3 - Memoria número de arquivos abertos"
 for syscall in fork execvp clone posix_spawnp
 do
