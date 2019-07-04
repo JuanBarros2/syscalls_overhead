@@ -1,6 +1,7 @@
 FROM debian
 
 COPY ./codes/memoriaOverhead.c /memoriaOverhead.c
+COPY ./codes/processosOverhead.c /processosOverhead.c
 COPY ./codes/pesquisaOverhead.c /pesquisaOverhead.c
 COPY ./codes/fileOverhead.c /fileOverhead.c
 
@@ -14,3 +15,5 @@ RUN apt-get update &&\
     gcc -o /memoriaOverhead /memoriaOverhead.c &&\
     gcc -o pesquisaOverhead /pesquisaOverhead.c &&\
     gcc -o fileOverhead /fileOverhead.c 
+    gcc -o /processosOverhead /processosOverhead.c &&\
+    gcc -o pesquisaOverhead /pesquisaOverhead.c 

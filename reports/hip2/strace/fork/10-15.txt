@@ -1,0 +1,2 @@
+strace: ptrace(PTRACE_TRACEME, ...): Operation not permitted
++++ exited with 1 +++

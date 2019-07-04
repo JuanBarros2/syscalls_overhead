@@ -8,7 +8,7 @@ if [ ! -d "./reports" ]
 then
     echo "Criando pasta para resultados..."
     mkdir reports
-    for hip in hip1 hip3 hip4
+    for hip in hip1 hip2 hip3 hip4
     do
         mkdir ./reports/$hip
         mkdir ./reports/$hip/perf
@@ -39,7 +39,30 @@ do
     done
 done
 
-# Hipotese 3 - Número de arquivos abertos na memória
+## Hipotese 2 - Processos influencia em syscall
+echo "Gerando dados para hipotese 2 - Processos influencia em syscall"
+for syscall in fork execvp clone posix_spawnp
+do
+    for tool in strace perf
+    do
+        if [ ! -d "./reports/hip2/$tool/$syscall" ] 
+        then
+            mkdir ./reports/hip2/$tool/$syscall
+        fi
+    done
+    echo ".......Rodando analise para" $syscall 
+    for procNumbers in 10 100
+    do
+        for count in $(seq 1 $IT);
+        do
+            echo ".............. Gerando resultado $count para $procNumbers processos"
+            docker run -it projso/docker:1.0 strace -f -T -a 120 ./processosOverhead $syscall $procNumbers > ./reports/hip2/strace/$syscall/$procNumbers-$count.txt
+            docker run -it --privileged projso/docker:1.0 perf trace ./processosOverhead $syscall $procNumbers > ./reports/hip2/perf/$syscall/$procNumbers-$count.txt
+        done
+    done
+done
+
+## Hipotese 3 - Número de arquivos abertos na memória
 echo "Gerando dados para hipotese 3 - Memoria número de arquivos abertos"
 for syscall in fork execvp clone posix_spawnp
 do
