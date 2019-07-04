@@ -14,6 +14,6 @@ RUN apt-get update &&\
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* &&\
     gcc -o /memoriaOverhead /memoriaOverhead.c &&\
     gcc -o pesquisaOverhead /pesquisaOverhead.c &&\
-    gcc -o fileOverhead /fileOverhead.c 
+    gcc -o fileOverhead /fileOverhead.c &&\
     gcc -o /processosOverhead /processosOverhead.c &&\
     gcc -o pesquisaOverhead /pesquisaOverhead.c 
