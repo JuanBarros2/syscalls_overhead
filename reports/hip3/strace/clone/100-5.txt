@@ -1,0 +1,444 @@
+execve("./fileOverhead", ["./fileOverhead", "clone", "100"], [/* 4 vars */])                                            = 0 <0.000446>
+brk(NULL)                                                                                                               = 0x563f27352000 <0.000024>
+access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000059>
+access("/etc/ld.so.preload", R_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000058>
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC)                                                                            = 3 <0.000081>
+fstat(3, {st_mode=S_IFREG|0644, st_size=13580, ...})                                                                    = 0 <0.000036>
+mmap(NULL, 13580, PROT_READ, MAP_PRIVATE, 3, 0)                                                                         = 0x7f2146947000 <0.000055>
+close(3)                                                                                                                = 0 <0.000049>
+access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000060>
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC)                                                             = 3 <0.000082>
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832)                                       = 832 <0.000050>
+fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...})                                                                  = 0 <0.000061>
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0)                                                = 0x7f2146945000 <0.000054>
+mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0)                                               = 0x7f2146389000 <0.000054>
+mprotect(0x7f214651e000, 2097152, PROT_NONE)                                                                            = 0 <0.000056>
+mmap(0x7f214671e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000)                     = 0x7f214671e000 <0.000096>
+mmap(0x7f2146724000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0)                           = 0x7f2146724000 <0.000077>
+close(3)                                                                                                                = 0 <0.000054>
+arch_prctl(ARCH_SET_FS, 0x7f2146946440)                                                                                 = 0 <0.000031>
+mprotect(0x7f214671e000, 16384, PROT_READ)                                                                              = 0 <0.000076>
+mprotect(0x563f25d84000, 4096, PROT_READ)                                                                               = 0 <0.000106>
+mprotect(0x7f214694b000, 4096, PROT_READ)                                                                               = 0 <0.000090>
+munmap(0x7f2146947000, 13580)                                                                                           = 0 <0.000068>
+stat("files/", 0x7fffa4256720)                                                                                          = -1 ENOENT (No such file or directory) <0.000069>
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...})                                                          = 0 <0.000163>
+brk(NULL)                                                                                                               = 0x563f27352000 <0.000050>
+brk(0x563f27373000)                                                                                                     = 0x563f27373000 <0.000069>
+write(1, "Diretorio criado\n", 17Diretorio criado
+)                                                                                      = 17 <0.000046>
+mkdir("files/", 0700)                                                                                                   = 0 <0.000214>
+open("files/file0.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 3 <0.000144>
+open("files/file1.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 4 <0.000091>
+open("files/file2.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 5 <0.000198>
+open("files/file3.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 6 <0.000163>
+open("files/file4.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 7 <0.000177>
+open("files/file5.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 8 <0.000185>
+open("files/file6.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 9 <0.000124>
+open("files/file7.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 10 <0.000159>
+open("files/file8.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 11 <0.000152>
+open("files/file9.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 12 <0.000162>
+open("files/file10.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 13 <0.000106>
+open("files/file11.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 14 <0.000142>
+open("files/file12.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 15 <0.000176>
+open("files/file13.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 16 <0.000106>
+open("files/file14.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 17 <0.000131>
+open("files/file15.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 18 <0.000110>
+open("files/file16.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 19 <0.000096>
+open("files/file17.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 20 <0.000146>
+open("files/file18.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 21 <0.000155>
+open("files/file19.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 22 <0.000138>
+open("files/file20.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 23 <0.000128>
+open("files/file21.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 24 <0.000095>
+open("files/file22.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 25 <0.000085>
+open("files/file23.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 26 <0.000085>
+open("files/file24.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 27 <0.000082>
+open("files/file25.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 28 <0.000093>
+open("files/file26.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 29 <0.000145>
+open("files/file27.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 30 <0.000102>
+open("files/file28.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 31 <0.000111>
+open("files/file29.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 32 <0.000122>
+open("files/file30.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 33 <0.000091>
+open("files/file31.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 34 <0.000078>
+open("files/file32.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 35 <0.000114>
+open("files/file33.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 36 <0.000099>
+open("files/file34.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 37 <0.000099>
+open("files/file35.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 38 <0.000151>
+open("files/file36.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 39 <0.000114>
+open("files/file37.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 40 <0.000121>
+open("files/file38.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 41 <0.000086>
+open("files/file39.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 42 <0.000128>
+open("files/file40.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 43 <0.000133>
+open("files/file41.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 44 <0.000081>
+open("files/file42.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 45 <0.000166>
+open("files/file43.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 46 <0.000066>
+open("files/file44.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 47 <0.000069>
+open("files/file45.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 48 <0.000163>
+open("files/file46.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 49 <0.000082>
+open("files/file47.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 50 <0.000124>
+open("files/file48.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 51 <0.000099>
+open("files/file49.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 52 <0.000127>
+open("files/file50.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 53 <0.000095>
+open("files/file51.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 54 <0.000097>
+open("files/file52.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 55 <0.000249>
+open("files/file53.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 56 <0.000150>
+open("files/file54.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 57 <0.000092>
+open("files/file55.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 58 <0.000100>
+open("files/file56.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 59 <0.000657>
+open("files/file57.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 60 <0.000111>
+open("files/file58.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 61 <0.000083>
+open("files/file59.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 62 <0.000108>
+open("files/file60.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 63 <0.000107>
+open("files/file61.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 64 <0.000127>
+open("files/file62.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 65 <0.000108>
+open("files/file63.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 66 <0.000086>
+open("files/file64.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 67 <0.000121>
+open("files/file65.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 68 <0.000110>
+open("files/file66.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 69 <0.000152>
+open("files/file67.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 70 <0.000127>
+open("files/file68.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 71 <0.000086>
+open("files/file69.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 72 <0.000140>
+open("files/file70.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 73 <0.000119>
+open("files/file71.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 74 <0.000182>
+open("files/file72.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 75 <0.000071>
+open("files/file73.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 76 <0.000080>
+open("files/file74.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 77 <0.000098>
+open("files/file75.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 78 <0.000075>
+open("files/file76.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 79 <0.000137>
+open("files/file77.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 80 <0.000084>
+open("files/file78.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 81 <0.000102>
+open("files/file79.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 82 <0.000138>
+open("files/file80.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 83 <0.000098>
+open("files/file81.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 84 <0.000153>
+open("files/file82.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 85 <0.000122>
+open("files/file83.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 86 <0.000124>
+open("files/file84.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 87 <0.000182>
+open("files/file85.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 88 <0.000140>
+open("files/file86.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 89 <0.000105>
+open("files/file87.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 90 <0.000097>
+open("files/file88.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 91 <0.000156>
+open("files/file89.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 92 <0.000141>
+open("files/file90.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 93 <0.000106>
+open("files/file91.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 94 <0.000129>
+open("files/file92.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 95 <0.000149>
+open("files/file93.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 96 <0.000104>
+open("files/file94.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 97 <0.000085>
+open("files/file95.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 98 <0.000115>
+open("files/file96.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 99 <0.000158>
+open("files/file97.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 100 <0.000096>
+open("files/file98.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 101 <0.000074>
+open("files/file99.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 102 <0.000118>
+write(1, "Fechando arquivos\n", 18Fechando arquivos
+)                                                                                     = 18 <0.000052>
+close(3)                                                                                                                = 0 <0.000045>
+close(4)                                                                                                                = 0 <0.000035>
+close(5)                                                                                                                = 0 <0.000042>
+close(6)                                                                                                                = 0 <0.000048>
+close(7)                                                                                                                = 0 <0.000048>
+close(8)                                                                                                                = 0 <0.000046>
+close(9)                                                                                                                = 0 <0.000045>
+close(10)                                                                                                               = 0 <0.000051>
+close(11)                                                                                                               = 0 <0.000036>
+close(12)                                                                                                               = 0 <0.000199>
+close(13)                                                                                                               = 0 <0.000051>
+close(14)                                                                                                               = 0 <0.000038>
+close(15)                                                                                                               = 0 <0.000069>
+close(16)                                                                                                               = 0 <0.000042>
+close(17)                                                                                                               = 0 <0.000066>
+close(18)                                                                                                               = 0 <0.000046>
+close(19)                                                                                                               = 0 <0.000035>
+close(20)                                                                                                               = 0 <0.000041>
+close(21)                                                                                                               = 0 <0.000065>
+close(22)                                                                                                               = 0 <0.000038>
+close(23)                                                                                                               = 0 <0.000043>
+close(24)                                                                                                               = 0 <0.000059>
+close(25)                                                                                                               = 0 <0.000044>
+close(26)                                                                                                               = 0 <0.000066>
+close(27)                                                                                                               = 0 <0.000035>
+close(28)                                                                                                               = 0 <0.000034>
+close(29)                                                                                                               = 0 <0.000041>
+close(30)                                                                                                               = 0 <0.000040>
+close(31)                                                                                                               = 0 <0.000034>
+close(32)                                                                                                               = 0 <0.000034>
+close(33)                                                                                                               = 0 <0.000041>
+close(34)                                                                                                               = 0 <0.000035>
+close(35)                                                                                                               = 0 <0.000037>
+close(36)                                                                                                               = 0 <0.000041>
+close(37)                                                                                                               = 0 <0.000045>
+close(38)                                                                                                               = 0 <0.000038>
+close(39)                                                                                                               = 0 <0.000032>
+close(40)                                                                                                               = 0 <0.000040>
+close(41)                                                                                                               = 0 <0.000049>
+close(42)                                                                                                               = 0 <0.000044>
+close(43)                                                                                                               = 0 <0.000029>
+close(44)                                                                                                               = 0 <0.000042>
+close(45)                                                                                                               = 0 <0.000105>
+close(46)                                                                                                               = 0 <0.000045>
+close(47)                                                                                                               = 0 <0.000032>
+close(48)                                                                                                               = 0 <0.000039>
+close(49)                                                                                                               = 0 <0.000056>
+close(50)                                                                                                               = 0 <0.000055>
+close(51)                                                                                                               = 0 <0.000038>
+close(52)                                                                                                               = 0 <0.000036>
+close(53)                                                                                                               = 0 <0.000053>
+close(54)                                                                                                               = 0 <0.000053>
+close(55)                                                                                                               = 0 <0.000110>
+close(56)                                                                                                               = 0 <0.000041>
+close(57)                                                                                                               = 0 <0.000051>
+close(58)                                                                                                               = 0 <0.000043>
+close(59)                                                                                                               = 0 <0.000043>
+close(60)                                                                                                               = 0 <0.000036>
+close(61)                                                                                                               = 0 <0.000044>
+close(62)                                                                                                               = 0 <0.000073>
+close(63)                                                                                                               = 0 <0.000042>
+close(64)                                                                                                               = 0 <0.000046>
+close(65)                                                                                                               = 0 <0.000053>
+close(66)                                                                                                               = 0 <0.000040>
+close(67)                                                                                                               = 0 <0.000062>
+close(68)                                                                                                               = 0 <0.000051>
+close(69)                                                                                                               = 0 <0.000052>
+close(70)                                                                                                               = 0 <0.000038>
+close(71)                                                                                                               = 0 <0.000037>
+close(72)                                                                                                               = 0 <0.000045>
+close(73)                                                                                                               = 0 <0.000042>
+close(74)                                                                                                               = 0 <0.000054>
+close(75)                                                                                                               = 0 <0.000046>
+close(76)                                                                                                               = 0 <0.000051>
+close(77)                                                                                                               = 0 <0.000033>
+close(78)                                                                                                               = 0 <0.000106>
+close(79)                                                                                                               = 0 <0.000045>
+close(80)                                                                                                               = 0 <0.000061>
+close(81)                                                                                                               = 0 <0.000039>
+close(82)                                                                                                               = 0 <0.000038>
+close(83)                                                                                                               = 0 <0.000043>
+close(84)                                                                                                               = 0 <0.000049>
+close(85)                                                                                                               = 0 <0.000035>
+close(86)                                                                                                               = 0 <0.000038>
+close(87)                                                                                                               = 0 <0.000043>
+close(88)                                                                                                               = 0 <0.000048>
+close(89)                                                                                                               = 0 <0.000031>
+close(90)                                                                                                               = 0 <0.000028>
+close(91)                                                                                                               = 0 <0.000055>
+close(92)                                                                                                               = 0 <0.000054>
+close(93)                                                                                                               = 0 <0.000039>
+close(94)                                                                                                               = 0 <0.000035>
+close(95)                                                                                                               = 0 <0.000031>
+close(96)                                                                                                               = 0 <0.000036>
+close(97)                                                                                                               = 0 <0.000043>
+close(98)                                                                                                               = 0 <0.000045>
+close(99)                                                                                                               = 0 <0.000043>
+close(100)                                                                                                              = 0 <0.000051>
+close(101)                                                                                                              = 0 <0.000042>
+close(102)                                                                                                              = 0 <0.000041>
+write(1, "Syscall executada!\n", 19Syscall executada!
+)                                                                                    = 19 <0.000058>
+open("files/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC)                                                               = 3 <0.000060>
+fstat(3, {st_mode=S_IFDIR|0700, st_size=4096, ...})                                                                     = 0 <0.000044>
+getdents(3, /* 102 entries */, 32768)                                                                                   = 3248 <0.000266>
+stat("files//file4.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000039>
+unlink("files//file4.txt")                                                                                              = 0 <0.000185>
+stat("files//file82.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000066>
+unlink("files//file82.txt")                                                                                             = 0 <0.000117>
+stat("files//file66.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000050>
+unlink("files//file66.txt")                                                                                             = 0 <0.000132>
+stat("files//file62.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000045>
+unlink("files//file62.txt")                                                                                             = 0 <0.000172>
+stat("files//file31.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000043>
+unlink("files//file31.txt")                                                                                             = 0 <0.000093>
+stat("files//file58.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000038>
+unlink("files//file58.txt")                                                                                             = 0 <0.000067>
+stat("files//file23.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000047>
+unlink("files//file23.txt")                                                                                             = 0 <0.000109>
+stat("files//file14.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000046>
+unlink("files//file14.txt")                                                                                             = 0 <0.000102>
+stat("files//file8.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000049>
+unlink("files//file8.txt")                                                                                              = 0 <0.000078>
+stat("files//file51.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000060>
+unlink("files//file51.txt")                                                                                             = 0 <0.000101>
+stat("files//file11.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000044>
+unlink("files//file11.txt")                                                                                             = 0 <0.000085>
+stat("files//file84.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000037>
+unlink("files//file84.txt")                                                                                             = 0 <0.000070>
+stat("files//file72.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000035>
+unlink("files//file72.txt")                                                                                             = 0 <0.000065>
+stat("files//file91.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000056>
+unlink("files//file91.txt")                                                                                             = 0 <0.000105>
+stat("files//file40.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000046>
+unlink("files//file40.txt")                                                                                             = 0 <0.000099>
+stat("files//file47.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000046>
+unlink("files//file47.txt")                                                                                             = 0 <0.000099>
+stat("files//file39.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000047>
+unlink("files//file39.txt")                                                                                             = 0 <0.000084>
+stat("files//file32.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000052>
+unlink("files//file32.txt")                                                                                             = 0 <0.000099>
+stat("files//file49.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000040>
+unlink("files//file49.txt")                                                                                             = 0 <0.000102>
+stat("files//file0.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000041>
+unlink("files//file0.txt")                                                                                              = 0 <0.000096>
+stat("files//file53.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000041>
+unlink("files//file53.txt")                                                                                             = 0 <0.000075>
+stat("files//file16.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000042>
+unlink("files//file16.txt")                                                                                             = 0 <0.000097>
+stat("files//file92.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000057>
+unlink("files//file92.txt")                                                                                             = 0 <0.000109>
+stat("files//file42.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000042>
+unlink("files//file42.txt")                                                                                             = 0 <0.000078>
+stat("files//file44.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000052>
+unlink("files//file44.txt")                                                                                             = 0 <0.000109>
+stat("files//file97.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000048>
+unlink("files//file97.txt")                                                                                             = 0 <0.000081>
+stat("files//file50.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000045>
+unlink("files//file50.txt")                                                                                             = 0 <0.000103>
+stat("files//file61.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000038>
+unlink("files//file61.txt")                                                                                             = 0 <0.000092>
+stat("files//file21.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000039>
+unlink("files//file21.txt")                                                                                             = 0 <0.000089>
+stat("files//file85.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000068>
+unlink("files//file85.txt")                                                                                             = 0 <0.000118>
+stat("files//file20.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000047>
+unlink("files//file20.txt")                                                                                             = 0 <0.000105>
+stat("files//file1.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000042>
+unlink("files//file1.txt")                                                                                              = 0 <0.000105>
+stat("files//file83.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000044>
+unlink("files//file83.txt")                                                                                             = 0 <0.000096>
+stat("files//file25.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000047>
+unlink("files//file25.txt")                                                                                             = 0 <0.000090>
+stat("files//file98.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000040>
+unlink("files//file98.txt")                                                                                             = 0 <0.000079>
+stat("files//file3.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000043>
+unlink("files//file3.txt")                                                                                              = 0 <0.000114>
+stat("files//file24.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000043>
+unlink("files//file24.txt")                                                                                             = 0 <0.000113>
+stat("files//file48.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000043>
+unlink("files//file48.txt")                                                                                             = 0 <0.000098>
+stat("files//file63.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000041>
+unlink("files//file63.txt")                                                                                             = 0 <0.000475>
+stat("files//file9.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000044>
+unlink("files//file9.txt")                                                                                              = 0 <0.000070>
+stat("files//file12.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000036>
+unlink("files//file12.txt")                                                                                             = 0 <0.000080>
+stat("files//file43.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000107>
+unlink("files//file43.txt")                                                                                             = 0 <0.000101>
+stat("files//file33.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000040>
+unlink("files//file33.txt")                                                                                             = 0 <0.000105>
+stat("files//file34.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000038>
+unlink("files//file34.txt")                                                                                             = 0 <0.000107>
+stat("files//file41.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000044>
+unlink("files//file41.txt")                                                                                             = 0 <0.000101>
+stat("files//file74.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000047>
+unlink("files//file74.txt")                                                                                             = 0 <0.000089>
+stat("files//file18.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000054>
+unlink("files//file18.txt")                                                                                             = 0 <0.000075>
+stat("files//file27.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000045>
+unlink("files//file27.txt")                                                                                             = 0 <0.000102>
+stat("files//file70.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000042>
+unlink("files//file70.txt")                                                                                             = 0 <0.000115>
+stat("files//file96.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000050>
+unlink("files//file96.txt")                                                                                             = 0 <0.000113>
+stat("files//file26.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000061>
+unlink("files//file26.txt")                                                                                             = 0 <0.000107>
+stat("files//file38.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000044>
+unlink("files//file38.txt")                                                                                             = 0 <0.000098>
+stat("files//file77.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000035>
+unlink("files//file77.txt")                                                                                             = 0 <0.000059>
+stat("files//file6.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000033>
+unlink("files//file6.txt")                                                                                              = 0 <0.000072>
+stat("files//file79.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000052>
+unlink("files//file79.txt")                                                                                             = 0 <0.000088>
+stat("files//file36.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000056>
+unlink("files//file36.txt")                                                                                             = 0 <0.000098>
+stat("files//file46.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000035>
+unlink("files//file46.txt")                                                                                             = 0 <0.000121>
+stat("files//file13.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000051>
+unlink("files//file13.txt")                                                                                             = 0 <0.000087>
+stat("files//file81.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000057>
+unlink("files//file81.txt")                                                                                             = 0 <0.000085>
+stat("files//file87.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000078>
+unlink("files//file87.txt")                                                                                             = 0 <0.000091>
+stat("files//file80.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000066>
+unlink("files//file80.txt")                                                                                             = 0 <0.000110>
+stat("files//file7.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000090>
+unlink("files//file7.txt")                                                                                              = 0 <0.000074>
+stat("files//file86.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000051>
+unlink("files//file86.txt")                                                                                             = 0 <0.000079>
+stat("files//file64.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000058>
+unlink("files//file64.txt")                                                                                             = 0 <0.000093>
+stat("files//file94.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000042>
+unlink("files//file94.txt")                                                                                             = 0 <0.000086>
+stat("files//file28.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000095>
+unlink("files//file28.txt")                                                                                             = 0 <0.000107>
+stat("files//file99.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000048>
+unlink("files//file99.txt")                                                                                             = 0 <0.000073>
+stat("files//file15.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000036>
+unlink("files//file15.txt")                                                                                             = 0 <0.000086>
+stat("files//file71.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000036>
+unlink("files//file71.txt")                                                                                             = 0 <0.000065>
+stat("files//file55.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000035>
+unlink("files//file55.txt")                                                                                             = 0 <0.000103>
+stat("files//file52.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000048>
+unlink("files//file52.txt")                                                                                             = 0 <0.000102>
+stat("files//file89.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000091>
+unlink("files//file89.txt")                                                                                             = 0 <0.000113>
+stat("files//file37.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000073>
+unlink("files//file37.txt")                                                                                             = 0 <0.000096>
+stat("files//file93.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000042>
+unlink("files//file93.txt")                                                                                             = 0 <0.000097>
+stat("files//file5.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000058>
+unlink("files//file5.txt")                                                                                              = 0 <0.000113>
+stat("files//file54.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000046>
+unlink("files//file54.txt")                                                                                             = 0 <0.000079>
+stat("files//file57.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000036>
+unlink("files//file57.txt")                                                                                             = 0 <0.000093>
+stat("files//file69.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000040>
+unlink("files//file69.txt")                                                                                             = 0 <0.000103>
+stat("files//file75.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000048>
+unlink("files//file75.txt")                                                                                             = 0 <0.000109>
+stat("files//file59.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000052>
+unlink("files//file59.txt")                                                                                             = 0 <0.000092>
+stat("files//file76.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000054>
+unlink("files//file76.txt")                                                                                             = 0 <0.000066>
+stat("files//file56.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000035>
+unlink("files//file56.txt")                                                                                             = 0 <0.000061>
+stat("files//file35.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000044>
+unlink("files//file35.txt")                                                                                             = 0 <0.000107>
+stat("files//file29.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000046>
+unlink("files//file29.txt")                                                                                             = 0 <0.000082>
+stat("files//file10.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000041>
+unlink("files//file10.txt")                                                                                             = 0 <0.000103>
+stat("files//file88.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000043>
+unlink("files//file88.txt")                                                                                             = 0 <0.000079>
+stat("files//file17.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000049>
+unlink("files//file17.txt")                                                                                             = 0 <0.000099>
+stat("files//file90.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000048>
+unlink("files//file90.txt")                                                                                             = 0 <0.000078>
+stat("files//file19.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000058>
+unlink("files//file19.txt")                                                                                             = 0 <0.000096>
+stat("files//file68.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000046>
+unlink("files//file68.txt")                                                                                             = 0 <0.000094>
+stat("files//file65.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000043>
+unlink("files//file65.txt")                                                                                             = 0 <0.000090>
+stat("files//file67.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000057>
+unlink("files//file67.txt")                                                                                             = 0 <0.000121>
+stat("files//file30.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000071>
+unlink("files//file30.txt")                                                                                             = 0 <0.000120>
+stat("files//file95.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000047>
+unlink("files//file95.txt")                                                                                             = 0 <0.000099>
+stat("files//file60.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000049>
+unlink("files//file60.txt")                                                                                             = 0 <0.000086>
+stat("files//file2.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000069>
+unlink("files//file2.txt")                                                                                              = 0 <0.000097>
+stat("files//file73.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000042>
+unlink("files//file73.txt")                                                                                             = 0 <0.000128>
+stat("files//file78.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000047>
+unlink("files//file78.txt")                                                                                             = 0 <0.000076>
+stat("files//file22.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000057>
+unlink("files//file22.txt")                                                                                             = 0 <0.000097>
+stat("files//file45.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000055>
+unlink("files//file45.txt")                                                                                             = 0 <0.000108>
+getdents(3, /* 0 entries */, 32768)                                                                                     = 0 <0.000063>
+close(3)                                                                                                                = 0 <0.000079>
+rmdir("files/")                                                                                                         = 0 <0.000152>
+write(1, "Diret\303\263rio removido\n", 20Diretório removido
+)                                                                             = 20 <0.000048>
+exit_group(0)                                                                                                           = ?
++++ exited with 0 +++

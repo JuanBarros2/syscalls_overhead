@@ -1,0 +1,108 @@
+Diretorio criado
+         ? (     ?   ): fileOverhead/6  ... [[33mcontinued[m]: execve()) = 0
+     0.027 ( 0.001 ms): fileOverhead/6 brk(                                                                  ) = 0x55ba5996b000
+Fechando arquivos
+Fechando arquivos
+Syscall executada!
+     0.044 ( 0.005 ms): fileOverhead/6 access(filename: 0x3271e4e7                                           ) = -1 ENOENT No such file or directory
+Syscall executada!
+     0.052 ( 0.003 ms): fileOverhead/6 access(filename: 0x32720c70, mode: R                                  ) = -1 ENOENT No such file or directory
+Diretório removido
+     0.058 ( 0.004 ms): fileOverhead/6 open(filename: 0x3271e988, flags: CLOEXEC                             ) = 3
+     0.064 ( 0.001 ms): fileOverhead/6 fstat(fd: 3, statbuf: 0x7ffe37810820                                  ) = 0
+Diretório removido
+     0.067 ( 0.003 ms): fileOverhead/6 mmap(len: 13580, prot: READ, flags: PRIVATE, fd: 3                    ) = 0x7fe332920000
+     0.071 ( 0.001 ms): fileOverhead/6 close(fd: 3                                                           ) = 0
+     0.077 ( 0.002 ms): fileOverhead/6 access(filename: 0x3271e4e7                                           ) = -1 ENOENT No such file or directory
+     0.087 ([33m 0.021 ms[m): fileOverhead/6 open(filename: 0x32926d68, flags: CLOEXEC                             ) = 3
+     0.112 ( 0.004 ms): fileOverhead/6 read(fd: 3, buf: 0x7ffe378109c8, count: 832                           ) = 832
+     0.121 ( 0.008 ms): fileOverhead/6 fstat(fd: 3, statbuf: 0x7ffe37810860                                  ) = 0
+     0.131 ( 0.002 ms): fileOverhead/6 mmap(len: 8192, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS, fd: -1    ) = 0x7fe33291e000
+     0.137 ( 0.003 ms): fileOverhead/6 mmap(len: 3795296, prot: EXEC|READ, flags: PRIVATE|DENYWRITE, fd: 3   ) = 0x7fe332362000
+     0.142 ( 0.004 ms): fileOverhead/6 mprotect(start: 0x7fe3324f7000, len: 2097152                          ) = 0
+     0.148 ( 0.004 ms): fileOverhead/6 mmap(addr: 0x7fe3326f7000, len: 24576, prot: READ|WRITE, flags: PRIVATE|DENYWRITE|FIXED, fd: 3, off: 1658880) = 0x7fe3326f7000
+     0.157 ( 0.003 ms): fileOverhead/6 mmap(addr: 0x7fe3326fd000, len: 14688, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS|FIXED, fd: -1) = 0x7fe3326fd000
+     0.167 ( 0.001 ms): fileOverhead/6 close(fd: 3                                                           ) = 0
+     0.181 ( 0.001 ms): fileOverhead/6 arch_prctl(option: 4098, arg2: 140613782729792                        ) = 0
+     0.235 ( 0.004 ms): fileOverhead/6 mprotect(start: 0x7fe3326f7000, len: 16384, prot: READ                ) = 0
+     0.243 ( 0.003 ms): fileOverhead/6 mprotect(start: 0x55ba59601000, len: 4096, prot: READ                 ) = 0
+     0.249 ( 0.003 ms): fileOverhead/6 mprotect(start: 0x7fe332924000, len: 4096, prot: READ                 ) = 0
+     0.253 ( 0.004 ms): fileOverhead/6 munmap(addr: 0x7fe332920000, len: 13580                               ) = 0
+     0.288 ([33m 0.012 ms[m): fileOverhead/6 stat(filename: 0x59401260, statbuf: 0x7ffe37810e40                    ) = -1 ENOENT No such file or directory
+     0.309 ( 0.002 ms): fileOverhead/6 fstat(fd: 1, statbuf: 0x7ffe37810c70                                  ) = 0
+     0.340 ( 0.001 ms): fileOverhead/6 brk(                                                                  ) = 0x55ba5996b000
+     0.342 ( 0.003 ms): fileOverhead/6 brk(brk: 0x55ba5998c000                                               ) = 0x55ba5998c000
+     0.349 ([33m 0.011 ms[m): fileOverhead/6 write(fd: 1, buf: 0x55ba5996b010, count: 17                           ) = 17
+     0.362 ([33m 0.098 ms[m): fileOverhead/6 mkdir(pathname: 0x59401260, mode: IRWXU                               ) = 0
+     0.472 ([33m 0.019 ms[m): fileOverhead/6 open(filename: 0x37810dd0, flags: CREAT|TRUNC|WRONLY, mode: IRUGO|IWUGO) = 3
+     0.494 ([33m 0.013 ms[m): fileOverhead/6 open(filename: 0x37810dd0, flags: CREAT|TRUNC|WRONLY, mode: IRUGO|IWUGO) = 4
+     0.509 ([33m 0.015 ms[m): fileOverhead/6 open(filename: 0x37810dd0, flags: CREAT|TRUNC|WRONLY, mode: IRUGO|IWUGO) = 5
+     0.526 ([33m 0.013 ms[m): fileOverhead/6 open(filename: 0x37810dd0, flags: CREAT|TRUNC|WRONLY, mode: IRUGO|IWUGO) = 6
+     0.541 ([33m 0.013 ms[m): fileOverhead/6 open(filename: 0x37810dd0, flags: CREAT|TRUNC|WRONLY, mode: IRUGO|IWUGO) = 7
+     0.558 ([33m 0.014 ms[m): fileOverhead/6 open(filename: 0x37810dd0, flags: CREAT|TRUNC|WRONLY, mode: IRUGO|IWUGO) = 8
+     0.574 ([33m 0.012 ms[m): fileOverhead/6 open(filename: 0x37810dd0, flags: CREAT|TRUNC|WRONLY, mode: IRUGO|IWUGO) = 9
+     0.588 ([33m 0.014 ms[m): fileOverhead/6 open(filename: 0x37810dd0, flags: CREAT|TRUNC|WRONLY, mode: IRUGO|IWUGO) = 10
+     0.604 ([33m 0.011 ms[m): fileOverhead/6 open(filename: 0x37810dd0, flags: CREAT|TRUNC|WRONLY, mode: IRUGO|IWUGO) = 11
+     0.617 ([33m 0.011 ms[m): fileOverhead/6 open(filename: 0x37810dd0, flags: CREAT|TRUNC|WRONLY, mode: IRUGO|IWUGO) = 12
+     0.636 ([33m 0.429 ms[m): fileOverhead/6 clone(clone_flags: 18874385, child_tidptr: 0x7fe33291f710, tls: 140613782729792) = 7 (fileOverhead)
+     1.077 ( 0.005 ms): fileOverhead/6 write(fd: 1, buf: 0x55ba5996b010, count: 18                           ) = 18
+     1.091 ( 0.001 ms): fileOverhead/6 close(fd: 3                                                           ) = 0
+     1.096 ( 0.001 ms): fileOverhead/6 close(fd: 4                                                           ) = 0
+     1.098 ( 0.001 ms): fileOverhead/6 close(fd: 5                                                           ) = 0
+     1.101 ( 0.001 ms): fileOverhead/6 close(fd: 6                                                           ) = 0
+     1.103 ( 0.001 ms): fileOverhead/6 close(fd: 7                                                           ) = 0
+     1.109 ( 0.001 ms): fileOverhead/6 close(fd: 8                                                           ) = 0
+     1.111 ( 0.001 ms): fileOverhead/6 close(fd: 9                                                           ) = 0
+     1.114 ( 0.001 ms): fileOverhead/6 close(fd: 10                                                          ) = 0
+     1.116 ( 0.001 ms): fileOverhead/6 close(fd: 11                                                          ) = 0
+     1.118 ( 0.001 ms): fileOverhead/6 close(fd: 12                                                          ) = 0
+     1.121 ( 0.004 ms): fileOverhead/6 write(fd: 1, buf: 0x55ba5996b010, count: 19                           ) = 19
+     1.127 ( 0.005 ms): fileOverhead/6 open(filename: 0x59401260, flags: CLOEXEC|DIRECTORY|NONBLOCK          ) = 3
+     1.133 ( 0.002 ms): fileOverhead/6 fstat(fd: 3, statbuf: 0x7ffe37810c30                                  ) = 0
+     1.139 ([33m 0.012 ms[m): fileOverhead/6 getdents(fd: 3, dirent: 0x55ba5996b450, count: 32768                  ) = 368
+     1.155 ( 0.003 ms): fileOverhead/6 stat(filename: 0x59973460, statbuf: 0x7ffe37810cf0                    ) = 0
+     1.160 ([33m 0.018 ms[m): fileOverhead/6 unlink(pathname: 0x59973460                                           ) = 0
+     1.180 ( 0.002 ms): fileOverhead/6 stat(filename: 0x59973460, statbuf: 0x7ffe37810cf0                    ) = 0
+     1.184 ([33m 0.017 ms[m): fileOverhead/6 unlink(pathname: 0x59973460                                           ) = 0
+     1.203 ( 0.002 ms): fileOverhead/6 stat(filename: 0x59973460, statbuf: 0x7ffe37810cf0                    ) = 0
+         ? (     ?   ): fileOverhead/7  ... [[33mcontinued[m]: clone()
+     1.206 ([31m18446744073709.449 ms[m): fileOverhead/6 unlink(pathname: 0x59973460                                           ) ...
+     1.105 ( 0.004 ms): fileOverhead/7 write(fd: 1, buf: 0x55ba5996b010, count: 18                           ) = 18
+     1.122 ( 0.001 ms): fileOverhead/7 close(fd: 3                                                           ) = 0
+     1.131 ( 0.001 ms): fileOverhead/7 close(fd: 4                                                           ) = 0
+     1.134 ( 0.001 ms): fileOverhead/7 close(fd: 5                                                           ) = 0
+     1.137 ( 0.001 ms): fileOverhead/7 close(fd: 6                                                           ) = 0
+     1.140 ( 0.001 ms): fileOverhead/7 close(fd: 7                                                           ) = 0
+     1.145 ( 0.001 ms): fileOverhead/7 close(fd: 8                                                           ) = 0
+     1.148 ( 0.001 ms): fileOverhead/7 close(fd: 9                                                           ) = 0
+     1.151 ( 0.001 ms): fileOverhead/7 close(fd: 10                                                          ) = 0
+     1.154 ( 0.001 ms): fileOverhead/7 close(fd: 11                                                          ) = 0
+     1.157 ( 0.001 ms): fileOverhead/7 close(fd: 12                                                          ) = 0
+     1.159 ( 0.005 ms): fileOverhead/7 write(fd: 1, buf: 0x55ba5996b010, count: 19                           ) = 19
+     1.167 ( 0.006 ms): fileOverhead/7 open(filename: 0x59401260, flags: CLOEXEC|DIRECTORY|NONBLOCK          ) = 3
+     1.174 ( 0.002 ms): fileOverhead/7 fstat(fd: 3, statbuf: 0x7ffe37810c30                                  ) = 0
+     1.181 ( 0.010 ms): fileOverhead/7 getdents(fd: 3, dirent: 0x55ba5996b450, count: 32768                  ) = 336
+     1.205 ([33m 0.011 ms[m): fileOverhead/7 stat(filename: 0x59973460, statbuf: 0x7ffe37810cf0                    ) = -1 ENOENT No such file or directory
+     1.219 ( 0.002 ms): fileOverhead/7 close(fd: 3                                                           ) = 0
+     1.225 ( 0.003 ms): fileOverhead/7 write(fd: 1, buf: 0x55ba5996b010, count: 20                           ) = 20
+     1.244 (     ?   ): fileOverhead/7 exit_group(                                                           )
+     1.206 ([33m 0.026 ms[m): fileOverhead/6  ... [[33mcontinued[m]: unlink()) = 0
+     1.237 ( 0.004 ms): fileOverhead/6 stat(filename: 0x59973460, statbuf: 0x7ffe37810cf0                    ) = 0
+     1.243 ([33m 0.011 ms[m): fileOverhead/6 unlink(pathname: 0x59973460                                           ) = 0
+     1.256 ( 0.003 ms): fileOverhead/6 stat(filename: 0x59973460, statbuf: 0x7ffe37810cf0                    ) = 0
+     1.261 ([33m 0.010 ms[m): fileOverhead/6 unlink(pathname: 0x59973460                                           ) = 0
+     1.273 ( 0.004 ms): fileOverhead/6 stat(filename: 0x59973460, statbuf: 0x7ffe37810cf0                    ) = 0
+     1.279 ([33m 0.011 ms[m): fileOverhead/6 unlink(pathname: 0x59973460                                           ) = 0
+     1.292 ( 0.003 ms): fileOverhead/6 stat(filename: 0x59973460, statbuf: 0x7ffe37810cf0                    ) = 0
+     1.296 ([33m 0.010 ms[m): fileOverhead/6 unlink(pathname: 0x59973460                                           ) = 0
+     1.308 ( 0.003 ms): fileOverhead/6 stat(filename: 0x59973460, statbuf: 0x7ffe37810cf0                    ) = 0
+     1.312 ([33m 0.010 ms[m): fileOverhead/6 unlink(pathname: 0x59973460                                           ) = 0
+     1.324 ( 0.002 ms): fileOverhead/6 stat(filename: 0x59973460, statbuf: 0x7ffe37810cf0                    ) = 0
+     1.328 ( 0.009 ms): fileOverhead/6 unlink(pathname: 0x59973460                                           ) = 0
+     1.339 ( 0.002 ms): fileOverhead/6 stat(filename: 0x59973460, statbuf: 0x7ffe37810cf0                    ) = 0
+     1.342 ([33m 0.010 ms[m): fileOverhead/6 unlink(pathname: 0x59973460                                           ) = 0
+     1.354 ( 0.003 ms): fileOverhead/6 getdents(fd: 3, dirent: 0x55ba5996b450, count: 32768                  ) = 0
+     1.362 ( 0.001 ms): fileOverhead/6 close(fd: 3                                                           ) = 0
+     1.369 ([33m 0.035 ms[m): fileOverhead/6 rmdir(pathname: 0x59401260                                            ) = 0
+     1.406 ( 0.004 ms): fileOverhead/6 write(fd: 1, buf: 0x55ba5996b010, count: 20                           ) = 20
+     1.419 (     ?   ): fileOverhead/6 exit_group(                                                           )

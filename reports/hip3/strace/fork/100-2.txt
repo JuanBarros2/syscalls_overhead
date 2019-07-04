@@ -1,0 +1,763 @@
+execve("./fileOverhead", ["./fileOverhead", "fork", "100"], [/* 4 vars */])                                             = 0 <0.000505>
+brk(NULL)                                                                                                               = 0x558911aa1000 <0.000047>
+access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000062>
+access("/etc/ld.so.preload", R_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000062>
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC)                                                                            = 3 <0.000073>
+fstat(3, {st_mode=S_IFREG|0644, st_size=13580, ...})                                                                    = 0 <0.000042>
+mmap(NULL, 13580, PROT_READ, MAP_PRIVATE, 3, 0)                                                                         = 0x7f7e64d5f000 <0.000049>
+close(3)                                                                                                                = 0 <0.000043>
+access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000054>
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC)                                                             = 3 <0.000087>
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832)                                       = 832 <0.000061>
+fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...})                                                                  = 0 <0.000066>
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0)                                                = 0x7f7e64d5d000 <0.000104>
+mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0)                                               = 0x7f7e647a1000 <0.000059>
+mprotect(0x7f7e64936000, 2097152, PROT_NONE)                                                                            = 0 <0.000087>
+mmap(0x7f7e64b36000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000)                     = 0x7f7e64b36000 <0.000072>
+mmap(0x7f7e64b3c000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0)                           = 0x7f7e64b3c000 <0.000051>
+close(3)                                                                                                                = 0 <0.000035>
+arch_prctl(ARCH_SET_FS, 0x7f7e64d5e440)                                                                                 = 0 <0.000050>
+mprotect(0x7f7e64b36000, 16384, PROT_READ)                                                                              = 0 <0.000122>
+mprotect(0x55890ff5a000, 4096, PROT_READ)                                                                               = 0 <0.000046>
+mprotect(0x7f7e64d63000, 4096, PROT_READ)                                                                               = 0 <0.000096>
+munmap(0x7f7e64d5f000, 13580)                                                                                           = 0 <0.000093>
+stat("files/", 0x7ffe0ee146c0)                                                                                          = -1 ENOENT (No such file or directory) <0.000181>
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...})                                                          = 0 <0.000059>
+brk(NULL)                                                                                                               = 0x558911aa1000 <0.000043>
+brk(0x558911ac2000)                                                                                                     = 0x558911ac2000 <0.000048>
+write(1, "Diretorio criado\n", 17Diretorio criado
+)                                                                                      = 17 <0.000090>
+mkdir("files/", 0700)                                                                                                   = 0 <0.000781>
+open("files/file0.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 3 <0.000343>
+open("files/file1.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 4 <0.000516>
+open("files/file2.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 5 <0.000107>
+open("files/file3.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 6 <0.000128>
+open("files/file4.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 7 <0.000200>
+open("files/file5.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 8 <0.000086>
+open("files/file6.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 9 <0.000165>
+open("files/file7.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 10 <0.000235>
+open("files/file8.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 11 <0.000154>
+open("files/file9.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 12 <0.000129>
+open("files/file10.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 13 <0.000089>
+open("files/file11.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 14 <0.000198>
+open("files/file12.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 15 <0.000105>
+open("files/file13.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 16 <0.000129>
+open("files/file14.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 17 <0.000111>
+open("files/file15.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 18 <0.000189>
+open("files/file16.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 19 <0.000125>
+open("files/file17.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 20 <0.000102>
+open("files/file18.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 21 <0.000130>
+open("files/file19.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 22 <0.000169>
+open("files/file20.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 23 <0.000134>
+open("files/file21.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 24 <0.000156>
+open("files/file22.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 25 <0.000123>
+open("files/file23.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 26 <0.000113>
+open("files/file24.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 27 <0.000093>
+open("files/file25.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 28 <0.000115>
+open("files/file26.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 29 <0.000160>
+open("files/file27.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 30 <0.000167>
+open("files/file28.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 31 <0.000106>
+open("files/file29.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 32 <0.000113>
+open("files/file30.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 33 <0.000117>
+open("files/file31.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 34 <0.000151>
+open("files/file32.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 35 <0.000115>
+open("files/file33.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 36 <0.000117>
+open("files/file34.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 37 <0.000111>
+open("files/file35.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 38 <0.000137>
+open("files/file36.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 39 <0.000123>
+open("files/file37.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 40 <0.000087>
+open("files/file38.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 41 <0.000079>
+open("files/file39.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 42 <0.000090>
+open("files/file40.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 43 <0.000129>
+open("files/file41.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 44 <0.000079>
+open("files/file42.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 45 <0.000135>
+open("files/file43.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 46 <0.000103>
+open("files/file44.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 47 <0.000228>
+open("files/file45.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 48 <0.000119>
+open("files/file46.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 49 <0.000196>
+open("files/file47.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 50 <0.000181>
+open("files/file48.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 51 <0.000075>
+open("files/file49.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 52 <0.000067>
+open("files/file50.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 53 <0.000073>
+open("files/file51.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 54 <0.000091>
+open("files/file52.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 55 <0.000127>
+open("files/file53.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 56 <0.000087>
+open("files/file54.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 57 <0.000105>
+open("files/file55.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 58 <0.000148>
+open("files/file56.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 59 <0.000111>
+open("files/file57.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 60 <0.000103>
+open("files/file58.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 61 <0.000122>
+open("files/file59.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 62 <0.000089>
+open("files/file60.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 63 <0.000146>
+open("files/file61.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 64 <0.000846>
+open("files/file62.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 65 <0.000111>
+open("files/file63.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 66 <0.000097>
+open("files/file64.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 67 <0.000104>
+open("files/file65.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 68 <0.000129>
+open("files/file66.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 69 <0.000122>
+open("files/file67.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 70 <0.000091>
+open("files/file68.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 71 <0.000148>
+open("files/file69.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 72 <0.000097>
+open("files/file70.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 73 <0.000086>
+open("files/file71.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 74 <0.000072>
+open("files/file72.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 75 <0.000118>
+open("files/file73.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 76 <0.000125>
+open("files/file74.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 77 <0.000144>
+open("files/file75.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 78 <0.000105>
+open("files/file76.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 79 <0.000112>
+open("files/file77.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 80 <0.000098>
+open("files/file78.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 81 <0.000128>
+open("files/file79.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 82 <0.000113>
+open("files/file80.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 83 <0.000135>
+open("files/file81.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 84 <0.000130>
+open("files/file82.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 85 <0.000086>
+open("files/file83.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 86 <0.000123>
+open("files/file84.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 87 <0.000120>
+open("files/file85.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 88 <0.000110>
+open("files/file86.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 89 <0.000134>
+open("files/file87.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 90 <0.000115>
+open("files/file88.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 91 <0.000103>
+open("files/file89.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 92 <0.000095>
+open("files/file90.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 93 <0.000125>
+open("files/file91.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 94 <0.000091>
+open("files/file92.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 95 <0.000102>
+open("files/file93.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 96 <0.000107>
+open("files/file94.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 97 <0.000097>
+open("files/file95.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 98 <0.000111>
+open("files/file96.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 99 <0.000151>
+open("files/file97.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 100 <0.000104>
+open("files/file98.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 101 <0.000108>
+open("files/file99.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 102 <0.000115>
+clone(strace: Process 8 attached
+child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f7e64d5e710)             = 8 <0.000254>
+[pid     7] write(1, "Fechando arquivos\n", 18Fechando arquivos
+ <unfinished ...>
+[pid     8] write(1, "Fechando arquivos\n", 18Fechando arquivos
+ <unfinished ...>
+[pid     7] <... write resumed> )                                                                                       = 18 <0.000081>
+[pid     8] <... write resumed> )                                                                                       = 18 <0.000090>
+[pid     7] close(3)                                                                                                    = 0 <0.000035>
+[pid     8] close(3 <unfinished ...>
+[pid     7] close(4 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000067>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000114>
+[pid     8] close(4 <unfinished ...>
+[pid     7] close(5 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000072>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000075>
+[pid     8] close(5 <unfinished ...>
+[pid     7] close(6 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000065>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000066>
+[pid     8] close(6 <unfinished ...>
+[pid     7] close(7 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000062>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000068>
+[pid     8] close(7 <unfinished ...>
+[pid     7] close(8 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000062>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000062>
+[pid     8] close(8 <unfinished ...>
+[pid     7] close(9 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000061>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000069>
+[pid     8] close(9 <unfinished ...>
+[pid     7] close(10 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000068>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000067>
+[pid     8] close(10 <unfinished ...>
+[pid     7] close(11 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000069>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000064>
+[pid     8] close(11 <unfinished ...>
+[pid     7] close(12 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000066>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000071>
+[pid     8] close(12 <unfinished ...>
+[pid     7] close(13 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000061>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000084>
+[pid     8] close(13 <unfinished ...>
+[pid     7] close(14 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000060>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000098>
+[pid     8] close(14)                                                                                                   = 0 <0.000060>
+[pid     7] close(15 <unfinished ...>
+[pid     8] close(15 <unfinished ...>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000066>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000076>
+[pid     7] close(16 <unfinished ...>
+[pid     8] close(16 <unfinished ...>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000067>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000059>
+[pid     7] close(17 <unfinished ...>
+[pid     8] close(17 <unfinished ...>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000056>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000060>
+[pid     7] close(18 <unfinished ...>
+[pid     8] close(18 <unfinished ...>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000061>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000071>
+[pid     7] close(19 <unfinished ...>
+[pid     8] close(19 <unfinished ...>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000062>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000079>
+[pid     7] close(20 <unfinished ...>
+[pid     8] close(20)                                                                                                   = 0 <0.000049>
+[pid     8] close(21)                                                                                                   = 0 <0.000032>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000208>
+[pid     8] close(22 <unfinished ...>
+[pid     7] close(21 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000072>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000060>
+[pid     8] close(23 <unfinished ...>
+[pid     7] close(22 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000059>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000060>
+[pid     8] close(24 <unfinished ...>
+[pid     7] close(23 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000062>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000073>
+[pid     8] close(25 <unfinished ...>
+[pid     7] close(24 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000050>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000057>
+[pid     8] close(26 <unfinished ...>
+[pid     7] close(25 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000062>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000059>
+[pid     8] close(27 <unfinished ...>
+[pid     7] close(26 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000057>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000066>
+[pid     8] close(28 <unfinished ...>
+[pid     7] close(27 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000045>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000058>
+[pid     7] close(28)                                                                                                   = 0 <0.000069>
+[pid     7] close(29 <unfinished ...>
+[pid     8] close(29 <unfinished ...>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000058>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000054>
+[pid     7] close(30)                                                                                                   = 0 <0.000044>
+[pid     8] close(30 <unfinished ...>
+[pid     7] close(31 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000065>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000061>
+[pid     8] close(31 <unfinished ...>
+[pid     7] close(32 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000081>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000069>
+[pid     8] close(32 <unfinished ...>
+[pid     7] close(33 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000053>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000063>
+[pid     7] close(34 <unfinished ...>
+[pid     8] close(33 <unfinished ...>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000071>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000078>
+[pid     7] close(35 <unfinished ...>
+[pid     8] close(34 <unfinished ...>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000063>
+[pid     7] close(36 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000154>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000075>
+[pid     8] close(35 <unfinished ...>
+[pid     7] close(37 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000067>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000059>
+[pid     8] close(36 <unfinished ...>
+[pid     7] close(38 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000056>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000060>
+[pid     8] close(37 <unfinished ...>
+[pid     7] close(39 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000058>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000060>
+[pid     8] close(38 <unfinished ...>
+[pid     7] close(40 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000057>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000058>
+[pid     8] close(39 <unfinished ...>
+[pid     7] close(41 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000057>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000059>
+[pid     8] close(40 <unfinished ...>
+[pid     7] close(42 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000056>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000060>
+[pid     8] close(41 <unfinished ...>
+[pid     7] close(43 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000057>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000058>
+[pid     8] close(42 <unfinished ...>
+[pid     7] close(44 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000056>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000058>
+[pid     8] close(43 <unfinished ...>
+[pid     7] close(45 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000056>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000059>
+[pid     8] close(44 <unfinished ...>
+[pid     7] close(46 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000060>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000062>
+[pid     8] close(45 <unfinished ...>
+[pid     7] close(47 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000059>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000062>
+[pid     8] close(46 <unfinished ...>
+[pid     7] close(48 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000047>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000048>
+[pid     8] close(47 <unfinished ...>
+[pid     7] close(49 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000046>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000048>
+[pid     8] close(48 <unfinished ...>
+[pid     7] close(50 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000045>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000048>
+[pid     8] close(49 <unfinished ...>
+[pid     7] close(51 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000045>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000047>
+[pid     8] close(50 <unfinished ...>
+[pid     7] close(52 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000046>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000058>
+[pid     8] close(51 <unfinished ...>
+[pid     7] close(53 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000045>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000051>
+[pid     8] close(52 <unfinished ...>
+[pid     7] close(54 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000046>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000047>
+[pid     8] close(53 <unfinished ...>
+[pid     7] close(55 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000045>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000047>
+[pid     8] close(54 <unfinished ...>
+[pid     7] close(56 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000045>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000047>
+[pid     8] close(55 <unfinished ...>
+[pid     7] close(57 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000045>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000049>
+[pid     8] close(56 <unfinished ...>
+[pid     7] close(58 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000047>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000183>
+[pid     8] close(57 <unfinished ...>
+[pid     7] close(59 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000077>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000085>
+[pid     8] close(58 <unfinished ...>
+[pid     7] close(60 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000072>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000067>
+[pid     8] close(59 <unfinished ...>
+[pid     7] close(61 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000067>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000076>
+[pid     8] close(60 <unfinished ...>
+[pid     7] close(62 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000068>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000104>
+[pid     8] close(61 <unfinished ...>
+[pid     7] close(63 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000072>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000081>
+[pid     7] close(64 <unfinished ...>
+[pid     8] close(62)                                                                                                   = 0 <0.000041>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000142>
+[pid     8] close(63 <unfinished ...>
+[pid     7] close(65 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000066>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000064>
+[pid     8] close(64 <unfinished ...>
+[pid     7] close(66 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000065>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000080>
+[pid     8] close(65)                                                                                                   = 0 <0.000068>
+[pid     7] close(67)                                                                                                   = 0 <0.000041>
+[pid     8] close(66 <unfinished ...>
+[pid     7] close(68 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000060>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000067>
+[pid     8] close(67 <unfinished ...>
+[pid     7] close(69 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000058>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000068>
+[pid     8] close(68 <unfinished ...>
+[pid     7] close(70 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000061>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000061>
+[pid     8] close(69 <unfinished ...>
+[pid     7] close(71 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000047>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000053>
+[pid     8] close(70 <unfinished ...>
+[pid     7] close(72 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000054>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000063>
+[pid     7] close(73 <unfinished ...>
+[pid     8] close(71 <unfinished ...>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000080>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000094>
+[pid     7] close(74 <unfinished ...>
+[pid     8] close(72 <unfinished ...>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000077>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000084>
+[pid     7] close(75 <unfinished ...>
+[pid     8] close(73 <unfinished ...>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000063>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000060>
+[pid     7] close(76 <unfinished ...>
+[pid     8] close(74 <unfinished ...>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000056>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000060>
+[pid     7] close(77 <unfinished ...>
+[pid     8] close(75 <unfinished ...>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000077>
+[pid     7] close(78)                                                                                                   = 0 <0.000037>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000171>
+[pid     7] close(79 <unfinished ...>
+[pid     8] close(76 <unfinished ...>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000068>
+[pid     7] close(80 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000130>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000063>
+[pid     8] close(77 <unfinished ...>
+[pid     7] close(81 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000054>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000056>
+[pid     8] close(78 <unfinished ...>
+[pid     7] close(82 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000054>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000056>
+[pid     8] close(79 <unfinished ...>
+[pid     7] close(83 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000051>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000055>
+[pid     8] close(80 <unfinished ...>
+[pid     7] close(84)                                                                                                   = 0 <0.000020>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000080>
+[pid     7] close(85)                                                                                                   = 0 <0.000021>
+[pid     8] close(81 <unfinished ...>
+[pid     7] close(86 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000051>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000055>
+[pid     8] close(82 <unfinished ...>
+[pid     7] close(87 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000051>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000058>
+[pid     8] close(83 <unfinished ...>
+[pid     7] close(88 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000053>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000055>
+[pid     8] close(84 <unfinished ...>
+[pid     7] close(89 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000051>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000055>
+[pid     8] close(85 <unfinished ...>
+[pid     7] close(90)                                                                                                   = 0 <0.000020>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000079>
+[pid     7] close(91)                                                                                                   = 0 <0.000021>
+[pid     8] close(86 <unfinished ...>
+[pid     7] close(92)                                                                                                   = 0 <0.000020>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000079>
+[pid     7] close(93)                                                                                                   = 0 <0.000020>
+[pid     8] close(87 <unfinished ...>
+[pid     7] close(94)                                                                                                   = 0 <0.000019>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000079>
+[pid     7] close(95 <unfinished ...>
+[pid     8] close(88 <unfinished ...>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000053>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000056>
+[pid     7] close(96 <unfinished ...>
+[pid     8] close(89 <unfinished ...>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000051>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000054>
+[pid     7] close(97)                                                                                                   = 0 <0.000020>
+[pid     8] close(90 <unfinished ...>
+[pid     7] close(98 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000051>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000054>
+[pid     8] close(91 <unfinished ...>
+[pid     7] close(99 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000049>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000053>
+[pid     8] close(92 <unfinished ...>
+[pid     7] close(100)                                                                                                  = 0 <0.000020>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000078>
+[pid     7] close(101 <unfinished ...>
+[pid     8] close(93 <unfinished ...>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000052>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000056>
+[pid     7] close(102)                                                                                                  = 0 <0.000020>
+[pid     8] close(94 <unfinished ...>
+[pid     7] write(1, "Syscall executada!\n", 19Syscall executada!
+ <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000069>
+[pid     7] <... write resumed> )                                                                                       = 19 <0.000056>
+[pid     8] close(95 <unfinished ...>
+[pid     7] open("files/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000060>
+[pid     7] <... open resumed> )                                                                                        = 3 <0.000048>
+[pid     8] close(96 <unfinished ...>
+[pid     7] fstat(3,  <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000045>
+[pid     7] <... fstat resumed> {st_mode=S_IFDIR|0700, st_size=4096, ...})                                              = 0 <0.000047>
+[pid     8] close(97 <unfinished ...>
+[pid     7] getdents(3,  <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000046>
+[pid     8] close(98)                                                                                                   = 0 <0.000052>
+[pid     8] close(99 <unfinished ...>
+[pid     7] <... getdents resumed> /* 102 entries */, 32768)                                                            = 3248 <0.000247>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000124>
+[pid     7] stat("files//file4.txt",  <unfinished ...>
+[pid     8] close(100 <unfinished ...>
+[pid     7] <... stat resumed> {st_mode=S_IFREG|0644, st_size=0, ...})                                                  = 0 <0.000048>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000063>
+[pid     7] unlink("files//file4.txt" <unfinished ...>
+[pid     8] close(101)                                                                                                  = 0 <0.000032>
+[pid     7] <... unlink resumed> )                                                                                      = 0 <0.000114>
+[pid     8] close(102 <unfinished ...>
+[pid     7] stat("files//file82.txt",  <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000053>
+[pid     7] <... stat resumed> {st_mode=S_IFREG|0644, st_size=0, ...})                                                  = 0 <0.000048>
+[pid     8] write(1, "Syscall executada!\n", 19Syscall executada!
+ <unfinished ...>
+[pid     7] unlink("files//file82.txt" <unfinished ...>
+[pid     8] <... write resumed> )                                                                                       = 19 <0.000052>
+[pid     8] open("files/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC <unfinished ...>
+[pid     7] <... unlink resumed> )                                                                                      = 0 <0.000103>
+[pid     8] <... open resumed> )                                                                                        = 3 <0.000049>
+[pid     7] stat("files//file66.txt",  <unfinished ...>
+[pid     8] fstat(3,  <unfinished ...>
+[pid     7] <... stat resumed> {st_mode=S_IFREG|0644, st_size=0, ...})                                                  = 0 <0.000046>
+[pid     8] <... fstat resumed> {st_mode=S_IFDIR|0700, st_size=4096, ...})                                              = 0 <0.000055>
+[pid     7] unlink("files//file66.txt" <unfinished ...>
+[pid     8] getdents(3,  <unfinished ...>
+[pid     7] <... unlink resumed> )                                                                                      = 0 <0.000083>
+[pid     7] stat("files//file62.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                           = 0 <0.000092>
+[pid     8] <... getdents resumed> /* 99 entries */, 32768)                                                             = 3152 <0.000245>
+[pid     7] unlink("files//file62.txt" <unfinished ...>
+[pid     8] stat("files//file62.txt",  <unfinished ...>
+[pid     7] <... unlink resumed> )                                                                                      = 0 <0.000090>
+[pid     8] <... stat resumed> 0x7ffe0ee14570)                                                                          = -1 ENOENT (No such file or directory) <0.000050>
+[pid     7] stat("files//file31.txt",  <unfinished ...>
+[pid     8] close(3 <unfinished ...>
+[pid     7] <... stat resumed> {st_mode=S_IFREG|0644, st_size=0, ...})                                                  = 0 <0.000067>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000080>
+[pid     7] unlink("files//file31.txt" <unfinished ...>
+[pid     8] write(1, "Diret\303\263rio removido\n", 20Diretório removido
+ <unfinished ...>
+[pid     7] <... unlink resumed> )                                                                                      = 0 <0.000125>
+[pid     7] stat("files//file58.txt",  <unfinished ...>
+[pid     8] <... write resumed> )                                                                                       = 20 <0.000264>
+[pid     7] <... stat resumed> {st_mode=S_IFREG|0644, st_size=0, ...})                                                  = 0 <0.000082>
+[pid     7] unlink("files//file58.txt" <unfinished ...>
+[pid     8] exit_group(0)                                                                                               = ?
+[pid     7] <... unlink resumed> )                                                                                      = 0 <0.000132>
+[pid     7] stat("files//file23.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                           = 0 <0.000046>
+[pid     8] +++ exited with 0 +++
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+unlink("files//file23.txt")                                                                                             = 0 <0.000098>
+stat("files//file14.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000084>
+unlink("files//file14.txt")                                                                                             = 0 <0.000093>
+stat("files//file8.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000043>
+unlink("files//file8.txt")                                                                                              = 0 <0.000078>
+stat("files//file51.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000039>
+unlink("files//file51.txt")                                                                                             = 0 <0.000155>
+stat("files//file11.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000119>
+unlink("files//file11.txt")                                                                                             = 0 <0.000080>
+stat("files//file84.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000050>
+unlink("files//file84.txt")                                                                                             = 0 <0.000090>
+stat("files//file72.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000039>
+unlink("files//file72.txt")                                                                                             = 0 <0.000112>
+stat("files//file91.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000079>
+unlink("files//file91.txt")                                                                                             = 0 <0.000110>
+stat("files//file40.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000055>
+unlink("files//file40.txt")                                                                                             = 0 <0.000105>
+stat("files//file47.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000056>
+unlink("files//file47.txt")                                                                                             = 0 <0.000099>
+stat("files//file39.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000049>
+unlink("files//file39.txt")                                                                                             = 0 <0.000084>
+stat("files//file32.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000048>
+unlink("files//file32.txt")                                                                                             = 0 <0.000112>
+stat("files//file49.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000060>
+unlink("files//file49.txt")                                                                                             = 0 <0.000124>
+stat("files//file0.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000097>
+unlink("files//file0.txt")                                                                                              = 0 <0.000070>
+stat("files//file53.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000057>
+unlink("files//file53.txt")                                                                                             = 0 <0.000071>
+stat("files//file16.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000062>
+unlink("files//file16.txt")                                                                                             = 0 <0.000089>
+stat("files//file92.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000069>
+unlink("files//file92.txt")                                                                                             = 0 <0.000132>
+stat("files//file42.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000041>
+unlink("files//file42.txt")                                                                                             = 0 <0.000079>
+stat("files//file44.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000049>
+unlink("files//file44.txt")                                                                                             = 0 <0.000090>
+stat("files//file97.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000074>
+unlink("files//file97.txt")                                                                                             = 0 <0.000095>
+stat("files//file50.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000046>
+unlink("files//file50.txt")                                                                                             = 0 <0.000075>
+stat("files//file61.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000045>
+unlink("files//file61.txt")                                                                                             = 0 <0.000095>
+stat("files//file21.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000058>
+unlink("files//file21.txt")                                                                                             = 0 <0.000104>
+stat("files//file85.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000075>
+unlink("files//file85.txt")                                                                                             = 0 <0.000102>
+stat("files//file20.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000044>
+unlink("files//file20.txt")                                                                                             = 0 <0.000158>
+stat("files//file1.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000040>
+unlink("files//file1.txt")                                                                                              = 0 <0.000114>
+stat("files//file83.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000052>
+unlink("files//file83.txt")                                                                                             = 0 <0.000105>
+stat("files//file25.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000053>
+unlink("files//file25.txt")                                                                                             = 0 <0.000083>
+stat("files//file98.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000038>
+unlink("files//file98.txt")                                                                                             = 0 <0.000086>
+stat("files//file3.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000083>
+unlink("files//file3.txt")                                                                                              = 0 <0.000078>
+stat("files//file24.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000054>
+unlink("files//file24.txt")                                                                                             = 0 <0.000153>
+stat("files//file48.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000055>
+unlink("files//file48.txt")                                                                                             = 0 <0.000088>
+stat("files//file63.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000045>
+unlink("files//file63.txt")                                                                                             = 0 <0.000102>
+stat("files//file9.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000057>
+unlink("files//file9.txt")                                                                                              = 0 <0.000081>
+stat("files//file12.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000047>
+unlink("files//file12.txt")                                                                                             = 0 <0.000072>
+stat("files//file43.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000124>
+unlink("files//file43.txt")                                                                                             = 0 <0.000096>
+stat("files//file33.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000055>
+unlink("files//file33.txt")                                                                                             = 0 <0.000093>
+stat("files//file34.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000055>
+unlink("files//file34.txt")                                                                                             = 0 <0.000100>
+stat("files//file41.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000072>
+unlink("files//file41.txt")                                                                                             = 0 <0.000177>
+stat("files//file74.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000039>
+unlink("files//file74.txt")                                                                                             = 0 <0.000100>
+stat("files//file18.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000051>
+unlink("files//file18.txt")                                                                                             = 0 <0.000115>
+stat("files//file27.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000094>
+unlink("files//file27.txt")                                                                                             = 0 <0.000092>
+stat("files//file70.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000078>
+unlink("files//file70.txt")                                                                                             = 0 <0.000092>
+stat("files//file96.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000036>
+unlink("files//file96.txt")                                                                                             = 0 <0.000066>
+stat("files//file26.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000033>
+unlink("files//file26.txt")                                                                                             = 0 <0.000084>
+stat("files//file38.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000048>
+unlink("files//file38.txt")                                                                                             = 0 <0.000108>
+stat("files//file77.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000054>
+unlink("files//file77.txt")                                                                                             = 0 <0.000092>
+stat("files//file6.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000036>
+unlink("files//file6.txt")                                                                                              = 0 <0.000106>
+stat("files//file79.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000037>
+unlink("files//file79.txt")                                                                                             = 0 <0.000122>
+stat("files//file36.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000063>
+unlink("files//file36.txt")                                                                                             = 0 <0.000088>
+stat("files//file46.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000046>
+unlink("files//file46.txt")                                                                                             = 0 <0.000116>
+stat("files//file13.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000062>
+unlink("files//file13.txt")                                                                                             = 0 <0.000079>
+stat("files//file81.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000112>
+unlink("files//file81.txt")                                                                                             = 0 <0.000090>
+stat("files//file87.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000097>
+unlink("files//file87.txt")                                                                                             = 0 <0.000137>
+stat("files//file80.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000043>
+unlink("files//file80.txt")                                                                                             = 0 <0.000088>
+stat("files//file7.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000065>
+unlink("files//file7.txt")                                                                                              = 0 <0.000086>
+stat("files//file86.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000051>
+unlink("files//file86.txt")                                                                                             = 0 <0.000085>
+stat("files//file64.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000042>
+unlink("files//file64.txt")                                                                                             = 0 <0.000083>
+stat("files//file94.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000052>
+unlink("files//file94.txt")                                                                                             = 0 <0.000094>
+stat("files//file28.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000044>
+unlink("files//file28.txt")                                                                                             = 0 <0.000106>
+stat("files//file99.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000056>
+unlink("files//file99.txt")                                                                                             = 0 <0.000458>
+stat("files//file15.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000042>
+unlink("files//file15.txt")                                                                                             = 0 <0.000079>
+stat("files//file71.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000047>
+unlink("files//file71.txt")                                                                                             = 0 <0.000097>
+stat("files//file55.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000055>
+unlink("files//file55.txt")                                                                                             = 0 <0.000080>
+stat("files//file52.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000035>
+unlink("files//file52.txt")                                                                                             = 0 <0.000064>
+stat("files//file89.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000047>
+unlink("files//file89.txt")                                                                                             = 0 <0.000106>
+stat("files//file37.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000055>
+unlink("files//file37.txt")                                                                                             = 0 <0.000066>
+stat("files//file93.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000062>
+unlink("files//file93.txt")                                                                                             = 0 <0.000099>
+stat("files//file5.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000036>
+unlink("files//file5.txt")                                                                                              = 0 <0.000063>
+stat("files//file54.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000036>
+unlink("files//file54.txt")                                                                                             = 0 <0.000071>
+stat("files//file57.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000035>
+unlink("files//file57.txt")                                                                                             = 0 <0.000100>
+stat("files//file69.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000061>
+unlink("files//file69.txt")                                                                                             = 0 <0.000076>
+stat("files//file75.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000057>
+unlink("files//file75.txt")                                                                                             = 0 <0.000084>
+stat("files//file59.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000053>
+unlink("files//file59.txt")                                                                                             = 0 <0.000090>
+stat("files//file76.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000045>
+unlink("files//file76.txt")                                                                                             = 0 <0.000105>
+stat("files//file56.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000055>
+unlink("files//file56.txt")                                                                                             = 0 <0.000099>
+stat("files//file35.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000058>
+unlink("files//file35.txt")                                                                                             = 0 <0.000072>
+stat("files//file29.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000097>
+unlink("files//file29.txt")                                                                                             = 0 <0.000115>
+stat("files//file10.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000036>
+unlink("files//file10.txt")                                                                                             = 0 <0.000127>
+stat("files//file88.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000037>
+unlink("files//file88.txt")                                                                                             = 0 <0.000065>
+stat("files//file17.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000034>
+unlink("files//file17.txt")                                                                                             = 0 <0.000060>
+stat("files//file90.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000034>
+unlink("files//file90.txt")                                                                                             = 0 <0.000075>
+stat("files//file19.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000058>
+unlink("files//file19.txt")                                                                                             = 0 <0.000097>
+stat("files//file68.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000041>
+unlink("files//file68.txt")                                                                                             = 0 <0.000076>
+stat("files//file65.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000040>
+unlink("files//file65.txt")                                                                                             = 0 <0.000111>
+stat("files//file67.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000042>
+unlink("files//file67.txt")                                                                                             = 0 <0.000076>
+stat("files//file30.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000065>
+unlink("files//file30.txt")                                                                                             = 0 <0.000074>
+stat("files//file95.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000034>
+unlink("files//file95.txt")                                                                                             = 0 <0.000063>
+stat("files//file60.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000097>
+unlink("files//file60.txt")                                                                                             = 0 <0.000078>
+stat("files//file2.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000053>
+unlink("files//file2.txt")                                                                                              = 0 <0.000093>
+stat("files//file73.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000051>
+unlink("files//file73.txt")                                                                                             = 0 <0.000116>
+stat("files//file78.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000109>
+unlink("files//file78.txt")                                                                                             = 0 <0.000120>
+stat("files//file22.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000057>
+unlink("files//file22.txt")                                                                                             = 0 <0.000082>
+stat("files//file45.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                       = 0 <0.000055>
+unlink("files//file45.txt")                                                                                             = 0 <0.000079>
+getdents(3, /* 0 entries */, 32768)                                                                                     = 0 <0.000084>
+close(3)                                                                                                                = 0 <0.000099>
+rmdir("files/")                                                                                                         = 0 <0.000167>
+write(1, "Diret\303\263rio removido\n", 20Diretório removido
+)                                                                             = 20 <0.000048>
+exit_group(0)                                                                                                           = ?
++++ exited with 0 +++
+strace: Exit of unknown pid 8 ignored

@@ -1,0 +1,84 @@
+execve("./fileOverhead", ["./fileOverhead", "clone", "10"], [/* 4 vars */])                                             = 0 <0.000505>
+brk(NULL)                                                                                                               = 0x55a4453e6000 <0.000047>
+access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000055>
+access("/etc/ld.so.preload", R_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000060>
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC)                                                                            = 3 <0.000067>
+fstat(3, {st_mode=S_IFREG|0644, st_size=13580, ...})                                                                    = 0 <0.000050>
+mmap(NULL, 13580, PROT_READ, MAP_PRIVATE, 3, 0)                                                                         = 0x7f6590138000 <0.000053>
+close(3)                                                                                                                = 0 <0.000034>
+access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000049>
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC)                                                             = 3 <0.000162>
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832)                                       = 832 <0.000057>
+fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...})                                                                  = 0 <0.000061>
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0)                                                = 0x7f6590136000 <0.000040>
+mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0)                                               = 0x7f658fb7a000 <0.000052>
+mprotect(0x7f658fd0f000, 2097152, PROT_NONE)                                                                            = 0 <0.000115>
+mmap(0x7f658ff0f000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000)                     = 0x7f658ff0f000 <0.000077>
+mmap(0x7f658ff15000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0)                           = 0x7f658ff15000 <0.000061>
+close(3)                                                                                                                = 0 <0.000032>
+arch_prctl(ARCH_SET_FS, 0x7f6590137440)                                                                                 = 0 <0.000031>
+mprotect(0x7f658ff0f000, 16384, PROT_READ)                                                                              = 0 <0.000063>
+mprotect(0x55a443dfd000, 4096, PROT_READ)                                                                               = 0 <0.000071>
+mprotect(0x7f659013c000, 4096, PROT_READ)                                                                               = 0 <0.000044>
+munmap(0x7f6590138000, 13580)                                                                                           = 0 <0.000108>
+stat("files/", 0x7fffd615b5c0)                                                                                          = -1 ENOENT (No such file or directory) <0.000096>
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...})                                                          = 0 <0.000043>
+brk(NULL)                                                                                                               = 0x55a4453e6000 <0.000038>
+brk(0x55a445407000)                                                                                                     = 0x55a445407000 <0.000053>
+write(1, "Diretorio criado\n", 17Diretorio criado
+)                                                                                      = 17 <0.000054>
+mkdir("files/", 0700)                                                                                                   = 0 <0.000231>
+open("files/file0.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 3 <0.000153>
+open("files/file1.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 4 <0.000183>
+open("files/file2.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 5 <0.000111>
+open("files/file3.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 6 <0.000131>
+open("files/file4.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 7 <0.000150>
+open("files/file5.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 8 <0.000169>
+open("files/file6.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 9 <0.000126>
+open("files/file7.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 10 <0.000157>
+open("files/file8.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 11 <0.000227>
+open("files/file9.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 12 <0.000137>
+write(1, "Fechando arquivos\n", 18Fechando arquivos
+)                                                                                     = 18 <0.000064>
+close(3)                                                                                                                = 0 <0.000054>
+close(4)                                                                                                                = 0 <0.000041>
+close(5)                                                                                                                = 0 <0.000055>
+close(6)                                                                                                                = 0 <0.000064>
+close(7)                                                                                                                = 0 <0.000046>
+close(8)                                                                                                                = 0 <0.000077>
+close(9)                                                                                                                = 0 <0.000040>
+close(10)                                                                                                               = 0 <0.000053>
+close(11)                                                                                                               = 0 <0.000060>
+close(12)                                                                                                               = 0 <0.000062>
+write(1, "Syscall executada!\n", 19Syscall executada!
+)                                                                                    = 19 <0.000053>
+open("files/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC)                                                               = 3 <0.000098>
+fstat(3, {st_mode=S_IFDIR|0700, st_size=4096, ...})                                                                     = 0 <0.000054>
+getdents(3, /* 12 entries */, 32768)                                                                                    = 368 <0.000097>
+stat("files//file4.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000052>
+unlink("files//file4.txt")                                                                                              = 0 <0.000103>
+stat("files//file8.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000141>
+unlink("files//file8.txt")                                                                                              = 0 <0.000103>
+stat("files//file0.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000081>
+unlink("files//file0.txt")                                                                                              = 0 <0.000097>
+stat("files//file1.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000042>
+unlink("files//file1.txt")                                                                                              = 0 <0.000136>
+stat("files//file3.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000069>
+unlink("files//file3.txt")                                                                                              = 0 <0.000106>
+stat("files//file9.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000043>
+unlink("files//file9.txt")                                                                                              = 0 <0.000104>
+stat("files//file6.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000052>
+unlink("files//file6.txt")                                                                                              = 0 <0.000109>
+stat("files//file7.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000047>
+unlink("files//file7.txt")                                                                                              = 0 <0.000085>
+stat("files//file5.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000063>
+unlink("files//file5.txt")                                                                                              = 0 <0.000111>
+stat("files//file2.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000063>
+unlink("files//file2.txt")                                                                                              = 0 <0.000168>
+getdents(3, /* 0 entries */, 32768)                                                                                     = 0 <0.000071>
+close(3)                                                                                                                = 0 <0.000093>
+rmdir("files/")                                                                                                         = 0 <0.000242>
+write(1, "Diret\303\263rio removido\n", 20Diretório removido
+)                                                                             = 20 <0.000053>
+exit_group(0)                                                                                                           = ?
++++ exited with 0 +++
