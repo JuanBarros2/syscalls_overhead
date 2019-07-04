@@ -2,7 +2,7 @@
 echo "Construindo imagem docker..."
 docker build -t projso/docker:1.0 .
 
-IT=30
+IT=10
 
 if [ ! -d "./reports" ] 
 then
@@ -16,7 +16,7 @@ then
     done
 fi
 
-## Hipotese 1 - Memória influencia em syscall
+# Hipotese 1 - Memória influencia em syscall
 echo "Gerando dados para hipotese 1 - Memoria influencia em tempo de Syscall"
 for syscall in fork execvp clone posix_spawnp
 do
@@ -79,14 +79,14 @@ do
         for count in $(seq 1 $IT);
         do
             echo ".............. Gerando resultado $count para $memoryLevel de niveis de pilha"
-            docker run -it projso/docker:1.0 strace -f -T -a 120 ./fileOverhead $syscall $memoryLevel > ./reports/hip3/strace/$syscall/$memoryLevel-$count.txt
+            docker run -it --security-opt seccomp=unconfined projso/docker:1.0 strace -f -T -a 120 ./fileOverhead $syscall $memoryLevel > ./reports/hip3/strace/$syscall/$memoryLevel-$count.txt
             docker run -it --privileged projso/docker:1.0 perf trace ./fileOverhead $syscall $memoryLevel > ./reports/hip3/perf/$syscall/$memoryLevel-$count.txt
         done
     done
 done
 
 echo "Gerando dados para hipotese 4 - Path do binário influencia no tempo"
-## Hipotese 4 - 
+# Hipotese 4 - 
 for syscall in execv execvp posix_spawn posix_spawnp
 do
     for count in $(seq 1 $IT);

@@ -1,0 +1,145 @@
+execve("./fileOverhead", ["./fileOverhead", "fork", "10"], [/* 4 vars */])                                              = 0 <0.000444>
+brk(NULL)                                                                                                               = 0x55e18a964000 <0.000039>
+access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000051>
+access("/etc/ld.so.preload", R_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000067>
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC)                                                                            = 3 <0.000060>
+fstat(3, {st_mode=S_IFREG|0644, st_size=13580, ...})                                                                    = 0 <0.000043>
+mmap(NULL, 13580, PROT_READ, MAP_PRIVATE, 3, 0)                                                                         = 0x7fe58acf8000 <0.000082>
+close(3)                                                                                                                = 0 <0.000090>
+access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000052>
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC)                                                             = 3 <0.000071>
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832)                                       = 832 <0.000069>
+fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...})                                                                  = 0 <0.000043>
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0)                                                = 0x7fe58acf6000 <0.000052>
+mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0)                                               = 0x7fe58a73a000 <0.000078>
+mprotect(0x7fe58a8cf000, 2097152, PROT_NONE)                                                                            = 0 <0.000066>
+mmap(0x7fe58aacf000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000)                     = 0x7fe58aacf000 <0.000074>
+mmap(0x7fe58aad5000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0)                           = 0x7fe58aad5000 <0.000061>
+close(3)                                                                                                                = 0 <0.000043>
+arch_prctl(ARCH_SET_FS, 0x7fe58acf7440)                                                                                 = 0 <0.000065>
+mprotect(0x7fe58aacf000, 16384, PROT_READ)                                                                              = 0 <0.000051>
+mprotect(0x55e188d69000, 4096, PROT_READ)                                                                               = 0 <0.000052>
+mprotect(0x7fe58acfc000, 4096, PROT_READ)                                                                               = 0 <0.000060>
+munmap(0x7fe58acf8000, 13580)                                                                                           = 0 <0.000060>
+stat("files/", 0x7ffd494da360)                                                                                          = -1 ENOENT (No such file or directory) <0.000070>
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...})                                                          = 0 <0.000050>
+brk(NULL)                                                                                                               = 0x55e18a964000 <0.000036>
+brk(0x55e18a985000)                                                                                                     = 0x55e18a985000 <0.000050>
+write(1, "Diretorio criado\n", 17Diretorio criado
+)                                                                                      = 17 <0.000070>
+mkdir("files/", 0700)                                                                                                   = 0 <0.000198>
+open("files/file0.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 3 <0.000177>
+open("files/file1.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 4 <0.000151>
+open("files/file2.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 5 <0.000195>
+open("files/file3.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 6 <0.000187>
+open("files/file4.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 7 <0.000182>
+open("files/file5.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 8 <0.000101>
+open("files/file6.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 9 <0.000140>
+open("files/file7.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 10 <0.000097>
+open("files/file8.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 11 <0.000122>
+open("files/file9.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 12 <0.000183>
+clone(strace: Process 8 attached
+child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fe58acf7710)             = 8 <0.000288>
+[pid     7] write(1, "Fechando arquivos\n", 18Fechando arquivos
+ <unfinished ...>
+[pid     8] write(1, "Fechando arquivos\n", 18Fechando arquivos
+ <unfinished ...>
+[pid     7] <... write resumed> )                                                                                       = 18 <0.000092>
+[pid     8] <... write resumed> )                                                                                       = 18 <0.000085>
+[pid     7] close(3)                                                                                                    = 0 <0.000054>
+[pid     8] close(3 <unfinished ...>
+[pid     7] close(4 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000133>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000087>
+[pid     8] close(4 <unfinished ...>
+[pid     7] close(5)                                                                                                    = 0 <0.000052>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000148>
+[pid     7] close(6)                                                                                                    = 0 <0.000047>
+[pid     8] close(5 <unfinished ...>
+[pid     7] close(7 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000068>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000068>
+[pid     8] close(6 <unfinished ...>
+[pid     7] close(8 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000116>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000085>
+[pid     7] close(9)                                                                                                    = 0 <0.000061>
+[pid     8] close(7 <unfinished ...>
+[pid     7] close(10 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000058>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000058>
+[pid     8] close(8 <unfinished ...>
+[pid     7] close(11 <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000131>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000078>
+[pid     7] close(12)                                                                                                   = 0 <0.000038>
+[pid     8] close(9 <unfinished ...>
+[pid     7] write(1, "Syscall executada!\n", 19Syscall executada!
+ <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000096>
+[pid     7] <... write resumed> )                                                                                       = 19 <0.000085>
+[pid     8] close(10 <unfinished ...>
+[pid     7] open("files/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000102>
+[pid     7] <... open resumed> )                                                                                        = 3 <0.000055>
+[pid     8] close(11)                                                                                                   = 0 <0.000051>
+[pid     7] fstat(3, {st_mode=S_IFDIR|0700, st_size=4096, ...})                                                         = 0 <0.000053>
+[pid     8] close(12 <unfinished ...>
+[pid     7] getdents(3, /* 12 entries */, 32768)                                                                        = 368 <0.000093>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000190>
+[pid     7] stat("files//file4.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                            = 0 <0.000073>
+[pid     8] write(1, "Syscall executada!\n", 19Syscall executada!
+ <unfinished ...>
+[pid     7] unlink("files//file4.txt" <unfinished ...>
+[pid     8] <... write resumed> )                                                                                       = 19 <0.000068>
+[pid     7] <... unlink resumed> )                                                                                      = 0 <0.000126>
+[pid     8] open("files/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC <unfinished ...>
+[pid     7] stat("files//file8.txt",  <unfinished ...>
+[pid     8] <... open resumed> )                                                                                        = 3 <0.000129>
+[pid     7] <... stat resumed> {st_mode=S_IFREG|0644, st_size=0, ...})                                                  = 0 <0.000072>
+[pid     7] unlink("files//file8.txt" <unfinished ...>
+[pid     8] fstat(3,  <unfinished ...>
+[pid     7] <... unlink resumed> )                                                                                      = 0 <0.000100>
+[pid     8] <... fstat resumed> {st_mode=S_IFDIR|0700, st_size=4096, ...})                                              = 0 <0.000103>
+[pid     7] stat("files//file0.txt",  <unfinished ...>
+[pid     8] getdents(3,  <unfinished ...>
+[pid     7] <... stat resumed> {st_mode=S_IFREG|0644, st_size=0, ...})                                                  = 0 <0.000063>
+[pid     8] <... getdents resumed> /* 10 entries */, 32768)                                                             = 304 <0.000081>
+[pid     7] unlink("files//file0.txt" <unfinished ...>
+[pid     8] stat("files//file0.txt",  <unfinished ...>
+[pid     7] <... unlink resumed> )                                                                                      = 0 <0.000121>
+[pid     8] <... stat resumed> 0x7ffd494da210)                                                                          = -1 ENOENT (No such file or directory) <0.000079>
+[pid     7] stat("files//file1.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                            = 0 <0.000060>
+[pid     8] close(3 <unfinished ...>
+[pid     7] unlink("files//file1.txt" <unfinished ...>
+[pid     8] <... close resumed> )                                                                                       = 0 <0.000082>
+[pid     8] write(1, "Diret\303\263rio removido\n", 20Diretório removido
+ <unfinished ...>
+[pid     7] <... unlink resumed> )                                                                                      = 0 <0.000167>
+[pid     8] <... write resumed> )                                                                                       = 20 <0.000094>
+[pid     7] stat("files//file3.txt",  <unfinished ...>
+[pid     8] exit_group(0 <unfinished ...>
+[pid     7] <... stat resumed> {st_mode=S_IFREG|0644, st_size=0, ...})                                                  = 0 <0.000077>
+[pid     8] <... exit_group resumed>)                                                                                   = ?
+[pid     7] unlink("files//file3.txt")                                                                                  = 0 <0.000097>
+[pid     7] stat("files//file9.txt",  <unfinished ...>
+[pid     8] +++ exited with 0 +++
+<... stat resumed> {st_mode=S_IFREG|0644, st_size=0, ...})                                                              = 0 <0.000087>
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=8, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+unlink("files//file9.txt")                                                                                              = 0 <0.000140>
+stat("files//file6.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000088>
+unlink("files//file6.txt")                                                                                              = 0 <0.000108>
+stat("files//file7.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000053>
+unlink("files//file7.txt")                                                                                              = 0 <0.000131>
+stat("files//file5.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000081>
+unlink("files//file5.txt")                                                                                              = 0 <0.000158>
+stat("files//file2.txt", {st_mode=S_IFREG|0644, st_size=0, ...})                                                        = 0 <0.000049>
+unlink("files//file2.txt")                                                                                              = 0 <0.000115>
+getdents(3, /* 0 entries */, 32768)                                                                                     = 0 <0.000057>
+close(3)                                                                                                                = 0 <0.000057>
+rmdir("files/")                                                                                                         = 0 <0.000151>
+write(1, "Diret\303\263rio removido\n", 20Diretório removido
+)                                                                             = 20 <0.000043>
+exit_group(0)                                                                                                           = ?
++++ exited with 0 +++
+strace: Exit of unknown pid 8 ignored

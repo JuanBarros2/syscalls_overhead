@@ -1,0 +1,311 @@
+execve("./fileOverhead", ["./fileOverhead", "posix_spawnp", "100"], [/* 4 vars */])                                     = 0 <0.000302>
+brk(NULL)                                                                                                               = 0x56392bc3c000 <0.000034>
+access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000040>
+access("/etc/ld.so.preload", R_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000039>
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC)                                                                            = 3 <0.000051>
+fstat(3, {st_mode=S_IFREG|0644, st_size=13580, ...})                                                                    = 0 <0.000027>
+mmap(NULL, 13580, PROT_READ, MAP_PRIVATE, 3, 0)                                                                         = 0x7f5ec5fac000 <0.000034>
+close(3)                                                                                                                = 0 <0.000038>
+access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000055>
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC)                                                             = 3 <0.000064>
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832)                                       = 832 <0.000035>
+fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...})                                                                  = 0 <0.000062>
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0)                                                = 0x7f5ec5faa000 <0.000034>
+mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0)                                               = 0x7f5ec59ee000 <0.000040>
+mprotect(0x7f5ec5b83000, 2097152, PROT_NONE)                                                                            = 0 <0.000047>
+mmap(0x7f5ec5d83000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000)                     = 0x7f5ec5d83000 <0.000049>
+mmap(0x7f5ec5d89000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0)                           = 0x7f5ec5d89000 <0.000037>
+close(3)                                                                                                                = 0 <0.000032>
+arch_prctl(ARCH_SET_FS, 0x7f5ec5fab440)                                                                                 = 0 <0.000024>
+mprotect(0x7f5ec5d83000, 16384, PROT_READ)                                                                              = 0 <0.000036>
+mprotect(0x56392a25b000, 4096, PROT_READ)                                                                               = 0 <0.000054>
+mprotect(0x7f5ec5fb0000, 4096, PROT_READ)                                                                               = 0 <0.000043>
+munmap(0x7f5ec5fac000, 13580)                                                                                           = 0 <0.000046>
+stat("files/", 0x7ffd4750ed00)                                                                                          = -1 ENOENT (No such file or directory) <0.000061>
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...})                                                          = 0 <0.000045>
+brk(NULL)                                                                                                               = 0x56392bc3c000 <0.000029>
+brk(0x56392bc5d000)                                                                                                     = 0x56392bc5d000 <0.000040>
+write(1, "Diretorio criado\n", 17Diretorio criado
+)                                                                                      = 17 <0.000035>
+mkdir("files/", 0700)                                                                                                   = 0 <0.000139>
+open("files/file0.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 3 <0.000320>
+open("files/file1.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 4 <0.000121>
+open("files/file2.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 5 <0.000137>
+open("files/file3.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 6 <0.000099>
+open("files/file4.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 7 <0.000045>
+open("files/file5.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 8 <0.000045>
+open("files/file6.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 9 <0.000049>
+open("files/file7.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 10 <0.000050>
+open("files/file8.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 11 <0.000094>
+open("files/file9.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                 = 12 <0.000115>
+open("files/file10.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 13 <0.000060>
+open("files/file11.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 14 <0.000053>
+open("files/file12.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 15 <0.000048>
+open("files/file13.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 16 <0.000051>
+open("files/file14.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 17 <0.000049>
+open("files/file15.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 18 <0.000053>
+open("files/file16.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 19 <0.000039>
+open("files/file17.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 20 <0.000042>
+open("files/file18.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 21 <0.000039>
+open("files/file19.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 22 <0.000050>
+open("files/file20.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 23 <0.000046>
+open("files/file21.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 24 <0.000040>
+open("files/file22.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 25 <0.000050>
+open("files/file23.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 26 <0.000085>
+open("files/file24.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 27 <0.000077>
+open("files/file25.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 28 <0.000120>
+open("files/file26.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 29 <0.000080>
+open("files/file27.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 30 <0.000081>
+open("files/file28.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 31 <0.000070>
+open("files/file29.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 32 <0.000089>
+open("files/file30.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 33 <0.000075>
+open("files/file31.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 34 <0.000096>
+open("files/file32.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 35 <0.000084>
+open("files/file33.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 36 <0.000064>
+open("files/file34.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 37 <0.000110>
+open("files/file35.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 38 <0.000083>
+open("files/file36.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 39 <0.000071>
+open("files/file37.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 40 <0.000074>
+open("files/file38.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 41 <0.000130>
+open("files/file39.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 42 <0.000068>
+open("files/file40.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 43 <0.000077>
+open("files/file41.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 44 <0.000074>
+open("files/file42.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 45 <0.000089>
+open("files/file43.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 46 <0.000072>
+open("files/file44.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 47 <0.000130>
+open("files/file45.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 48 <0.000143>
+open("files/file46.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 49 <0.000077>
+open("files/file47.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 50 <0.000086>
+open("files/file48.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 51 <0.000070>
+open("files/file49.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 52 <0.000085>
+open("files/file50.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 53 <0.000107>
+open("files/file51.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 54 <0.000105>
+open("files/file52.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 55 <0.000051>
+open("files/file53.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 56 <0.000047>
+open("files/file54.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 57 <0.000104>
+open("files/file55.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 58 <0.000060>
+open("files/file56.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 59 <0.000071>
+open("files/file57.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 60 <0.000045>
+open("files/file58.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 61 <0.000049>
+open("files/file59.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 62 <0.000092>
+open("files/file60.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 63 <0.000079>
+open("files/file61.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 64 <0.000086>
+open("files/file62.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 65 <0.000101>
+open("files/file63.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 66 <0.000074>
+open("files/file64.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 67 <0.000066>
+open("files/file65.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 68 <0.000555>
+open("files/file66.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 69 <0.000066>
+open("files/file67.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 70 <0.000064>
+open("files/file68.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 71 <0.000057>
+open("files/file69.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 72 <0.000048>
+open("files/file70.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 73 <0.000070>
+open("files/file71.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 74 <0.000083>
+open("files/file72.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 75 <0.000058>
+open("files/file73.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 76 <0.000103>
+open("files/file74.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 77 <0.000101>
+open("files/file75.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 78 <0.000072>
+open("files/file76.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 79 <0.000087>
+open("files/file77.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 80 <0.000066>
+open("files/file78.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 81 <0.000067>
+open("files/file79.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 82 <0.000111>
+open("files/file80.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 83 <0.000075>
+open("files/file81.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 84 <0.000114>
+open("files/file82.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 85 <0.000091>
+open("files/file83.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 86 <0.000085>
+open("files/file84.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 87 <0.000075>
+open("files/file85.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 88 <0.000089>
+open("files/file86.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 89 <0.000083>
+open("files/file87.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 90 <0.000094>
+open("files/file88.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 91 <0.000089>
+open("files/file89.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 92 <0.000053>
+open("files/file90.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 93 <0.000089>
+open("files/file91.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 94 <0.000083>
+open("files/file92.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 95 <0.000065>
+open("files/file93.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 96 <0.000083>
+open("files/file94.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 97 <0.000077>
+open("files/file95.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 98 <0.000077>
+open("files/file96.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 99 <0.000077>
+open("files/file97.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 100 <0.000084>
+open("files/file98.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 101 <0.000085>
+open("files/file99.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666)                                                                = 102 <0.000094>
+pipe2([103, 104], O_CLOEXEC)                                                                                            = 0 <0.000044>
+mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0)                                     = 0x7f5ec5fa1000 <0.000050>
+rt_sigprocmask(SIG_BLOCK, ~[], [], 8)                                                                                   = 0 <0.000023>
+clone(strace: Process 8 attached
+ <unfinished ...>
+[pid     8] close(103)                                                                                                  = 0 <0.000031>
+[pid     8] rt_sigprocmask(SIG_BLOCK, NULL, ~[KILL STOP], 8)                                                            = 0 <0.000029>
+[pid     8] rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                 = 0 <0.000035>
+[pid     8] rt_sigaction(SIGHUP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000051>
+[pid     8] rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                 = 0 <0.000034>
+[pid     8] rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000021>
+[pid     8] rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000028>
+[pid     8] rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000033>
+[pid     8] rt_sigaction(SIGILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                 = 0 <0.000036>
+[pid     8] rt_sigaction(SIGILL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000032>
+[pid     8] rt_sigaction(SIGTRAP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000025>
+[pid     8] rt_sigaction(SIGTRAP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000020>
+[pid     8] rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000038>
+[pid     8] rt_sigaction(SIGABRT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000035>
+[pid     8] rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                 = 0 <0.000027>
+[pid     8] rt_sigaction(SIGBUS, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000023>
+[pid     8] rt_sigaction(SIGFPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                 = 0 <0.000036>
+[pid     8] rt_sigaction(SIGFPE, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000030>
+[pid     8] rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000023>
+[pid     8] rt_sigaction(SIGUSR1, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000019>
+[pid     8] rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000018>
+[pid     8] rt_sigaction(SIGSEGV, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000034>
+[pid     8] rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000024>
+[pid     8] rt_sigaction(SIGUSR2, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000026>
+[pid     8] rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000024>
+[pid     8] rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000019>
+[pid     8] rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000027>
+[pid     8] rt_sigaction(SIGALRM, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000033>
+[pid     8] rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000023>
+[pid     8] rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000024>
+[pid     8] rt_sigaction(SIGSTKFLT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                              = 0 <0.000019>
+[pid     8] rt_sigaction(SIGSTKFLT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000027>
+[pid     8] rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000022>
+[pid     8] rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000024>
+[pid     8] rt_sigaction(SIGCONT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000028>
+[pid     8] rt_sigaction(SIGCONT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000025>
+[pid     8] rt_sigaction(SIGTSTP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000033>
+[pid     8] rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000026>
+[pid     8] rt_sigaction(SIGTTIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000023>
+[pid     8] rt_sigaction(SIGTTIN, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000026>
+[pid     8] rt_sigaction(SIGTTOU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000027>
+[pid     8] rt_sigaction(SIGTTOU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000029>
+[pid     8] rt_sigaction(SIGURG, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                 = 0 <0.000040>
+[pid     8] rt_sigaction(SIGURG, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000028>
+[pid     8] rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000023>
+[pid     8] rt_sigaction(SIGXCPU, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000023>
+[pid     8] rt_sigaction(SIGXFSZ, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000025>
+[pid     8] rt_sigaction(SIGXFSZ, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000047>
+[pid     8] rt_sigaction(SIGVTALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                              = 0 <0.000021>
+[pid     8] rt_sigaction(SIGVTALRM, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000021>
+[pid     8] rt_sigaction(SIGPROF, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000029>
+[pid     8] rt_sigaction(SIGPROF, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000022>
+[pid     8] rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                               = 0 <0.000020>
+[pid     8] rt_sigaction(SIGWINCH, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000019>
+[pid     8] rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                  = 0 <0.000028>
+[pid     8] rt_sigaction(SIGIO, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000022>
+[pid     8] rt_sigaction(SIGPWR, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                 = 0 <0.000020>
+[pid     8] rt_sigaction(SIGPWR, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000030>
+[pid     8] rt_sigaction(SIGSYS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                 = 0 <0.000027>
+[pid     8] rt_sigaction(SIGSYS, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000020>
+[pid     8] rt_sigaction(SIGRTMIN, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000023>
+[pid     8] rt_sigaction(SIGRT_1, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000033>
+[pid     8] rt_sigaction(SIGRT_2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000020>
+[pid     8] rt_sigaction(SIGRT_2, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000026>
+[pid     8] rt_sigaction(SIGRT_3, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000038>
+[pid     8] rt_sigaction(SIGRT_3, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000064>
+[pid     8] rt_sigaction(SIGRT_4, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000029>
+[pid     8] rt_sigaction(SIGRT_4, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000023>
+[pid     8] rt_sigaction(SIGRT_5, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000029>
+[pid     8] rt_sigaction(SIGRT_5, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000023>
+[pid     8] rt_sigaction(SIGRT_6, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000032>
+[pid     8] rt_sigaction(SIGRT_6, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000026>
+[pid     8] rt_sigaction(SIGRT_7, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000028>
+[pid     8] rt_sigaction(SIGRT_7, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000029>
+[pid     8] rt_sigaction(SIGRT_8, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000023>
+[pid     8] rt_sigaction(SIGRT_8, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000030>
+[pid     8] rt_sigaction(SIGRT_9, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                                = 0 <0.000026>
+[pid     8] rt_sigaction(SIGRT_9, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000020>
+[pid     8] rt_sigaction(SIGRT_10, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                               = 0 <0.000025>
+[pid     8] rt_sigaction(SIGRT_10, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000025>
+[pid     8] rt_sigaction(SIGRT_11, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                               = 0 <0.000025>
+[pid     8] rt_sigaction(SIGRT_11, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000023>
+[pid     8] rt_sigaction(SIGRT_12, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                               = 0 <0.000025>
+[pid     8] rt_sigaction(SIGRT_12, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000031>
+[pid     8] rt_sigaction(SIGRT_13, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                               = 0 <0.000031>
+[pid     8] rt_sigaction(SIGRT_13, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000032>
+[pid     8] rt_sigaction(SIGRT_14, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                               = 0 <0.000032>
+[pid     8] rt_sigaction(SIGRT_14, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000031>
+[pid     8] rt_sigaction(SIGRT_15, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                               = 0 <0.000028>
+[pid     8] rt_sigaction(SIGRT_15, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000025>
+[pid     8] rt_sigaction(SIGRT_16, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                               = 0 <0.000020>
+[pid     8] rt_sigaction(SIGRT_16, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000028>
+[pid     8] rt_sigaction(SIGRT_17, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                               = 0 <0.000024>
+[pid     8] rt_sigaction(SIGRT_17, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000019>
+[pid     8] rt_sigaction(SIGRT_18, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                               = 0 <0.000036>
+[pid     8] rt_sigaction(SIGRT_18, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000024>
+[pid     8] rt_sigaction(SIGRT_19, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                               = 0 <0.000021>
+[pid     8] rt_sigaction(SIGRT_19, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000023>
+[pid     8] rt_sigaction(SIGRT_20, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                               = 0 <0.000022>
+[pid     8] rt_sigaction(SIGRT_20, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000024>
+[pid     8] rt_sigaction(SIGRT_21, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                               = 0 <0.000023>
+[pid     8] rt_sigaction(SIGRT_21, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000020>
+[pid     8] rt_sigaction(SIGRT_22, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                               = 0 <0.000028>
+[pid     8] rt_sigaction(SIGRT_22, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000023>
+[pid     8] rt_sigaction(SIGRT_23, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                               = 0 <0.000023>
+[pid     8] rt_sigaction(SIGRT_23, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000024>
+[pid     8] rt_sigaction(SIGRT_24, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                               = 0 <0.000034>
+[pid     8] rt_sigaction(SIGRT_24, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000025>
+[pid     8] rt_sigaction(SIGRT_25, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                               = 0 <0.000023>
+[pid     8] rt_sigaction(SIGRT_25, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000022>
+[pid     8] rt_sigaction(SIGRT_26, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                               = 0 <0.000030>
+[pid     8] rt_sigaction(SIGRT_26, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000027>
+[pid     8] rt_sigaction(SIGRT_27, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                               = 0 <0.000026>
+[pid     8] rt_sigaction(SIGRT_27, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000025>
+[pid     8] rt_sigaction(SIGRT_28, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                               = 0 <0.000029>
+[pid     8] rt_sigaction(SIGRT_28, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000025>
+[pid     8] rt_sigaction(SIGRT_29, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                               = 0 <0.000021>
+[pid     8] rt_sigaction(SIGRT_29, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000024>
+[pid     8] rt_sigaction(SIGRT_30, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                               = 0 <0.000020>
+[pid     8] rt_sigaction(SIGRT_30, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000084>
+[pid     8] rt_sigaction(SIGRT_31, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                               = 0 <0.000027>
+[pid     8] rt_sigaction(SIGRT_31, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000024>
+[pid     8] rt_sigaction(SIGRT_32, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8)                               = 0 <0.000024>
+[pid     8] rt_sigaction(SIGRT_32, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f5ec5a21060}, NULL, 8) = 0 <0.000019>
+[pid     8] rt_sigprocmask(SIG_SETMASK, [], NULL, 8)                                                                    = 0 <0.000068>
+[pid     8] execve("/usr/local/sbin/sleep", ["sleep", "0"], NULL)                                                       = -1 ENOENT (No such file or directory) <0.000047>
+[pid     8] execve("/usr/local/bin/sleep", ["sleep", "0"], NULL)                                                        = -1 ENOENT (No such file or directory) <0.000040>
+[pid     8] execve("/usr/sbin/sleep", ["sleep", "0"], NULL)                                                             = -1 ENOENT (No such file or directory) <0.000037>
+[pid     8] execve("/usr/bin/sleep", ["sleep", "0"], NULL)                                                              = -1 ENOENT (No such file or directory) <0.000062>
+[pid     8] execve("/sbin/sleep", ["sleep", "0"], NULL)                                                                 = -1 ENOENT (No such file or directory) <0.000067>
+[pid     8] execve("/bin/sleep", ["sleep", "0"], NULL <unfinished ...>
+[pid     7] <... clone resumed> child_stack=0x7f5ec5fa9ff0, flags=CLONE_VM|CLONE_VFORK|SIGCHLD)                         = 8 <0.011855>
+[pid     7] close(104)                                                                                                  = 0 <0.000029>
+[pid     8] <... execve resumed> )                                                                                      = 0 <0.000252>
+[pid     7] read(103, "", 4)                                                                                            = 0 <0.000032>
+[pid     8] brk(NULL <unfinished ...>
+[pid     7] munmap(0x7f5ec5fa1000, 36864 <unfinished ...>
+[pid     8] <... brk resumed> )                                                                                         = 0x5595330e5000 <0.000044>
+[pid     7] <... munmap resumed> )                                                                                      = 0 <0.000046>
+[pid     7] close(103 <unfinished ...>
+[pid     8] access("/etc/ld.so.nohwcap", F_OK <unfinished ...>
+[pid     7] <... close resumed> )                                                                                       = 0 <0.000110>
+[pid     7] rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid     8] <... access resumed> )                                                                                      = -1 ENOENT (No such file or directory) <0.000113>
+[pid     7] <... rt_sigprocmask resumed> NULL, 8)                                                                       = 0 <0.000058>
+[pid     8] access("/etc/ld.so.preload", R_OK <unfinished ...>
+[pid     7] exit_group(0 <unfinished ...>
+[pid     8] <... access resumed> )                                                                                      = -1 ENOENT (No such file or directory) <0.000046>
+[pid     7] <... exit_group resumed>)                                                                                   = ?
+[pid     8] open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC)                                                                = 103 <0.000045>
+[pid     8] fstat(103, {st_mode=S_IFREG|0644, st_size=13580, ...})                                                      = 0 <0.000040>
+[pid     7] +++ exited with 0 +++
+mmap(NULL, 13580, PROT_READ, MAP_PRIVATE, 103, 0)                                                                       = 0x7fb5b7fa0000 <0.000036>
+close(103)                                                                                                              = 0 <0.000026>
+access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000026>
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC)                                                             = 103 <0.000038>
+read(103, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832)                                     = 832 <0.000026>
+fstat(103, {st_mode=S_IFREG|0755, st_size=1689360, ...})                                                                = 0 <0.000061>
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0)                                                = 0x7fb5b7f9e000 <0.000045>
+mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 103, 0)                                             = 0x7fb5b79e2000 <0.000039>
+mprotect(0x7fb5b7b77000, 2097152, PROT_NONE)                                                                            = 0 <0.000039>
+mmap(0x7fb5b7d77000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 103, 0x195000)                   = 0x7fb5b7d77000 <0.000036>
+mmap(0x7fb5b7d7d000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0)                           = 0x7fb5b7d7d000 <0.000043>
+close(103)                                                                                                              = 0 <0.000026>
+arch_prctl(ARCH_SET_FS, 0x7fb5b7f9f480)                                                                                 = 0 <0.000032>
+mprotect(0x7fb5b7d77000, 16384, PROT_READ)                                                                              = 0 <0.000033>
+mprotect(0x559531bd6000, 4096, PROT_READ)                                                                               = 0 <0.000038>
+mprotect(0x7fb5b7fa4000, 4096, PROT_READ)                                                                               = 0 <0.000043>
+munmap(0x7fb5b7fa0000, 13580)                                                                                           = 0 <0.000037>
+brk(NULL)                                                                                                               = 0x5595330e5000 <0.000020>
+brk(0x559533106000)                                                                                                     = 0x559533106000 <0.000051>
+nanosleep({tv_sec=0, tv_nsec=0}, NULL)                                                                                  = 0 <0.000097>
+close(1)                                                                                                                = 0 <0.000034>
+close(2)                                                                                                                = 0 <0.000028>
+exit_group(0)                                                                                                           = ?
++++ exited with 0 +++
