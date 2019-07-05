@@ -46,15 +46,20 @@ void createFiles(int files, char syscall[]) {
         array de argumentos a ser passado. */
         int erro = execvp(argv[0], argv);
     } else if(strcmp(syscall, "clone") == 0) {
+        void *pchild_stack2 = malloc(1024 * 1024);
+        if ( pchild_stack2 == NULL ) {
+            printf("ERROR: Unable to allocate memory.\n");
+            exit(EXIT_FAILURE);
+        }
         /* Cria uma thread de execução para o processo atual.
         Recebe um ponteiro de uma função que rodará na execução
         da syscall, um ponteiro para a pilha compartilhada entre
         threads, constantes (nesse caso, CLONE_VFORK define que
         o processo pai deve esperar os filhos terminarem a execução
         para continuar a execução), e ponteiro para argumentos.*/
-        clone(&doNothing, NULL, CLONE_VFORK, NULL);
+        clone(&doNothing, pchild_stack2 + (1024 * 1024), CLONE_VFORK, NULL);
     } else if(strcmp(syscall, "posix_spawnp") == 0) {
-        pid_t pid;
+        pid_t pid; 
         posix_spawnp(&pid, argv[0], NULL, NULL, argv, NULL);
         exit(0);
     }

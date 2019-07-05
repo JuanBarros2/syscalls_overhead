@@ -1,55 +1,47 @@
          ? (     ?   ): processosOverh/6  ... [[33mcontinued[m]: execve()) = 0
-     0.037 ( 0.003 ms): processosOverh/6 brk(                                                                  ) = 0x55d5d6d13000
-     0.057 ( 0.006 ms): processosOverh/6 access(filename: 0x75c0e4e7                                           ) = -1 ENOENT No such file or directory
-     0.066 ( 0.004 ms): processosOverh/6 access(filename: 0x75c10c70, mode: R                                  ) = -1 ENOENT No such file or directory
-     0.075 ( 0.008 ms): processosOverh/6 open(filename: 0x75c0e988, flags: CLOEXEC                             ) = 3
-     0.086 ( 0.003 ms): processosOverh/6 fstat(fd: 3, statbuf: 0x7ffcc4f6c1e0                                  ) = 0
-     0.091 ( 0.005 ms): processosOverh/6 mmap(len: 13580, prot: READ, flags: PRIVATE, fd: 3                    ) = 0x7faf75e10000
-     0.098 ( 0.002 ms): processosOverh/6 close(fd: 3                                                           ) = 0
-     0.106 ( 0.003 ms): processosOverh/6 access(filename: 0x75c0e4e7                                           ) = -1 ENOENT No such file or directory
-     0.112 ( 0.007 ms): processosOverh/6 open(filename: 0x75e16d68, flags: CLOEXEC                             ) = 3
-     0.122 ( 0.003 ms): processosOverh/6 read(fd: 3, buf: 0x7ffcc4f6c388, count: 832                           ) = 832
-     0.128 ( 0.002 ms): processosOverh/6 fstat(fd: 3, statbuf: 0x7ffcc4f6c220                                  ) = 0
-     0.132 ( 0.004 ms): processosOverh/6 mmap(len: 8192, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS, fd: -1    ) = 0x7faf75e0e000
-     0.145 ( 0.005 ms): processosOverh/6 mmap(len: 3795296, prot: EXEC|READ, flags: PRIVATE|DENYWRITE, fd: 3   ) = 0x7faf75852000
-     0.152 ( 0.008 ms): processosOverh/6 mprotect(start: 0x7faf759e7000, len: 2097152                          ) = 0
-     0.163 ( 0.007 ms): processosOverh/6 mmap(addr: 0x7faf75be7000, len: 24576, prot: READ|WRITE, flags: PRIVATE|DENYWRITE|FIXED, fd: 3, off: 1658880) = 0x7faf75be7000
-     0.176 ( 0.004 ms): processosOverh/6 mmap(addr: 0x7faf75bed000, len: 14688, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS|FIXED, fd: -1) = 0x7faf75bed000
-     0.190 ( 0.002 ms): processosOverh/6 close(fd: 3                                                           ) = 0
-     0.210 ( 0.002 ms): processosOverh/6 arch_prctl(option: 4098, arg2: 140391573681216                        ) = 0
-     0.273 ( 0.007 ms): processosOverh/6 mprotect(start: 0x7faf75be7000, len: 16384, prot: READ                ) = 0
-     0.285 ( 0.004 ms): processosOverh/6 mprotect(start: 0x55d5d60ec000, len: 4096, prot: READ                 ) = 0
-     0.293 ( 0.004 ms): processosOverh/6 mprotect(start: 0x7faf75e14000, len: 4096, prot: READ                 ) = 0
-     0.299 ( 0.007 ms): processosOverh/6 munmap(addr: 0x7faf75e10000, len: 13580                               ) = 0
-     0.347 ([33m 0.354 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7faf75e0f710, tls: 140391573681216) = 7 (processosOverhe)
-     0.709 ([33m 0.322 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7faf75e0f710, tls: 140391573681216) = 8 (processosOverhe)
-     1.040 ([33m 0.304 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7faf75e0f710, tls: 140391573681216) = 9 (processosOverhe)
-     1.351 ([33m 0.315 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7faf75e0f710, tls: 140391573681216) = 10 (processosOverhe)
+     0.053 ( 0.003 ms): processosOverh/6 brk(                                                                  ) = 0x563f5fbcb000
+     0.082 ([33m 0.011 ms[m): processosOverh/6 access(filename: 0x89bd44e7                                           ) = -1 ENOENT No such file or directory
+     0.097 ( 0.004 ms): processosOverh/6 access(filename: 0x89bd6c70, mode: R                                  ) = -1 ENOENT No such file or directory
+     0.106 ( 0.009 ms): processosOverh/6 open(filename: 0x89bd4988, flags: CLOEXEC                             ) = 3
+     0.119 ( 0.004 ms): processosOverh/6 fstat(fd: 3, statbuf: 0x7ffcb3b60a20                                  ) = 0
+     0.126 ( 0.006 ms): processosOverh/6 mmap(len: 13580, prot: READ, flags: PRIVATE, fd: 3                    ) = 0x7f8f89dd6000
+     0.134 ( 0.003 ms): processosOverh/6 close(fd: 3                                                           ) = 0
+     0.144 ( 0.005 ms): processosOverh/6 access(filename: 0x89bd44e7                                           ) = -1 ENOENT No such file or directory
+     0.155 ([33m 0.013 ms[m): processosOverh/6 open(filename: 0x89ddcd68, flags: CLOEXEC                             ) = 3
+     0.171 ( 0.005 ms): processosOverh/6 read(fd: 3, buf: 0x7ffcb3b60bc8, count: 832                           ) = 832
+     0.192 ( 0.004 ms): processosOverh/6 fstat(fd: 3, statbuf: 0x7ffcb3b60a60                                  ) = 0
+     0.200 ( 0.008 ms): processosOverh/6 mmap(len: 8192, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS, fd: -1    ) = 0x7f8f89dd4000
+     0.221 ( 0.008 ms): processosOverh/6 mmap(len: 3795296, prot: EXEC|READ, flags: PRIVATE|DENYWRITE, fd: 3   ) = 0x7f8f89818000
+     0.233 ([33m 0.013 ms[m): processosOverh/6 mprotect(start: 0x7f8f899ad000, len: 2097152                          ) = 0
+     0.250 ([33m 0.013 ms[m): processosOverh/6 mmap(addr: 0x7f8f89bad000, len: 24576, prot: READ|WRITE, flags: PRIVATE|DENYWRITE|FIXED, fd: 3, off: 1658880) = 0x7f8f89bad000
+     0.277 ([33m 0.018 ms[m): processosOverh/6 mmap(addr: 0x7f8f89bb3000, len: 14688, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS|FIXED, fd: -1) = 0x7f8f89bb3000
+     0.309 ( 0.003 ms): processosOverh/6 close(fd: 3                                                           ) = 0
+     0.337 ( 0.003 ms): processosOverh/6 arch_prctl(option: 4098, arg2: 140254470034496                        ) = 0
+     0.414 ( 0.009 ms): processosOverh/6 mprotect(start: 0x7f8f89bad000, len: 16384, prot: READ                ) = 0
+     0.428 ( 0.005 ms): processosOverh/6 mprotect(start: 0x563f5fb19000, len: 4096, prot: READ                 ) = 0
+     0.439 ( 0.005 ms): processosOverh/6 mprotect(start: 0x7f8f89dda000, len: 4096, prot: READ                 ) = 0
+     0.447 ( 0.008 ms): processosOverh/6 munmap(addr: 0x7f8f89dd6000, len: 13580                               ) = 0
+     0.500 ([33m 0.439 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7f8f89dd5710, tls: 140254470034496) = 7 (processosOverhe)
+     0.952 ([33m 0.475 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7f8f89dd5710, tls: 140254470034496) = 8 (processosOverhe)
+     1.443 ([33m 0.462 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7f8f89dd5710, tls: 140254470034496) = 9 (processosOverhe)
+     1.919 ([33m 0.444 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7f8f89dd5710, tls: 140254470034496) = 10 (processosOverhe)
          ? (     ?   ): :13/13  ... [[33mcontinued[m]: clone()
-     1.677 ([31m 1.390 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7faf75e0f710, tls: 140391573681216) ...
-         ? (     ?   ): :15/15  ... [[33mcontinued[m]: clone()
-     3.067 ([33m 0.768 ms[m): :13/13 nanosleep(rqtp: 0x7ffcc4f6cb60, rmtp: 0x7ffcc4f6cb60                  ) ...
-         ? (     ?   ): :16/16  ... [[33mcontinued[m]: clone()
-     3.835 ([33m 0.525 ms[m): :15/15 nanosleep(rqtp: 0x7ffcc4f6cb60, rmtp: 0x7ffcc4f6cb60                  ) ...
-         ? (     ?   ): :17/17  ... [[33mcontinued[m]: clone()
-     4.360 ([33m 0.595 ms[m): :16/16 nanosleep(rqtp: 0x7ffcc4f6cb60, rmtp: 0x7ffcc4f6cb60                  ) ...
-     4.955 (     ?   ): :17/17 exit_group(                                                           )
-     1.677 ([33m 0.447 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 11 (processosOverhe)
-     2.138 ([33m 0.398 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7faf75e0f710, tls: 140391573681216) = 12 (processosOverhe)
-     2.549 ([33m 0.402 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7faf75e0f710, tls: 140391573681216) = 13 (processosOverhe)
-     2.964 ([33m 0.412 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7faf75e0f710, tls: 140391573681216) = 14 (processosOverhe)
-     3.389 ([33m 0.367 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7faf75e0f710, tls: 140391573681216) = 15 (processosOverhe)
-     3.769 ([33m 0.449 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7faf75e0f710, tls: 140391573681216) = 16 (processosOverhe)
-     4.243 ([33m 0.460 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7faf75e0f710, tls: 140391573681216) = 17 (processosOverhe)
-     4.783 (     ?   ): processosOverh/6 exit_group(                                                           )
-         ? (     ?   ): processosOverh/12  ... [[33mcontinued[m]: clone()
-         ? (     ?   ): processosOverh/14  ... [[33mcontinued[m]: clone()
-         ? (     ?   ): processosOverh/11  ... [[33mcontinued[m]: clone()
+     2.378 ([31m 1.769 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7f8f89dd5710, tls: 140254470034496) ...
+         ? (     ?   ): :14/14  ... [[33mcontinued[m]: clone()
+     4.146 ([33m 0.924 ms[m): :13/13 nanosleep(rqtp: 0x7ffcb3b613a0, rmtp: 0x7ffcb3b613a0                  ) ...
          ? (     ?   ): processosOverh/7  ... [[33mcontinued[m]: clone()
-     5.034 ([31m18446744073705.301 ms[m): processosOverh/12 nanosleep(rqtp: 0x7ffcc4f6cb60, rmtp: 0x7ffcc4f6cb60                  ) ...
+     5.070 ([31m18446744073705.535 ms[m): :14/14 nanosleep(rqtp: 0x7ffcb3b613a0, rmtp: 0x7ffcb3b613a0                  ) ...
+     2.378 ([33m 0.664 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 11 (processosOverhe)
+     1.052 ([31m 2.012 ms[m): processosOverh/7 nanosleep(rqtp: 0x7ffcb3b613a0, rmtp: 0x7ffcb3b613a0                  ) ...
+     3.064 ([33m 0.494 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7f8f89dd5710, tls: 140254470034496) = 12 (processosOverhe)
+     3.574 ([33m 0.463 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7f8f89dd5710, tls: 140254470034496) = 13 (processosOverhe)
+     4.052 ([33m 0.520 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7f8f89dd5710, tls: 140254470034496) = 14 (processosOverhe)
+     4.589 ([33m 0.484 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7f8f89dd5710, tls: 140254470034496) = 15 (processosOverhe)
+     5.088 ([33m 0.461 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7f8f89dd5710, tls: 140254470034496) = 16 (processosOverhe)
+     5.595 ([33m 0.473 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7f8f89dd5710, tls: 140254470034496) = 17 (processosOverhe)
+     6.126 (     ?   ): processosOverh/6 exit_group(                                                           )
          ? (     ?   ): processosOverh/8  ... [[33mcontinued[m]: clone()
-     0.785 ([33m 0.320 ms[m): processosOverh/7 nanosleep(rqtp: 0x7ffcc4f6cb60, rmtp: 0x7ffcc4f6cb60                  ) ...
          ? (     ?   ): processosOverh/9  ... [[33mcontinued[m]: clone()
-     1.104 ([33m 0.308 ms[m): processosOverh/8 nanosleep(rqtp: 0x7ffcc4f6cb60, rmtp: 0x7ffcc4f6cb60                  ) ...
+     1.543 ([33m 0.453 ms[m): processosOverh/8 nanosleep(rqtp: 0x7ffcb3b613a0, rmtp: 0x7ffcb3b613a0                  ) ...
          ? (     ?   ): processosOverh/10  ... [[33mcontinued[m]: clone()
-     1.413 ([33m 0.325 ms[m): processosOverh/9 nanosleep(rqtp: 0x7ffcc4f6cb60, rmtp: 0x7ffcc4f6cb60                  ) ...
+     1.996 ([33m 0.450 ms[m): processosOverh/9 nanosleep(rqtp: 0x7ffcb3b613a0, rmtp: 0x7ffcb3b613a0                  ) ...

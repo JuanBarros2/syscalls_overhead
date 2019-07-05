@@ -1,0 +1,518 @@
+         ? (     ?   ): processosOverh/6  ... [[33mcontinued[m]: execve()) = 0
+     0.052 ( 0.003 ms): processosOverh/6 brk(                                                                  ) = 0x55ed6470a000
+     0.075 ( 0.006 ms): processosOverh/6 access(filename: 0x19c604e7                                           ) = -1 ENOENT No such file or directory
+     0.085 ( 0.004 ms): processosOverh/6 access(filename: 0x19c62c70, mode: R                                  ) = -1 ENOENT No such file or directory
+     0.093 ( 0.007 ms): processosOverh/6 open(filename: 0x19c60988, flags: CLOEXEC                             ) = 3
+     0.102 ( 0.003 ms): processosOverh/6 fstat(fd: 3, statbuf: 0x7fff4d35f0f0                                  ) = 0
+     0.107 ( 0.004 ms): processosOverh/6 mmap(len: 13580, prot: READ, flags: PRIVATE, fd: 3                    ) = 0x7fd619e62000
+     0.114 ( 0.002 ms): processosOverh/6 close(fd: 3                                                           ) = 0
+     0.122 ( 0.003 ms): processosOverh/6 access(filename: 0x19c604e7                                           ) = -1 ENOENT No such file or directory
+     0.129 ( 0.010 ms): processosOverh/6 open(filename: 0x19e68d68, flags: CLOEXEC                             ) = 3
+     0.141 ( 0.004 ms): processosOverh/6 read(fd: 3, buf: 0x7fff4d35f298, count: 832                           ) = 832
+     0.147 ( 0.002 ms): processosOverh/6 fstat(fd: 3, statbuf: 0x7fff4d35f130                                  ) = 0
+     0.155 ( 0.004 ms): processosOverh/6 mmap(len: 8192, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS, fd: -1    ) = 0x7fd619e60000
+     0.166 ( 0.006 ms): processosOverh/6 mmap(len: 3795296, prot: EXEC|READ, flags: PRIVATE|DENYWRITE, fd: 3   ) = 0x7fd6198a4000
+     0.174 ( 0.007 ms): processosOverh/6 mprotect(start: 0x7fd619a39000, len: 2097152                          ) = 0
+     0.184 ( 0.010 ms): processosOverh/6 mmap(addr: 0x7fd619c39000, len: 24576, prot: READ|WRITE, flags: PRIVATE|DENYWRITE|FIXED, fd: 3, off: 1658880) = 0x7fd619c39000
+     0.201 ( 0.005 ms): processosOverh/6 mmap(addr: 0x7fd619c3f000, len: 14688, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS|FIXED, fd: -1) = 0x7fd619c3f000
+     0.216 ( 0.002 ms): processosOverh/6 close(fd: 3                                                           ) = 0
+     0.235 ( 0.002 ms): processosOverh/6 arch_prctl(option: 4098, arg2: 140557534237760                        ) = 0
+     0.306 ( 0.007 ms): processosOverh/6 mprotect(start: 0x7fd619c39000, len: 16384, prot: READ                ) = 0
+     0.318 ( 0.005 ms): processosOverh/6 mprotect(start: 0x55ed64051000, len: 4096, prot: READ                 ) = 0
+     0.327 ( 0.004 ms): processosOverh/6 mprotect(start: 0x7fd619e66000, len: 4096, prot: READ                 ) = 0
+     0.334 ( 0.008 ms): processosOverh/6 munmap(addr: 0x7fd619e62000, len: 13580                               ) = 0
+     0.383 ([33m 0.367 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 7 (processosOverhe)
+     0.762 ([33m 0.295 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 8 (processosOverhe)
+     1.067 ([33m 0.323 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 9 (processosOverhe)
+     1.400 ([33m 0.297 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 10 (processosOverhe)
+     1.706 ([33m 0.368 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 11 (processosOverhe)
+     2.086 ([33m 0.326 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 12 (processosOverhe)
+     2.424 ([33m 0.283 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 13 (processosOverhe)
+     2.718 ([33m 0.375 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 14 (processosOverhe)
+     3.104 ([33m 0.283 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 15 (processosOverhe)
+     3.395 ([33m 0.260 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 16 (processosOverhe)
+         ? (     ?   ): processosOverh/8  ... [[33mcontinued[m]: clone()
+     3.663 ([31m18446744073707.027 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) ...
+         ? (     ?   ): processosOverh/10  ... [[33mcontinued[m]: clone()
+     1.139 ([33m 0.708 ms[m): processosOverh/8 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/9  ... [[33mcontinued[m]: clone()
+     1.848 ([31m18446744073709.184 ms[m): processosOverh/10 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/7  ... [[33mcontinued[m]: clone()
+     1.482 ([31m 1.465 ms[m): processosOverh/9 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/15  ... [[33mcontinued[m]: clone()
+     2.946 ([33m 0.669 ms[m): processosOverh/7 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/16  ... [[33mcontinued[m]: clone()
+     3.616 ([33m 0.226 ms[m): processosOverh/15 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): :17/17  ... [[33mcontinued[m]: clone()
+     3.842 ([33m 0.290 ms[m): processosOverh/16 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): :18/18  ... [[33mcontinued[m]: clone()
+     4.132 ([31m 1.222 ms[m): :17/17 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+     3.663 ([33m 0.306 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 17 (processosOverhe)
+     5.354 ([31m18446744073708.176 ms[m): :18/18 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+     3.979 ([31m 1.087 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 18 (processosOverhe)
+     5.082 ([33m 0.417 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 19 (processosOverhe)
+     5.511 ([33m 0.322 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 20 (processosOverhe)
+     5.843 ([33m 0.298 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 21 (processosOverhe)
+     6.150 ([33m 0.296 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 22 (processosOverhe)
+         ? (     ?   ): processosOverh/19  ... [[33mcontinued[m]: clone()
+     6.454 ([33m 0.290 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 23 (processosOverhe)
+         ? (     ?   ): processosOverh/20  ... [[33mcontinued[m]: clone()
+         ? (     ?   ): :24/24  ... [[33mcontinued[m]: clone()
+     6.753 ([33m 0.468 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) ...
+     6.753 ([33m 0.358 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 24 (processosOverhe)
+     7.221 ([31m18446744073709.457 ms[m): :24/24 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+     7.126 ([33m 0.290 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 25 (processosOverhe)
+     7.425 ([33m 0.263 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 26 (processosOverhe)
+     7.696 ([33m 0.263 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 27 (processosOverhe)
+     7.967 ([33m 0.261 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 28 (processosOverhe)
+         ? (     ?   ): processosOverh/26  ... [[33mcontinued[m]: clone()
+     8.235 ([31m18446744073709.059 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) ...
+         ? (     ?   ): :29/29  ... [[33mcontinued[m]: clone()
+     7.742 ([33m 0.829 ms[m): processosOverh/26 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+     8.235 ([33m 0.273 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 29 (processosOverhe)
+     8.571 ([31m18446744073709.496 ms[m): :29/29 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+     8.517 ([33m 0.273 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 30 (processosOverhe)
+     8.799 ([33m 0.300 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 31 (processosOverhe)
+         ? (     ?   ): processosOverh/14  ... [[33mcontinued[m]: clone()
+     9.111 ([33m 0.302 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) ...
+         ? (     ?   ): processosOverh/11  ... [[33mcontinued[m]: clone()
+         ? (     ?   ): processosOverh/13  ... [[33mcontinued[m]: clone()
+     9.413 ([33m 0.558 ms[m): processosOverh/14 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+     9.970 ([33m 0.033 ms[m): processosOverh/11 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/23  ... [[33mcontinued[m]: clone()
+         ? (     ?   ): processosOverh/22  ... [[33mcontinued[m]: clone()
+    10.004 ([33m 0.342 ms[m): processosOverh/13 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+    10.346 ([33m 0.133 ms[m): processosOverh/23 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/21  ... [[33mcontinued[m]: clone()
+    10.478 ([33m 0.396 ms[m): processosOverh/22 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/12  ... [[33mcontinued[m]: clone()
+    10.874 ([33m 0.512 ms[m): processosOverh/21 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+     9.111 ([31m 2.738 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 32 (processosOverhe)
+    11.386 ([33m 0.529 ms[m): processosOverh/12 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/30  ... [[33mcontinued[m]: clone()
+    11.915 ([33m 0.960 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) ...
+    11.915 ([31m 1.342 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 33 (processosOverhe)
+    12.874 ([33m 0.476 ms[m): processosOverh/30 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+    13.350 ([33m 0.334 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 34 (processosOverhe)
+    13.695 ([33m 0.324 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 35 (processosOverhe)
+    14.030 ([33m 0.360 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 36 (processosOverhe)
+    14.402 ([33m 0.323 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 37 (processosOverhe)
+    14.736 ([33m 0.311 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 38 (processosOverhe)
+    15.062 ([33m 0.324 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 39 (processosOverhe)
+    15.397 ([33m 0.324 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 40 (processosOverhe)
+    15.731 ([33m 0.305 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 41 (processosOverhe)
+    16.046 ([33m 0.313 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 42 (processosOverhe)
+    16.368 ([33m 0.320 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 43 (processosOverhe)
+    16.697 ([33m 0.302 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 44 (processosOverhe)
+    17.008 ([33m 0.308 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 45 (processosOverhe)
+    17.326 ([33m 0.305 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 46 (processosOverhe)
+    17.641 ([33m 0.311 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 47 (processosOverhe)
+    17.963 ([33m 0.317 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 48 (processosOverhe)
+    18.289 ([33m 0.304 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 49 (processosOverhe)
+         ? (     ?   ): processosOverh/32  ... [[33mcontinued[m]: clone()
+    18.603 ([33m 0.134 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) ...
+         ? (     ?   ): processosOverh/33  ... [[33mcontinued[m]: clone()
+    18.738 ([33m 0.059 ms[m): processosOverh/32 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/37  ... [[33mcontinued[m]: clone()
+    18.796 ([33m 0.062 ms[m): processosOverh/33 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/38  ... [[33mcontinued[m]: clone()
+    18.859 ([33m 0.055 ms[m): processosOverh/37 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/36  ... [[33mcontinued[m]: clone()
+    18.914 ([33m 0.108 ms[m): processosOverh/38 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/39  ... [[33mcontinued[m]: clone()
+    19.021 ([33m 0.055 ms[m): processosOverh/36 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/41  ... [[33mcontinued[m]: clone()
+    19.077 ([33m 0.042 ms[m): processosOverh/39 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/42  ... [[33mcontinued[m]: clone()
+    19.119 ([33m 0.058 ms[m): processosOverh/41 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/47  ... [[33mcontinued[m]: clone()
+    19.177 ([33m 0.066 ms[m): processosOverh/42 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/35  ... [[33mcontinued[m]: clone()
+    19.243 ([33m 0.055 ms[m): processosOverh/47 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/48  ... [[33mcontinued[m]: clone()
+    19.298 ([33m 0.054 ms[m): processosOverh/35 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/34  ... [[33mcontinued[m]: clone()
+    19.352 ([33m 0.056 ms[m): processosOverh/48 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/49  ... [[33mcontinued[m]: clone()
+    19.407 ([33m 0.054 ms[m): processosOverh/34 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+    18.603 ([31m 1.203 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 50 (processosOverhe)
+    19.462 ([33m 0.356 ms[m): processosOverh/49 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+    19.817 ([33m 0.307 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 51 (processosOverhe)
+    20.134 ([33m 0.299 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 52 (processosOverhe)
+    20.443 ([33m 0.274 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 53 (processosOverhe)
+    20.726 ([33m 0.279 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 54 (processosOverhe)
+    21.012 ([33m 0.274 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 55 (processosOverhe)
+    21.295 ([33m 0.276 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 56 (processosOverhe)
+    21.579 ([33m 0.268 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 57 (processosOverhe)
+    21.854 ([33m 0.308 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 58 (processosOverhe)
+    22.170 ([33m 0.313 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 59 (processosOverhe)
+    22.493 ([33m 0.306 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 60 (processosOverhe)
+    22.809 ([33m 0.314 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 61 (processosOverhe)
+    23.137 ([33m 0.307 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 62 (processosOverhe)
+    23.454 ([33m 0.309 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 63 (processosOverhe)
+    23.774 ([33m 0.312 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 64 (processosOverhe)
+         ? (     ?   ): processosOverh/54  ... [[33mcontinued[m]: clone()
+    24.096 ([33m 0.225 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) ...
+         ? (     ?   ): processosOverh/56  ... [[33mcontinued[m]: clone()
+    24.320 ([33m 0.064 ms[m): processosOverh/54 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/57  ... [[33mcontinued[m]: clone()
+    24.384 ([33m 0.059 ms[m): processosOverh/56 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/58  ... [[33mcontinued[m]: clone()
+    24.443 ([33m 0.053 ms[m): processosOverh/57 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+    24.096 ([33m 0.621 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 65 (processosOverhe)
+    24.496 ([33m 0.231 ms[m): processosOverh/58 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+    24.727 ([33m 0.311 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 66 (processosOverhe)
+    25.049 ([33m 0.450 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 67 (processosOverhe)
+    25.508 ([33m 0.296 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 68 (processosOverhe)
+    25.812 ([33m 0.282 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 69 (processosOverhe)
+    26.104 ([33m 0.311 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 70 (processosOverhe)
+    26.425 ([33m 0.290 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 71 (processosOverhe)
+    26.725 ([33m 0.269 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 72 (processosOverhe)
+         ? (     ?   ): processosOverh/60  ... [[33mcontinued[m]: clone()
+    27.006 ([33m 0.348 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) ...
+         ? (     ?   ): processosOverh/59  ... [[33mcontinued[m]: clone()
+    27.354 ([33m 0.057 ms[m): processosOverh/60 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+    27.006 ([33m 0.647 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 73 (processosOverhe)
+    27.410 ([33m 0.252 ms[m): processosOverh/59 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+    27.662 ([33m 0.306 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 74 (processosOverhe)
+         ? (     ?   ): processosOverh/25  ... [[33mcontinued[m]: clone()
+    27.976 ([31m18446744073693.664 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) ...
+         ? (     ?   ): processosOverh/28  ... [[33mcontinued[m]: clone()
+    12.089 ([33m 0.061 ms[m): processosOverh/25 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/27  ... [[33mcontinued[m]: clone()
+    12.150 ([33m 0.061 ms[m): processosOverh/28 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/40  ... [[33mcontinued[m]: clone()
+    12.211 ([31m 3.612 ms[m): processosOverh/27 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/43  ... [[33mcontinued[m]: clone()
+    15.823 ([33m 0.931 ms[m): processosOverh/40 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/44  ... [[33mcontinued[m]: clone()
+    16.754 ([33m 0.387 ms[m): processosOverh/43 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/45  ... [[33mcontinued[m]: clone()
+    17.141 ([33m 0.261 ms[m): processosOverh/44 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/46  ... [[33mcontinued[m]: clone()
+    17.402 ([33m 0.311 ms[m): processosOverh/45 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/53  ... [[33mcontinued[m]: clone()
+    17.714 ([31m 3.065 ms[m): processosOverh/46 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/55  ... [[33mcontinued[m]: clone()
+    20.778 ([33m 0.568 ms[m): processosOverh/53 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/50  ... [[33mcontinued[m]: clone()
+    21.346 ([33m 0.724 ms[m): processosOverh/55 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/52  ... [[33mcontinued[m]: clone()
+    22.070 ([33m 0.058 ms[m): processosOverh/50 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/51  ... [[33mcontinued[m]: clone()
+    22.128 ([33m 0.056 ms[m): processosOverh/52 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/69  ... [[33mcontinued[m]: clone()
+    22.184 ([31m 3.972 ms[m): processosOverh/51 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/72  ... [[33mcontinued[m]: clone()
+    26.156 ([33m 0.897 ms[m): processosOverh/69 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+    27.976 ([33m 0.301 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 75 (processosOverhe)
+    27.054 ([31m 1.233 ms[m): processosOverh/72 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+    28.287 ([33m 0.294 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 76 (processosOverhe)
+    28.589 ([33m 0.287 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 77 (processosOverhe)
+    28.884 ([33m 0.291 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 78 (processosOverhe)
+    29.181 ([33m 0.271 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 79 (processosOverhe)
+    29.459 ([33m 0.280 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 80 (processosOverhe)
+    29.747 ([33m 0.281 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 81 (processosOverhe)
+    30.036 ([33m 0.282 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 82 (processosOverhe)
+    30.331 ([31m18446744073708.125 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) ...
+    28.904 ([33m 0.336 ms[m): processosOverh/20 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/61  ... [[33mcontinued[m]: clone()
+    30.331 ([33m 0.282 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 83 (processosOverhe)
+    29.240 ([31m 1.383 ms[m): processosOverh/19 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+    30.622 ([33m 0.022 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) ...
+         ? (     ?   ): processosOverh/62  ... [[33mcontinued[m]: clone()
+    30.645 ([33m 0.045 ms[m): processosOverh/61 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/63  ... [[33mcontinued[m]: clone()
+    30.690 ([33m 0.039 ms[m): processosOverh/62 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/64  ... [[33mcontinued[m]: clone()
+    30.729 ([33m 0.040 ms[m): processosOverh/63 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/65  ... [[33mcontinued[m]: clone()
+    30.769 ([33m 0.037 ms[m): processosOverh/64 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/73  ... [[33mcontinued[m]: clone()
+    30.806 ([33m 0.043 ms[m): processosOverh/65 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/79  ... [[33mcontinued[m]: clone()
+    30.849 ([33m 0.037 ms[m): processosOverh/73 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/31  ... [[33mcontinued[m]: clone()
+    30.886 ([33m 0.040 ms[m): processosOverh/79 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/80  ... [[33mcontinued[m]: clone()
+    30.926 ([33m 0.044 ms[m): processosOverh/31 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/68  ... [[33mcontinued[m]: clone()
+    30.970 ([33m 0.050 ms[m): processosOverh/80 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/70  ... [[33mcontinued[m]: clone()
+    31.020 ([33m 0.039 ms[m): processosOverh/68 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/75  ... [[33mcontinued[m]: clone()
+    31.059 ([33m 0.040 ms[m): processosOverh/70 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/76  ... [[33mcontinued[m]: clone()
+    31.098 ([33m 0.037 ms[m): processosOverh/75 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/81  ... [[33mcontinued[m]: clone()
+    31.135 ([33m 0.036 ms[m): processosOverh/76 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/66  ... [[33mcontinued[m]: clone()
+    31.171 ([33m 0.037 ms[m): processosOverh/81 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/67  ... [[33mcontinued[m]: clone()
+    31.207 ([33m 0.039 ms[m): processosOverh/66 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/83  ... [[33mcontinued[m]: clone()
+    31.246 ([33m 0.039 ms[m): processosOverh/67 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): :85/85  ... [[33mcontinued[m]: clone()
+    31.285 ([33m 0.034 ms[m): processosOverh/83 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): :86/86  ... [[33mcontinued[m]: clone()
+    31.319 ([33m 0.275 ms[m): :85/85 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): :84/84  ... [[33mcontinued[m]: clone()
+    31.593 ([31m18446744073708.957 ms[m): :86/86 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+    30.622 ([33m 0.323 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 84 (processosOverhe)
+    30.999 ([31m18446744073709.508 ms[m): :84/84 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+    30.954 ([33m 0.301 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 85 (processosOverhe)
+    31.264 ([33m 0.294 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 86 (processosOverhe)
+    31.566 ([33m 0.294 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 87 (processosOverhe)
+         ? (     ?   ): processosOverh/87  ... [[33mcontinued[m]: clone()
+    31.875 ([33m 0.073 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) ...
+         ? (     ?   ): processosOverh/71  ... [[33mcontinued[m]: clone()
+    31.948 ([33m 0.128 ms[m): processosOverh/87 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/77  ... [[33mcontinued[m]: clone()
+    32.076 ([33m 0.095 ms[m): processosOverh/71 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/74  ... [[33mcontinued[m]: clone()
+    32.171 ([33m 0.057 ms[m): processosOverh/77 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/82  ... [[33mcontinued[m]: clone()
+    32.228 ([33m 0.717 ms[m): processosOverh/74 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/78  ... [[33mcontinued[m]: clone()
+    32.945 ([33m 0.062 ms[m): processosOverh/82 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): :88/88  ... [[33mcontinued[m]: clone()
+    33.007 ([33m 0.312 ms[m): processosOverh/78 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+    31.875 ([31m 1.389 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 88 (processosOverhe)
+    33.319 ([31m18446744073709.508 ms[m): :88/88 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): :89/89  ... [[33mcontinued[m]: clone()
+    33.275 ([33m 0.361 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) ...
+    33.275 ([33m 0.301 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 89 (processosOverhe)
+    33.636 ([31m18446744073709.504 ms[m): :89/89 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+    33.587 ([33m 0.310 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 90 (processosOverhe)
+         ? (     ?   ): processosOverh/90  ... [[33mcontinued[m]: clone()
+    33.905 ([33m 0.225 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) ...
+         ? (     ?   ): :91/91  ... [[33mcontinued[m]: clone()
+    33.905 ([33m 0.309 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 91 (processosOverhe)
+    34.130 ([33m 0.097 ms[m): processosOverh/90 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+    34.227 ([33m 0.172 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) ...
+    34.227 ([33m 0.585 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 92 (processosOverhe)
+    34.399 ([33m 0.429 ms[m): processosOverh/91 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+    34.828 ([33m 0.313 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 93 (processosOverhe)
+         ? (     ?   ): :94/94  ... [[33mcontinued[m]: clone()
+    35.154 ([33m 0.325 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 94 (processosOverhe)
+    35.492 ([33m 0.174 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) ...
+         ? (     ?   ): :95/95  ... [[33mcontinued[m]: clone()
+    35.666 ([33m 0.242 ms[m): processosOverh/94 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+    35.492 ([33m 0.319 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 95 (processosOverhe)
+    35.908 ([31m18446744073709.469 ms[m): :95/95 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+    35.823 ([33m 0.320 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 96 (processosOverhe)
+         ? (     ?   ): processosOverh/96  ... [[33mcontinued[m]: clone()
+    36.161 ([33m 0.116 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) ...
+    36.161 ([33m 0.323 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 97 (processosOverhe)
+    36.277 ([33m 0.217 ms[m): processosOverh/96 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/97  ... [[33mcontinued[m]: clone()
+    36.494 ([33m 0.213 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) ...
+    36.494 ([33m 0.311 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 98 (processosOverhe)
+    36.707 ([33m 0.112 ms[m): processosOverh/97 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+    36.819 ([33m 0.321 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 99 (processosOverhe)
+    37.162 ([33m 0.325 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 100 (processosOverhe)
+         ? (     ?   ): processosOverh/100  ... [[33mcontinued[m]: clone()
+    37.501 ([33m 0.197 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) ...
+    37.501 ([33m 0.306 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 101 (processosOverhe)
+    37.698 ([33m 0.119 ms[m): processosOverh/100 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+    37.817 ([33m 0.311 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 102 (processosOverhe)
+    38.145 ([33m 0.321 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 103 (processosOverhe)
+         ? (     ?   ): processosOverh/103  ... [[33mcontinued[m]: clone()
+    38.480 ([33m 0.364 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) ...
+    38.480 ([33m 0.340 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 104 (processosOverhe)
+    38.844 ([31m18446744073709.543 ms[m): processosOverh/103 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+    38.833 ([33m 0.280 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) = 105 (processosOverhe)
+         ? (     ?   ): processosOverh/105  ... [[33mcontinued[m]: clone()
+    39.125 ([33m 0.065 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7fd619e61710, tls: 140557534237760) ...
+         ? (     ?   ): processosOverh/104  ... [[33mcontinued[m]: clone()
+    39.189 ([33m 0.214 ms[m): processosOverh/105 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): :106/106  ... [[33mcontinued[m]: clone()
+    39.403 ([33m 0.073 ms[m): processosOverh/104 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): :107/107  ... [[33mcontinued[m]: clone()
+    39.476 ([33m 0.301 ms[m): :106/106 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+    39.777 ( 0.003 ms): :107/107 close(fd: 3                                                           ) = 0
+    39.782 ( 0.002 ms): :107/107 rt_sigprocmask(how: BLOCK, oset: 0x7fd619e5fea0, sigsetsize: 8        ) = 0
+    39.787 ( 0.003 ms): :107/107 rt_sigaction(sig: HUP, oact: 0x7fd619e5fdb0, sigsetsize: 8            ) = 0
+    39.792 ( 0.002 ms): :107/107 rt_sigaction(sig: HUP, act: 0x7fd619e5fd10, sigsetsize: 8             ) = 0
+    39.796 ([33m 0.026 ms[m): :107/107 rt_sigaction(sig: INT, oact: 0x7fd619e5fdb0, sigsetsize: 8            ) = 0
+    39.853 ( 0.003 ms): :107/107 rt_sigaction(sig: INT, act: 0x7fd619e5fd10, sigsetsize: 8             ) = 0
+    39.858 ( 0.002 ms): :107/107 rt_sigaction(sig: QUIT, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    39.862 ( 0.002 ms): :107/107 rt_sigaction(sig: QUIT, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    39.867 ( 0.002 ms): :107/107 rt_sigaction(sig: ILL, oact: 0x7fd619e5fdb0, sigsetsize: 8            ) = 0
+    39.871 ( 0.002 ms): :107/107 rt_sigaction(sig: ILL, act: 0x7fd619e5fd10, sigsetsize: 8             ) = 0
+    39.875 ( 0.002 ms): :107/107 rt_sigaction(sig: TRAP, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    39.879 ( 0.002 ms): :107/107 rt_sigaction(sig: TRAP, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    39.883 ( 0.002 ms): :107/107 rt_sigaction(sig: ABRT, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    39.901 ([33m 0.014 ms[m): :107/107 rt_sigaction(sig: ABRT, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    39.918 ( 0.002 ms): :107/107 rt_sigaction(sig: BUS, oact: 0x7fd619e5fdb0, sigsetsize: 8            ) = 0
+    39.922 ( 0.002 ms): :107/107 rt_sigaction(sig: BUS, act: 0x7fd619e5fd10, sigsetsize: 8             ) = 0
+    39.926 ( 0.002 ms): :107/107 rt_sigaction(sig: FPE, oact: 0x7fd619e5fdb0, sigsetsize: 8            ) = 0
+    39.930 ( 0.002 ms): :107/107 rt_sigaction(sig: FPE, act: 0x7fd619e5fd10, sigsetsize: 8             ) = 0
+    39.935 ( 0.002 ms): :107/107 rt_sigaction(sig: USR1, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    39.939 ( 0.002 ms): :107/107 rt_sigaction(sig: USR1, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    39.944 ( 0.002 ms): :107/107 rt_sigaction(sig: SEGV, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    39.960 ([33m 0.013 ms[m): :107/107 rt_sigaction(sig: SEGV, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    39.975 ( 0.002 ms): :107/107 rt_sigaction(sig: USR2, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    39.981 ( 0.002 ms): :107/107 rt_sigaction(sig: USR2, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    39.986 ( 0.002 ms): :107/107 rt_sigaction(sig: PIPE, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    39.990 ( 0.002 ms): :107/107 rt_sigaction(sig: PIPE, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    39.993 ( 0.002 ms): :107/107 rt_sigaction(sig: ALRM, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    39.997 ( 0.002 ms): :107/107 rt_sigaction(sig: ALRM, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.001 ( 0.002 ms): :107/107 rt_sigaction(sig: TERM, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.006 ( 0.002 ms): :107/107 rt_sigaction(sig: TERM, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.010 ( 0.002 ms): :107/107 rt_sigaction(sig: STKFLT, oact: 0x7fd619e5fdb0, sigsetsize: 8         ) = 0
+    40.014 ( 0.002 ms): :107/107 rt_sigaction(sig: STKFLT, act: 0x7fd619e5fd10, sigsetsize: 8          ) = 0
+    40.018 ( 0.002 ms): :107/107 rt_sigaction(sig: CHLD, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.022 ( 0.002 ms): :107/107 rt_sigaction(sig: CHLD, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.027 ( 0.002 ms): :107/107 rt_sigaction(sig: CONT, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.031 ( 0.002 ms): :107/107 rt_sigaction(sig: CONT, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.035 ( 0.002 ms): :107/107 rt_sigaction(sig: TSTP, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.039 ( 0.002 ms): :107/107 rt_sigaction(sig: TSTP, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.043 ( 0.002 ms): :107/107 rt_sigaction(sig: TTIN, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.047 ( 0.002 ms): :107/107 rt_sigaction(sig: TTIN, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.052 ( 0.002 ms): :107/107 rt_sigaction(sig: TTOU, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.056 ( 0.002 ms): :107/107 rt_sigaction(sig: TTOU, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.060 ( 0.002 ms): :107/107 rt_sigaction(sig: URG, oact: 0x7fd619e5fdb0, sigsetsize: 8            ) = 0
+    40.064 ( 0.002 ms): :107/107 rt_sigaction(sig: URG, act: 0x7fd619e5fd10, sigsetsize: 8             ) = 0
+    40.069 ( 0.002 ms): :107/107 rt_sigaction(sig: XCPU, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.073 ( 0.002 ms): :107/107 rt_sigaction(sig: XCPU, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.077 ( 0.002 ms): :107/107 rt_sigaction(sig: XFSZ, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.081 ( 0.002 ms): :107/107 rt_sigaction(sig: XFSZ, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.086 ( 0.002 ms): :107/107 rt_sigaction(sig: VTALRM, oact: 0x7fd619e5fdb0, sigsetsize: 8         ) = 0
+    40.090 ( 0.002 ms): :107/107 rt_sigaction(sig: VTALRM, act: 0x7fd619e5fd10, sigsetsize: 8          ) = 0
+    40.094 ( 0.002 ms): :107/107 rt_sigaction(sig: PROF, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.098 ( 0.002 ms): :107/107 rt_sigaction(sig: PROF, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.104 ( 0.002 ms): :107/107 rt_sigaction(sig: WINCH, oact: 0x7fd619e5fdb0, sigsetsize: 8          ) = 0
+    40.109 ( 0.002 ms): :107/107 rt_sigaction(sig: WINCH, act: 0x7fd619e5fd10, sigsetsize: 8           ) = 0
+    40.113 ( 0.002 ms): :107/107 rt_sigaction(sig: IO, oact: 0x7fd619e5fdb0, sigsetsize: 8             ) = 0
+    40.117 ( 0.002 ms): :107/107 rt_sigaction(sig: IO, act: 0x7fd619e5fd10, sigsetsize: 8              ) = 0
+    40.122 ( 0.002 ms): :107/107 rt_sigaction(sig: PWR, oact: 0x7fd619e5fdb0, sigsetsize: 8            ) = 0
+    40.126 ( 0.002 ms): :107/107 rt_sigaction(sig: PWR, act: 0x7fd619e5fd10, sigsetsize: 8             ) = 0
+    40.130 ( 0.002 ms): :107/107 rt_sigaction(sig: SYS, oact: 0x7fd619e5fdb0, sigsetsize: 8            ) = 0
+    40.149 ( 0.002 ms): :107/107 rt_sigaction(sig: SYS, act: 0x7fd619e5fd10, sigsetsize: 8             ) = 0
+    40.154 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x20, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.158 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x21, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.163 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x22, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.167 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x22, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.171 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x23, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.175 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x23, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.179 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x24, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.184 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x24, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.188 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x25, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.192 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x25, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.197 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x26, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.201 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x26, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.205 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x27, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.209 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x27, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.214 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x28, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.218 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x28, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.222 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x29, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.229 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x29, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.233 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x2a, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.237 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x2a, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.241 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x2b, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.245 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x2b, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.249 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x2c, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.253 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x2c, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.257 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x2d, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.261 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x2d, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.265 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x2e, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.269 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x2e, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.273 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x2f, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.277 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x2f, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.281 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x30, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.296 ( 0.003 ms): :107/107 rt_sigaction(sig: 0x30, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.307 ( 0.007 ms): :107/107 rt_sigaction(sig: 0x31, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.316 ( 0.009 ms): :107/107 rt_sigaction(sig: 0x31, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.328 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x32, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.332 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x32, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.336 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x33, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.347 ( 0.009 ms): :107/107 rt_sigaction(sig: 0x33, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.365 ( 0.007 ms): :107/107 rt_sigaction(sig: 0x34, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.374 ( 0.003 ms): :107/107 rt_sigaction(sig: 0x34, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.385 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x35, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.395 ( 0.007 ms): :107/107 rt_sigaction(sig: 0x35, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.404 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x36, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.409 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x36, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.413 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x37, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.428 ( 0.007 ms): :107/107 rt_sigaction(sig: 0x37, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.443 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x38, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.447 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x38, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.451 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x39, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.456 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x39, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.460 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x3a, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.464 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x3a, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.469 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x3b, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.473 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x3b, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.477 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x3c, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.482 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x3c, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.486 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x3d, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.490 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x3d, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.495 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x3e, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.499 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x3e, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.504 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x3f, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.508 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x3f, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.512 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x40, oact: 0x7fd619e5fdb0, sigsetsize: 8           ) = 0
+    40.517 ( 0.002 ms): :107/107 rt_sigaction(sig: 0x40, act: 0x7fd619e5fd10, sigsetsize: 8            ) = 0
+    40.521 ( 0.002 ms): :107/107 rt_sigprocmask(how: SETMASK, nset: 0x7fff4d35f808, sigsetsize: 8      ) = 0
+    40.535 ([33m 0.053 ms[m): :107/107 execve(filename: 0x19e5fd80, argv: 0x7fff4d35fac0                     ) = -2
+    40.595 ( 0.008 ms): :107/107 execve(filename: 0x19e5fd80, argv: 0x7fff4d35fac0                     ) = -2
+    40.606 ( 0.006 ms): :107/107 execve(filename: 0x19e5fd80, argv: 0x7fff4d35fac0                     ) = -2
+    40.615 ( 0.007 ms): :107/107 execve(filename: 0x19e5fd80, argv: 0x7fff4d35fac0                     ) = -2
+    40.624 ( 0.007 ms): :107/107 execve(filename: 0x19e5fd80, argv: 0x7fff4d35fac0                     ) = -2
+    40.634 ([33m 0.045 ms[m): :107/107 execve(filename: 0x19e5fd80, argv: 0x7fff4d35fac0                     ) = -2
+    39.125 ([31m 1.750 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 107
+    40.686 ([33m 0.192 ms[m): :107/107 execve(filename: 0x19e5fd80, argv: 0x7fff4d35fac0                     ) ...
+    40.879 ( 0.003 ms): processosOverh/6 close(fd: 4                                                           ) = 0
+    40.686 ([33m 0.425 ms[m): sleep/107  ... [[33mcontinued[m]: execve()) = 0
+    40.884 ([33m 0.260 ms[m): processosOverh/6 read(fd: 3, buf: 0x7fff4d35f778, count: 4                             ) ...
+    41.143 ( 0.003 ms): sleep/107 brk(                                                                  ) = 0x55b097d47000
+    41.168 ( 0.006 ms): sleep/107 access(filename: 0x54ff44e7                                           ) = -1 ENOENT No such file or directory
+    41.178 ( 0.003 ms): sleep/107 access(filename: 0x54ff6c70, mode: R                                  ) = -1 ENOENT No such file or directory
+    41.186 ( 0.007 ms): sleep/107 open(filename: 0x54ff4988, flags: CLOEXEC                             ) = 3
+    41.196 ( 0.003 ms): sleep/107 fstat(fd: 3, statbuf: 0x7ffec00a99b0                                  ) = 0
+    41.202 ( 0.005 ms): sleep/107 mmap(len: 13580, prot: READ, flags: PRIVATE, fd: 3                    ) = 0x7f43551f6000
+    41.209 ( 0.002 ms): sleep/107 close(fd: 3                                                           ) = 0
+    41.218 ( 0.003 ms): sleep/107 access(filename: 0x54ff44e7                                           ) = -1 ENOENT No such file or directory
+    41.225 ( 0.008 ms): sleep/107 open(filename: 0x551fcd68, flags: CLOEXEC                             ) = 3
+    41.235 ( 0.004 ms): sleep/107 read(fd: 3, buf: 0x7ffec00a9b58, count: 832                           ) = 832
+    41.242 ( 0.002 ms): sleep/107 fstat(fd: 3, statbuf: 0x7ffec00a99f0                                  ) = 0
+    41.247 ( 0.004 ms): sleep/107 mmap(len: 8192, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS, fd: -1    ) = 0x7f43551f4000
+    41.259 ( 0.006 ms): sleep/107 mmap(len: 3795296, prot: EXEC|READ, flags: PRIVATE|DENYWRITE, fd: 3   ) = 0x7f4354c38000
+    41.268 ([33m 0.011 ms[m): sleep/107 mprotect(start: 0x7f4354dcd000, len: 2097152                          ) = 0
+    41.281 ( 0.008 ms): sleep/107 mmap(addr: 0x7f4354fcd000, len: 24576, prot: READ|WRITE, flags: PRIVATE|DENYWRITE|FIXED, fd: 3, off: 1658880) = 0x7f4354fcd000
+    41.297 ( 0.005 ms): sleep/107 mmap(addr: 0x7f4354fd3000, len: 14688, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS|FIXED, fd: -1) = 0x7f4354fd3000
+    41.310 ( 0.002 ms): sleep/107 close(fd: 3                                                           ) = 0
+    41.334 ( 0.002 ms): sleep/107 arch_prctl(option: 4098, arg2: 139927167652992                        ) = 0
+    41.407 ( 0.008 ms): sleep/107 mprotect(start: 0x7f4354fcd000, len: 16384, prot: READ                ) = 0
+    41.422 ( 0.005 ms): sleep/107 mprotect(start: 0x55b097a37000, len: 4096, prot: READ                 ) = 0
+    41.432 ( 0.005 ms): sleep/107 mprotect(start: 0x7f43551fa000, len: 4096, prot: READ                 ) = 0
+    41.440 ( 0.008 ms): sleep/107 munmap(addr: 0x7f43551f6000, len: 13580                               ) = 0
+    41.528 ( 0.003 ms): sleep/107 brk(                                                                  ) = 0x55b097d47000
+    41.533 ( 0.004 ms): sleep/107 brk(brk: 0x55b097d68000                                               ) = 0x55b097d68000
+    40.884 ([33m 0.700 ms[m): processosOverh/6  ... [[33mcontinued[m]: read()) = 0
+    41.570 ([33m 0.017 ms[m): sleep/107 nanosleep(rqtp: 0x7ffec00aa300                                        ) ...
+    41.587 ([33m 0.013 ms[m): processosOverh/6 munmap(addr: 0x7fd619e57000, len: 36864                               ) = 0
+    41.602 ( 0.002 ms): processosOverh/6 close(fd: 3                                                           ) = 0
+    41.613 ( 0.003 ms): processosOverh/6 rt_sigprocmask(how: SETMASK, nset: 0x7fff4d35f808, sigsetsize: 8      ) = 0
+    41.652 (     ?   ): processosOverh/6 exit_group(                                                           )
+    41.570 ([33m 0.239 ms[m): sleep/107  ... [[33mcontinued[m]: nanosleep()) = 0
+    41.831 ( 0.003 ms): sleep/107 close(fd: 1                                                           ) = 0
+    41.837 ( 0.002 ms): sleep/107 close(fd: 2                                                           ) = 0
+    41.844 (     ?   ): sleep/107 exit_group(                                                           )
+    41.652 ([31m18446744073707.320 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 106 (processosOverhe)
+    39.449 ([33m 0.020 ms[m): processosOverh/6 pipe2(fildes: 0x7fff4d35f800, flags: CLOEXEC                          ) = 0
+    39.472 ( 0.009 ms): processosOverh/6 mmap(len: 36864, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS|STACK, fd: -1) = 0x7fd619e57000
+    39.484 ( 0.005 ms): processosOverh/6 rt_sigprocmask(how: BLOCK, nset: 0x7fff4d35f780, oset: 0x7fff4d35f808, sigsetsize: 8) = 0
+         ? (     ?   ): processosOverh/99  ... [[33mcontinued[m]: clone()
+    39.494 ([33m 0.478 ms[m): processosOverh/6 clone(clone_flags: 16657, newsp: 140557534232560, parent_tidptr: 0xffffffffffffffff, child_tidptr: 0x55ed63e50bf8) ...
+         ? (     ?   ): processosOverh/98  ... [[33mcontinued[m]: clone()
+    39.972 ([33m 0.064 ms[m): processosOverh/99 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/101  ... [[33mcontinued[m]: clone()
+    40.036 ([33m 0.056 ms[m): processosOverh/98 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/102  ... [[33mcontinued[m]: clone()
+    40.092 ([33m 0.056 ms[m): processosOverh/101 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/92  ... [[33mcontinued[m]: clone()
+    40.148 ([33m 0.057 ms[m): processosOverh/102 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...
+         ? (     ?   ): processosOverh/93  ... [[33mcontinued[m]: clone()
+    40.205 ([33m 0.051 ms[m): processosOverh/92 nanosleep(rqtp: 0x7fff4d35fa70, rmtp: 0x7fff4d35fa70                  ) ...

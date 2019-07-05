@@ -1,0 +1,219 @@
+         ? (     ?   ): processosOverh/6  ... [[33mcontinued[m]: execve()) = 0
+     0.031 ( 0.002 ms): processosOverh/6 brk(                                                                  ) = 0x55c7cc5bb000
+     0.050 ( 0.006 ms): processosOverh/6 access(filename: 0x585404e7                                           ) = -1 ENOENT No such file or directory
+     0.060 ( 0.004 ms): processosOverh/6 access(filename: 0x58542c70, mode: R                                  ) = -1 ENOENT No such file or directory
+     0.068 ( 0.007 ms): processosOverh/6 open(filename: 0x58540988, flags: CLOEXEC                             ) = 3
+     0.077 ( 0.004 ms): processosOverh/6 fstat(fd: 3, statbuf: 0x7fff67266330                                  ) = 0
+     0.083 ( 0.004 ms): processosOverh/6 mmap(len: 13580, prot: READ, flags: PRIVATE, fd: 3                    ) = 0x7f9558742000
+     0.089 ( 0.002 ms): processosOverh/6 close(fd: 3                                                           ) = 0
+     0.096 ( 0.002 ms): processosOverh/6 access(filename: 0x585404e7                                           ) = -1 ENOENT No such file or directory
+     0.102 ( 0.006 ms): processosOverh/6 open(filename: 0x58748d68, flags: CLOEXEC                             ) = 3
+     0.110 ( 0.004 ms): processosOverh/6 read(fd: 3, buf: 0x7fff672664d8, count: 832                           ) = 832
+     0.118 ( 0.002 ms): processosOverh/6 fstat(fd: 3, statbuf: 0x7fff67266370                                  ) = 0
+     0.124 ( 0.004 ms): processosOverh/6 mmap(len: 8192, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS, fd: -1    ) = 0x7f9558740000
+     0.135 ( 0.006 ms): processosOverh/6 mmap(len: 3795296, prot: EXEC|READ, flags: PRIVATE|DENYWRITE, fd: 3   ) = 0x7f9558184000
+     0.144 ( 0.008 ms): processosOverh/6 mprotect(start: 0x7f9558319000, len: 2097152                          ) = 0
+     0.154 ([33m 0.015 ms[m): processosOverh/6 mmap(addr: 0x7f9558519000, len: 24576, prot: READ|WRITE, flags: PRIVATE|DENYWRITE|FIXED, fd: 3, off: 1658880) = 0x7f9558519000
+     0.177 ( 0.005 ms): processosOverh/6 mmap(addr: 0x7f955851f000, len: 14688, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS|FIXED, fd: -1) = 0x7f955851f000
+     0.191 ( 0.002 ms): processosOverh/6 close(fd: 3                                                           ) = 0
+     0.208 ( 0.002 ms): processosOverh/6 arch_prctl(option: 4098, arg2: 140279410857024                        ) = 0
+     0.260 ( 0.005 ms): processosOverh/6 mprotect(start: 0x7f9558519000, len: 16384, prot: READ                ) = 0
+     0.268 ( 0.003 ms): processosOverh/6 mprotect(start: 0x55c7cbfe4000, len: 4096, prot: READ                 ) = 0
+     0.274 ( 0.003 ms): processosOverh/6 mprotect(start: 0x7f9558746000, len: 4096, prot: READ                 ) = 0
+     0.279 ( 0.005 ms): processosOverh/6 munmap(addr: 0x7f9558742000, len: 13580                               ) = 0
+     0.313 ([33m 0.303 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7f9558741710, tls: 140279410857024) = 7 (processosOverhe)
+     0.623 ([33m 0.260 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7f9558741710, tls: 140279410857024) = 8 (processosOverhe)
+     0.892 ([33m 0.307 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7f9558741710, tls: 140279410857024) = 9 (processosOverhe)
+     1.210 ([33m 0.269 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7f9558741710, tls: 140279410857024) = 10 (processosOverhe)
+     1.488 ([33m 0.278 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7f9558741710, tls: 140279410857024) = 11 (processosOverhe)
+     1.775 ([33m 0.285 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7f9558741710, tls: 140279410857024) = 12 (processosOverhe)
+     2.070 ([33m 0.263 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7f9558741710, tls: 140279410857024) = 13 (processosOverhe)
+     2.340 ([33m 0.268 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7f9558741710, tls: 140279410857024) = 14 (processosOverhe)
+     2.617 ([33m 0.450 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7f9558741710, tls: 140279410857024) = 15 (processosOverhe)
+         ? (     ?   ): processosOverh/8  ... [[33mcontinued[m]: clone()
+     3.078 ([31m18446744073707.629 ms[m): processosOverh/6 clone(clone_flags: 18874385, child_tidptr: 0x7f9558741710, tls: 140279410857024) ...
+         ? (     ?   ): processosOverh/10  ... [[33mcontinued[m]: clone()
+     1.156 ([33m 0.375 ms[m): processosOverh/8 nanosleep(rqtp: 0x7fff67266cb0, rmtp: 0x7fff67266cb0                  ) ...
+         ? (     ?   ): processosOverh/11  ... [[33mcontinued[m]: clone()
+     1.531 ([33m 0.289 ms[m): processosOverh/10 nanosleep(rqtp: 0x7fff67266cb0, rmtp: 0x7fff67266cb0                  ) ...
+         ? (     ?   ): processosOverh/12  ... [[33mcontinued[m]: clone()
+     1.820 ([33m 0.296 ms[m): processosOverh/11 nanosleep(rqtp: 0x7fff67266cb0, rmtp: 0x7fff67266cb0                  ) ...
+         ? (     ?   ): processosOverh/13  ... [[33mcontinued[m]: clone()
+     2.116 ([33m 0.266 ms[m): processosOverh/12 nanosleep(rqtp: 0x7fff67266cb0, rmtp: 0x7fff67266cb0                  ) ...
+         ? (     ?   ): processosOverh/14  ... [[33mcontinued[m]: clone()
+     2.382 ([33m 0.279 ms[m): processosOverh/13 nanosleep(rqtp: 0x7fff67266cb0, rmtp: 0x7fff67266cb0                  ) ...
+         ? (     ?   ): :17/17  ... [[33mcontinued[m]: clone()
+     2.661 ([31m 1.018 ms[m): processosOverh/14 nanosleep(rqtp: 0x7fff67266cb0, rmtp: 0x7fff67266cb0                  ) ...
+     3.678 ( 0.002 ms): :17/17 close(fd: 3                                                           ) = 0
+     3.683 ( 0.002 ms): :17/17 rt_sigprocmask(how: BLOCK, oset: 0x7f955873fea0, sigsetsize: 8        ) = 0
+     3.688 ( 0.003 ms): :17/17 rt_sigaction(sig: HUP, oact: 0x7f955873fdb0, sigsetsize: 8            ) = 0
+     3.693 ( 0.002 ms): :17/17 rt_sigaction(sig: HUP, act: 0x7f955873fd10, sigsetsize: 8             ) = 0
+     3.698 ( 0.002 ms): :17/17 rt_sigaction(sig: INT, oact: 0x7f955873fdb0, sigsetsize: 8            ) = 0
+     3.702 ( 0.002 ms): :17/17 rt_sigaction(sig: INT, act: 0x7f955873fd10, sigsetsize: 8             ) = 0
+     3.706 ( 0.002 ms): :17/17 rt_sigaction(sig: QUIT, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     3.710 ( 0.002 ms): :17/17 rt_sigaction(sig: QUIT, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     3.714 ( 0.002 ms): :17/17 rt_sigaction(sig: ILL, oact: 0x7f955873fdb0, sigsetsize: 8            ) = 0
+     3.719 ( 0.002 ms): :17/17 rt_sigaction(sig: ILL, act: 0x7f955873fd10, sigsetsize: 8             ) = 0
+     3.724 ( 0.002 ms): :17/17 rt_sigaction(sig: TRAP, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     3.728 ( 0.002 ms): :17/17 rt_sigaction(sig: TRAP, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     3.732 ( 0.002 ms): :17/17 rt_sigaction(sig: ABRT, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     3.736 ( 0.002 ms): :17/17 rt_sigaction(sig: ABRT, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     3.740 ( 0.002 ms): :17/17 rt_sigaction(sig: BUS, oact: 0x7f955873fdb0, sigsetsize: 8            ) = 0
+     3.745 ( 0.002 ms): :17/17 rt_sigaction(sig: BUS, act: 0x7f955873fd10, sigsetsize: 8             ) = 0
+     3.750 ( 0.002 ms): :17/17 rt_sigaction(sig: FPE, oact: 0x7f955873fdb0, sigsetsize: 8            ) = 0
+     3.754 ( 0.002 ms): :17/17 rt_sigaction(sig: FPE, act: 0x7f955873fd10, sigsetsize: 8             ) = 0
+     3.758 ( 0.002 ms): :17/17 rt_sigaction(sig: USR1, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     3.763 ( 0.002 ms): :17/17 rt_sigaction(sig: USR1, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     3.767 ( 0.002 ms): :17/17 rt_sigaction(sig: SEGV, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     3.772 ( 0.002 ms): :17/17 rt_sigaction(sig: SEGV, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     3.776 ( 0.002 ms): :17/17 rt_sigaction(sig: USR2, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     3.780 ( 0.002 ms): :17/17 rt_sigaction(sig: USR2, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     3.784 ( 0.002 ms): :17/17 rt_sigaction(sig: PIPE, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     3.788 ( 0.002 ms): :17/17 rt_sigaction(sig: PIPE, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     3.792 ( 0.002 ms): :17/17 rt_sigaction(sig: ALRM, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     3.796 ( 0.002 ms): :17/17 rt_sigaction(sig: ALRM, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     3.828 ( 0.002 ms): :17/17 rt_sigaction(sig: TERM, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     3.832 ( 0.001 ms): :17/17 rt_sigaction(sig: TERM, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     3.835 ( 0.001 ms): :17/17 rt_sigaction(sig: STKFLT, oact: 0x7f955873fdb0, sigsetsize: 8         ) = 0
+     3.839 ( 0.002 ms): :17/17 rt_sigaction(sig: STKFLT, act: 0x7f955873fd10, sigsetsize: 8          ) = 0
+     3.843 ( 0.002 ms): :17/17 rt_sigaction(sig: CHLD, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     3.847 ( 0.002 ms): :17/17 rt_sigaction(sig: CHLD, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     3.852 ( 0.002 ms): :17/17 rt_sigaction(sig: CONT, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     3.856 ( 0.002 ms): :17/17 rt_sigaction(sig: CONT, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     3.860 ( 0.002 ms): :17/17 rt_sigaction(sig: TSTP, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     3.864 ( 0.002 ms): :17/17 rt_sigaction(sig: TSTP, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     3.868 ( 0.002 ms): :17/17 rt_sigaction(sig: TTIN, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     3.872 ( 0.002 ms): :17/17 rt_sigaction(sig: TTIN, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     3.877 ( 0.002 ms): :17/17 rt_sigaction(sig: TTOU, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     3.880 ( 0.001 ms): :17/17 rt_sigaction(sig: TTOU, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     3.883 ( 0.001 ms): :17/17 rt_sigaction(sig: URG, oact: 0x7f955873fdb0, sigsetsize: 8            ) = 0
+     3.886 ( 0.001 ms): :17/17 rt_sigaction(sig: URG, act: 0x7f955873fd10, sigsetsize: 8             ) = 0
+     3.892 ( 0.002 ms): :17/17 rt_sigaction(sig: XCPU, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     3.896 ( 0.002 ms): :17/17 rt_sigaction(sig: XCPU, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     3.900 ( 0.002 ms): :17/17 rt_sigaction(sig: XFSZ, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     3.905 ( 0.002 ms): :17/17 rt_sigaction(sig: XFSZ, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     3.909 ( 0.002 ms): :17/17 rt_sigaction(sig: VTALRM, oact: 0x7f955873fdb0, sigsetsize: 8         ) = 0
+     3.914 ( 0.002 ms): :17/17 rt_sigaction(sig: VTALRM, act: 0x7f955873fd10, sigsetsize: 8          ) = 0
+     3.918 ( 0.002 ms): :17/17 rt_sigaction(sig: PROF, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     3.923 ( 0.001 ms): :17/17 rt_sigaction(sig: PROF, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     3.926 ( 0.001 ms): :17/17 rt_sigaction(sig: WINCH, oact: 0x7f955873fdb0, sigsetsize: 8          ) = 0
+     3.929 ( 0.001 ms): :17/17 rt_sigaction(sig: WINCH, act: 0x7f955873fd10, sigsetsize: 8           ) = 0
+     3.932 ( 0.001 ms): :17/17 rt_sigaction(sig: IO, oact: 0x7f955873fdb0, sigsetsize: 8             ) = 0
+     3.935 ( 0.001 ms): :17/17 rt_sigaction(sig: IO, act: 0x7f955873fd10, sigsetsize: 8              ) = 0
+     3.937 ( 0.001 ms): :17/17 rt_sigaction(sig: PWR, oact: 0x7f955873fdb0, sigsetsize: 8            ) = 0
+     3.941 ( 0.001 ms): :17/17 rt_sigaction(sig: PWR, act: 0x7f955873fd10, sigsetsize: 8             ) = 0
+     3.943 ( 0.001 ms): :17/17 rt_sigaction(sig: SYS, oact: 0x7f955873fdb0, sigsetsize: 8            ) = 0
+     3.947 ( 0.002 ms): :17/17 rt_sigaction(sig: SYS, act: 0x7f955873fd10, sigsetsize: 8             ) = 0
+     3.951 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x20, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     3.954 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x21, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     3.958 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x22, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     3.963 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x22, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     3.967 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x23, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     3.971 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x23, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     3.974 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x24, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     3.978 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x24, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     3.982 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x25, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     3.987 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x25, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     3.991 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x26, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     3.995 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x26, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     3.999 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x27, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.005 ( 0.001 ms): :17/17 rt_sigaction(sig: 0x27, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.008 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x28, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.015 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x28, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.019 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x29, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.023 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x29, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.027 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x2a, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.030 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x2a, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.034 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x2b, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.038 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x2b, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.042 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x2c, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.046 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x2c, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.050 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x2d, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.054 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x2d, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.058 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x2e, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.062 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x2e, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.066 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x2f, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.070 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x2f, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.075 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x30, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.079 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x30, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.083 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x31, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.087 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x31, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.091 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x32, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.095 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x32, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.099 ( 0.001 ms): :17/17 rt_sigaction(sig: 0x33, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.102 ( 0.001 ms): :17/17 rt_sigaction(sig: 0x33, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.105 ( 0.001 ms): :17/17 rt_sigaction(sig: 0x34, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.108 ( 0.001 ms): :17/17 rt_sigaction(sig: 0x34, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.111 ( 0.001 ms): :17/17 rt_sigaction(sig: 0x35, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.114 ( 0.001 ms): :17/17 rt_sigaction(sig: 0x35, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.117 ( 0.001 ms): :17/17 rt_sigaction(sig: 0x36, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.120 ( 0.001 ms): :17/17 rt_sigaction(sig: 0x36, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.123 ( 0.001 ms): :17/17 rt_sigaction(sig: 0x37, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.126 ( 0.001 ms): :17/17 rt_sigaction(sig: 0x37, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.129 ( 0.001 ms): :17/17 rt_sigaction(sig: 0x38, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.132 ( 0.001 ms): :17/17 rt_sigaction(sig: 0x38, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.135 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x39, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.138 ( 0.001 ms): :17/17 rt_sigaction(sig: 0x39, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.141 ( 0.001 ms): :17/17 rt_sigaction(sig: 0x3a, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.144 ( 0.001 ms): :17/17 rt_sigaction(sig: 0x3a, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.148 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x3b, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.152 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x3b, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.156 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x3c, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.160 ( 0.001 ms): :17/17 rt_sigaction(sig: 0x3c, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.163 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x3d, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.167 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x3d, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.171 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x3e, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.176 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x3e, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.180 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x3f, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.184 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x3f, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.188 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x40, oact: 0x7f955873fdb0, sigsetsize: 8           ) = 0
+     4.193 ( 0.002 ms): :17/17 rt_sigaction(sig: 0x40, act: 0x7f955873fd10, sigsetsize: 8            ) = 0
+     4.197 ( 0.003 ms): :17/17 rt_sigprocmask(how: SETMASK, nset: 0x7fff67266a48, sigsetsize: 8      ) = 0
+     4.211 ([33m 0.029 ms[m): :17/17 execve(filename: 0x5873fd80, argv: 0x7fff67266d00                     ) = -2
+     4.250 ( 0.008 ms): :17/17 execve(filename: 0x5873fd80, argv: 0x7fff67266d00                     ) = -2
+     4.263 ( 0.006 ms): :17/17 execve(filename: 0x5873fd80, argv: 0x7fff67266d00                     ) = -2
+     4.272 ( 0.007 ms): :17/17 execve(filename: 0x5873fd80, argv: 0x7fff67266d00                     ) = -2
+     4.282 ( 0.007 ms): :17/17 execve(filename: 0x5873fd80, argv: 0x7fff67266d00                     ) = -2
+     4.291 ([33m 0.028 ms[m): :17/17 execve(filename: 0x5873fd80, argv: 0x7fff67266d00                     ) = -2
+         ? (     ?   ): processosOverh/9  ... [[33mcontinued[m]: clone()
+     4.322 ([31m18446744073706.551 ms[m): :17/17 execve(filename: 0x5873fd80, argv: 0x7fff67266d00                     ) ...
+     4.322 ([33m 0.209 ms[m): sleep/17  ... [[33mcontinued[m]: execve()) = 0
+     1.323 ([31m 3.239 ms[m): processosOverh/9 nanosleep(rqtp: 0x7fff67266cb0, rmtp: 0x7fff67266cb0                  ) ...
+     4.561 ( 0.002 ms): sleep/17 brk(                                                                  ) = 0x55aab5660000
+     4.585 ( 0.007 ms): sleep/17 access(filename: 0x4630b4e7                                           ) = -1 ENOENT No such file or directory
+     4.596 ( 0.003 ms): sleep/17 access(filename: 0x4630dc70, mode: R                                  ) = -1 ENOENT No such file or directory
+     4.611 ( 0.007 ms): sleep/17 open(filename: 0x4630b988, flags: CLOEXEC                             ) = 3
+     4.621 ( 0.006 ms): sleep/17 fstat(fd: 3, statbuf: 0x7fffb73b2b50                                  ) = 0
+     4.629 ( 0.005 ms): sleep/17 mmap(len: 13580, prot: READ, flags: PRIVATE, fd: 3                    ) = 0x7fa74650d000
+     4.637 ( 0.002 ms): sleep/17 close(fd: 3                                                           ) = 0
+     4.646 ( 0.003 ms): sleep/17 access(filename: 0x4630b4e7                                           ) = -1 ENOENT No such file or directory
+     4.653 ( 0.009 ms): sleep/17 open(filename: 0x46513d68, flags: CLOEXEC                             ) = 3
+     4.665 ( 0.003 ms): sleep/17 read(fd: 3, buf: 0x7fffb73b2cf8, count: 832                           ) = 832
+     4.672 ( 0.002 ms): sleep/17 fstat(fd: 3, statbuf: 0x7fffb73b2b90                                  ) = 0
+     4.677 ( 0.004 ms): sleep/17 mmap(len: 8192, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS, fd: -1    ) = 0x7fa74650b000
+     4.689 ( 0.006 ms): sleep/17 mmap(len: 3795296, prot: EXEC|READ, flags: PRIVATE|DENYWRITE, fd: 3   ) = 0x7fa745f4f000
+     4.698 ( 0.009 ms): sleep/17 mprotect(start: 0x7fa7460e4000, len: 2097152                          ) = 0
+     4.709 ( 0.009 ms): sleep/17 mmap(addr: 0x7fa7462e4000, len: 24576, prot: READ|WRITE, flags: PRIVATE|DENYWRITE|FIXED, fd: 3, off: 1658880) = 0x7fa7462e4000
+     4.726 ( 0.005 ms): sleep/17 mmap(addr: 0x7fa7462ea000, len: 14688, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS|FIXED, fd: -1) = 0x7fa7462ea000
+     4.741 ( 0.002 ms): sleep/17 close(fd: 3                                                           ) = 0
+     4.767 ( 0.002 ms): sleep/17 arch_prctl(option: 4098, arg2: 140356415964288                        ) = 0
+     4.767 ([33m 0.083 ms[m): sleep/17  ... [[33mcontinued[m]: mprotect()) = 0
+     4.767 ([33m 0.093 ms[m): sleep/17  ... [[33mcontinued[m]: mprotect()) = 0
+     4.767 ([33m 0.101 ms[m): sleep/17  ... [[33mcontinued[m]: mprotect()) = 0
+     4.767 ([33m 0.111 ms[m): sleep/17  ... [[33mcontinued[m]: munmap()) = 0
+     3.078 ([33m 0.290 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 16 (processosOverhe)
+     3.395 ([33m 0.020 ms[m): processosOverh/6 pipe2(fildes: 0x7fff67266a40, flags: CLOEXEC                          ) = 0
+     3.418 ( 0.006 ms): processosOverh/6 mmap(len: 36864, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS|STACK, fd: -1) = 0x7f9558737000
+     3.426 ( 0.002 ms): processosOverh/6 rt_sigprocmask(how: BLOCK, nset: 0x7fff672669c0, oset: 0x7fff67266a48, sigsetsize: 8) = 0
+         ? (     ?   ): processosOverh/15  ... [[33mcontinued[m]: clone()
+     3.432 ([33m 0.294 ms[m): processosOverh/6 clone(clone_flags: 16657, newsp: 140279410851824, parent_tidptr: 0xffffffffffffffff, child_tidptr: 0x55c7cbde3bf8) ...
+         ? (     ?   ): processosOverh/16  ... [[33mcontinued[m]: clone()
+     3.727 ([33m 0.050 ms[m): processosOverh/15 nanosleep(rqtp: 0x7fff67266cb0, rmtp: 0x7fff67266cb0                  ) ...
+     3.432 ([31m 1.053 ms[m): processosOverh/6  ... [[33mcontinued[m]: clone()) = 17 (processosOverhe)
+     3.777 ([33m 0.723 ms[m): processosOverh/16 nanosleep(rqtp: 0x7fff67266cb0, rmtp: 0x7fff67266cb0                  ) ...
+     4.499 ([33m 0.010 ms[m): processosOverh/6 close(fd: 4                                                           ) = 0
+     4.544 ( 0.009 ms): processosOverh/6 read(fd: 3, buf: 0x7fff672669b8, count: 4                             ) = 0
+     4.556 ([33m 0.026 ms[m): processosOverh/6 munmap(addr: 0x7f9558737000, len: 36864                               ) = 0
+     4.585 ( 0.002 ms): processosOverh/6 close(fd: 3                                                           ) = 0
+     4.594 ( 0.007 ms): processosOverh/6 rt_sigprocmask(how: SETMASK, nset: 0x7fff67266a48, sigsetsize: 8      ) = 0
+     4.638 (     ?   ): processosOverh/6 exit_group(                                                           )

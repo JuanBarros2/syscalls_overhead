@@ -1,98 +1,95 @@
-execve("./processosOverhead", ["./processosOverhead", "fork", "10"], [/* 4 vars */])                                    = 0 <0.000305>
-brk(NULL)                                                                                                               = 0x55cbc2a7d000 <0.000020>
-access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000522>
-access("/etc/ld.so.preload", R_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000024>
-open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC)                                                                            = 3 <0.000029>
-fstat(3, {st_mode=S_IFREG|0644, st_size=13580, ...})                                                                    = 0 <0.000017>
-mmap(NULL, 13580, PROT_READ, MAP_PRIVATE, 3, 0)                                                                         = 0x7fed601bf000 <0.000022>
-close(3)                                                                                                                = 0 <0.000020>
-access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000023>
-open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC)                                                             = 3 <0.000029>
-read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832)                                       = 832 <0.000019>
-fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...})                                                                  = 0 <0.000016>
-mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0)                                                = 0x7fed601bd000 <0.000021>
-mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0)                                               = 0x7fed5fc01000 <0.000030>
-mprotect(0x7fed5fd96000, 2097152, PROT_NONE)                                                                            = 0 <0.000032>
-mmap(0x7fed5ff96000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000)                     = 0x7fed5ff96000 <0.000043>
-mmap(0x7fed5ff9c000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0)                           = 0x7fed5ff9c000 <0.000035>
-close(3)                                                                                                                = 0 <0.000463>
-arch_prctl(ARCH_SET_FS, 0x7fed601be440)                                                                                 = 0 <0.000019>
-mprotect(0x7fed5ff96000, 16384, PROT_READ)                                                                              = 0 <0.000560>
-mprotect(0x55cbc0d40000, 4096, PROT_READ)                                                                               = 0 <0.000025>
-mprotect(0x7fed601c3000, 4096, PROT_READ)                                                                               = 0 <0.000020>
-munmap(0x7fed601bf000, 13580)                                                                                           = 0 <0.000036>
-clone(strace: Process 8 attached
-child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fed601be710)             = 8 <0.001538>
-[pid     8] nanosleep({tv_sec=2, tv_nsec=0},  <unfinished ...>
-[pid     7] clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fed601be710) = 9 <0.000133>
-[pid     7] clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fed601be710) = 10 <0.000099>
-[pid     7] clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fed601be710) = 11 <0.000098>
-[pid     7] clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fed601be710) = 12 <0.000078>
-[pid     7] clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fed601be710) = 13 <0.000140>
-[pid     7] clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fed601be710) = 14 <0.000069>
-strace: Process 14 attached
-[pid     7] clone(strace: Process 12 attached
-strace: Process 11 attached
-strace: Process 10 attached
-strace: Process 9 attached
-strace: Process 15 attached
-child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fed601be710) = 15 <0.000200>
-[pid    14] nanosleep({tv_sec=2, tv_nsec=0},  <unfinished ...>
-[pid     7] clone( <unfinished ...>
-[pid    15] nanosleep({tv_sec=2, tv_nsec=0},  <unfinished ...>
-[pid    12] nanosleep({tv_sec=2, tv_nsec=0},  <unfinished ...>
-[pid    11] nanosleep({tv_sec=2, tv_nsec=0},  <unfinished ...>
-[pid    10] nanosleep({tv_sec=2, tv_nsec=0},  <unfinished ...>
-[pid     9] nanosleep({tv_sec=2, tv_nsec=0},  <unfinished ...>
-[pid     7] <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fed601be710) = 16 <0.000126>
-[pid     7] clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fed601be710) = 17 <0.000095>
-[pid     7] clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fed601be710) = 18 <0.000144>
-[pid     7] exit_group(0)                                                                                               = ?
-[pid     7] +++ exited with 0 +++
-strace: Process 13 attached
-strace: Process 16 attached
-strace: Process 17 attached
-[pid    16] nanosleep({tv_sec=2, tv_nsec=0},  <unfinished ...>
-[pid    13] nanosleep({tv_sec=2, tv_nsec=0},  <unfinished ...>
-[pid    17] nanosleep({tv_sec=2, tv_nsec=0}, strace: Process 18 attached
+execve("./processosOverhead", ["./processosOverhead", "fork", "10"], [/* 4 vars */])                                    = 0 <0.000198>
+brk(NULL)                                                                                                               = 0x55f038602000 <0.000024>
+access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000027>
+access("/etc/ld.so.preload", R_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000026>
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC)                                                                            = 3 <0.000028>
+fstat(3, {st_mode=S_IFREG|0644, st_size=13580, ...})                                                                    = 0 <0.000016>
+mmap(NULL, 13580, PROT_READ, MAP_PRIVATE, 3, 0)                                                                         = 0x7fe585c44000 <0.000019>
+close(3)                                                                                                                = 0 <0.000016>
+access("/etc/ld.so.nohwcap", F_OK)                                                                                      = -1 ENOENT (No such file or directory) <0.000017>
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC)                                                             = 3 <0.000024>
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\4\2\0\0\0\0\0"..., 832)                                       = 832 <0.000014>
+fstat(3, {st_mode=S_IFREG|0755, st_size=1689360, ...})                                                                  = 0 <0.000114>
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0)                                                = 0x7fe585c42000 <0.000020>
+mmap(NULL, 3795296, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0)                                               = 0x7fe585686000 <0.000018>
+mprotect(0x7fe58581b000, 2097152, PROT_NONE)                                                                            = 0 <0.000020>
+mmap(0x7fe585a1b000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x195000)                     = 0x7fe585a1b000 <0.000026>
+mmap(0x7fe585a21000, 14688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0)                           = 0x7fe585a21000 <0.000020>
+close(3)                                                                                                                = 0 <0.000018>
+arch_prctl(ARCH_SET_FS, 0x7fe585c43440)                                                                                 = 0 <0.000017>
+mprotect(0x7fe585a1b000, 16384, PROT_READ)                                                                              = 0 <0.000019>
+mprotect(0x55f036dbe000, 4096, PROT_READ)                                                                               = 0 <0.000013>
+mprotect(0x7fe585c48000, 4096, PROT_READ)                                                                               = 0 <0.000014>
+munmap(0x7fe585c44000, 13580)                                                                                           = 0 <0.000026>
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fe585c43710)             = 9 <0.000113>
+clone(strace: Process 9 attached
  <unfinished ...>
-[pid    18] exit_group(0)                                                                                               = ?
-[pid    18] +++ exited with 0 +++
-[pid     8] <... nanosleep resumed> 0x7ffd303ab200)                                                                     = 0 <2.000243>
+[pid     9] nanosleep({tv_sec=2, tv_nsec=0}, strace: Process 10 attached
+ <unfinished ...>
+[pid     8] <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fe585c43710) = 10 <0.000207>
+[pid    10] nanosleep({tv_sec=2, tv_nsec=0},  <unfinished ...>
+[pid     8] clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fe585c43710) = 11 <0.000081>
+[pid     8] clone(strace: Process 12 attached
+child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fe585c43710) = 12 <0.000111>
+[pid     8] clone( <unfinished ...>
+[pid    12] nanosleep({tv_sec=2, tv_nsec=0}, strace: Process 13 attached
+ <unfinished ...>
+[pid     8] <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fe585c43710) = 13 <0.000135>
+[pid     8] clone( <unfinished ...>
+[pid    13] nanosleep({tv_sec=2, tv_nsec=0},  <unfinished ...>
+[pid     8] <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fe585c43710) = 14 <0.000111>
+[pid     8] clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fe585c43710) = 15 <0.000086>
+[pid     8] clone(strace: Process 15 attached
+strace: Process 16 attached
+ <unfinished ...>
+[pid    15] nanosleep({tv_sec=2, tv_nsec=0},  <unfinished ...>
+[pid     8] <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fe585c43710) = 16 <0.000235>
+[pid    16] nanosleep({tv_sec=2, tv_nsec=0},  <unfinished ...>
+[pid     8] clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fe585c43710) = 17 <0.000146>
+strace: Process 17 attached
+[pid     8] clone(strace: Process 18 attached
+child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fe585c43710) = 18 <0.000132>
+[pid    17] nanosleep({tv_sec=2, tv_nsec=0},  <unfinished ...>
+[pid     8] clone( <unfinished ...>
+[pid    18] nanosleep({tv_sec=2, tv_nsec=0}, strace: Process 19 attached
+ <unfinished ...>
+[pid     8] <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fe585c43710) = 19 <0.000106>
 [pid     8] exit_group(0)                                                                                               = ?
+[pid    19] exit_group(0)                                                                                               = ?
 [pid     8] +++ exited with 0 +++
-[pid     9] <... nanosleep resumed> 0x7ffd303ab200)                                                                     = 0 <2.000142>
-[pid     9] exit_group(0 <unfinished ...>
-[pid    10] <... nanosleep resumed> 0x7ffd303ab200)                                                                     = 0 <2.000442>
-[pid     9] <... exit_group resumed>)                                                                                   = ?
-[pid    11] <... nanosleep resumed> 0x7ffd303ab200)                                                                     = 0 <2.000614>
-[pid    12] <... nanosleep resumed> 0x7ffd303ab200)                                                                     = 0 <2.000687>
-[pid    14] <... nanosleep resumed> 0x7ffd303ab200)                                                                     = 0 <2.000784>
-[pid    15] <... nanosleep resumed> 0x7ffd303ab200)                                                                     = 0 <2.000796>
+[pid    19] +++ exited with 0 +++
+strace: Process 14 attached
+[pid    14] nanosleep({tv_sec=2, tv_nsec=0}, strace: Process 11 attached
+ <unfinished ...>
+[pid    11] nanosleep({tv_sec=2, tv_nsec=0},  <unfinished ...>
+[pid     9] <... nanosleep resumed> 0x7ffe01d2a470)                                                                     = 0 <2.000158>
+[pid    10] <... nanosleep resumed> 0x7ffe01d2a470)                                                                     = 0 <2.000106>
+[pid     9] exit_group(0)                                                                                               = ?
+[pid    10] exit_group(0)                                                                                               = ?
 [pid     9] +++ exited with 0 +++
-[pid    11] exit_group(0 <unfinished ...>
-[pid    12] exit_group(0 <unfinished ...>
-[pid    14] exit_group(0 <unfinished ...>
-[pid    10] exit_group(0 <unfinished ...>
-[pid    11] <... exit_group resumed>)                                                                                   = ?
-[pid    12] <... exit_group resumed>)                                                                                   = ?
-[pid    14] <... exit_group resumed>)                                                                                   = ?
-[pid    15] exit_group(0 <unfinished ...>
-[pid    10] <... exit_group resumed>)                                                                                   = ?
-[pid    11] +++ exited with 0 +++
-[pid    12] +++ exited with 0 +++
-[pid    14] +++ exited with 0 +++
-[pid    15] <... exit_group resumed>)                                                                                   = ?
-[pid    16] <... nanosleep resumed> 0x7ffd303ab200)                                                                     = 0 <2.000797>
 [pid    10] +++ exited with 0 +++
-[pid    13] <... nanosleep resumed> 0x7ffd303ab200)                                                                     = 0 <2.001238>
-[pid    15] +++ exited with 0 +++
-[pid    16] exit_group(0 <unfinished ...>
-[pid    13] exit_group(0 <unfinished ...>
-[pid    16] <... exit_group resumed>)                                                                                   = ?
-[pid    16] +++ exited with 0 +++
-[pid    13] <... exit_group resumed>)                                                                                   = ?
+[pid    12] <... nanosleep resumed> 0x7ffe01d2a470)                                                                     = 0 <2.000099>
+[pid    12] exit_group(0)                                                                                               = ?
+[pid    12] +++ exited with 0 +++
+[pid    13] <... nanosleep resumed> 0x7ffe01d2a470)                                                                     = 0 <2.000077>
+[pid    13] exit_group(0)                                                                                               = ?
 [pid    13] +++ exited with 0 +++
-<... nanosleep resumed> 0x7ffd303ab200)                                                                                 = 0 <2.000383>
-exit_group(0)                                                                                                           = ?
+[pid    15] <... nanosleep resumed> 0x7ffe01d2a470)                                                                     = 0 <2.000087>
+[pid    15] exit_group(0)                                                                                               = ?
+[pid    16] <... nanosleep resumed> 0x7ffe01d2a470)                                                                     = 0 <2.000098>
+[pid    15] +++ exited with 0 +++
+[pid    16] exit_group(0)                                                                                               = ?
+[pid    16] +++ exited with 0 +++
+[pid    17] <... nanosleep resumed> 0x7ffe01d2a470)                                                                     = 0 <2.000085>
+[pid    18] <... nanosleep resumed> 0x7ffe01d2a470)                                                                     = 0 <2.000084>
+[pid    17] exit_group(0)                                                                                               = ?
+[pid    18] exit_group(0)                                                                                               = ?
+[pid    17] +++ exited with 0 +++
+[pid    18] +++ exited with 0 +++
+[pid    14] <... nanosleep resumed> 0x7ffe01d2a470)                                                                     = 0 <2.000084>
+[pid    14] exit_group(0 <unfinished ...>
+[pid    11] <... nanosleep resumed> 0x7ffe01d2a470)                                                                     = 0 <2.000094>
+[pid    14] <... exit_group resumed>)                                                                                   = ?
+[pid    11] exit_group(0)                                                                                               = ?
+[pid    14] +++ exited with 0 +++
 +++ exited with 0 +++

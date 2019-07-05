@@ -2,6 +2,8 @@
 echo "Construindo imagem docker..."
 docker build -t projso/docker:1.0 .
 
+# --security-opt seccomp:unconfined -it --security-opt seccomp=unconfined
+
 IT=10
 
 if [ ! -d "./reports" ] 
@@ -79,8 +81,8 @@ do
         for count in $(seq 1 $IT);
         do
             echo ".............. Gerando resultado $count para $memoryLevel de niveis de pilha"
-            docker run -it --security-opt seccomp=unconfined projso/docker:1.0 strace -f -T -a 120 ./fileOverhead $syscall $memoryLevel > ./reports/hip3/strace/$syscall/$memoryLevel-$count.txt
-            docker run -it --privileged projso/docker:1.0 perf trace ./fileOverhead $syscall $memoryLevel > ./reports/hip3/perf/$syscall/$memoryLevel-$count.txt
+            docker run -it projso/docker:1.0 strace -f -T -a 120 ./fileOverhead $syscall $memoryLevel > ./reports/hip3/strace/$syscall/$memoryLevel-$count.txt
+            docker run --privileged -it projso/docker:1.0 perf trace ./fileOverhead $syscall $memoryLevel > ./reports/hip3/perf/$syscall/$memoryLevel-$count.txt
         done
     done
 done
