@@ -70,4 +70,4 @@ def make_chart_hip3(df):
         plt.xticks([r + (barWidth/2) for r in range(len(syscalls))], syscalls)
         num += 1
     plt.legend()
-    plt.savefig('reports/hip3/chart.png', dpi = 1200)
+    plt.savefig('reports/hip3/chart.png', dpi = 300)

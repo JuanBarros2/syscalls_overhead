@@ -1,9 +1,10 @@
-FROM debian
+FROM continuumio/anaconda3
 
-COPY ./codes/memoriaOverhead.c /memoriaOverhead.c
-COPY ./codes/processosOverhead.c /processosOverhead.c
-COPY ./codes/pesquisaOverhead.c /pesquisaOverhead.c
-COPY ./codes/fileOverhead.c /fileOverhead.c
+COPY ./codes /app/codes
+
+WORKDIR /app
+
+VOLUME /app
 
 RUN apt-get update &&\
     apt-get install -y build-essential &&\
@@ -11,9 +12,10 @@ RUN apt-get update &&\
     ln -s /usr/bin/perf_* /usr/bin/perf && \
     apt-get install -y strace &&\
     apt-get clean &&\
-    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* &&\
-    gcc -o /memoriaOverhead /memoriaOverhead.c &&\
-    gcc -o pesquisaOverhead /pesquisaOverhead.c &&\
-    gcc -o fileOverhead /fileOverhead.c &&\
-    gcc -o /processosOverhead /processosOverhead.c &&\
-    gcc -o pesquisaOverhead /pesquisaOverhead.c 
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* 
+
+RUN gcc -o /app/codes/memoriaOverhead /app/codes/memoriaOverhead.c &&\
+    gcc -o /app/codes/pesquisaOverhead /app/codes/pesquisaOverhead.c &&\
+    gcc -o /app/codes/fileOverhead /app/codes/fileOverhead.c &&\
+    gcc -o /app/codes/processosOverhead /app/codes/processosOverhead.c &&\
+    gcc -o /app/codes/pesquisaOverhead /app/codes/pesquisaOverhead.c

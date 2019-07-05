@@ -51,4 +51,4 @@ def make_chart_hip4(df):
     plt.xlabel('Resultado com as ferramentas', fontweight='bold')
     plt.xticks([r + (barWidth/2) for r in range(len(syscalls))], syscalls)
     plt.legend()
-    plt.savefig('reports/hip4/chart.png', dpi = 1200)
+    plt.savefig('reports/hip4/chart.png', dpi = 300)

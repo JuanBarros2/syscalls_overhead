@@ -68,7 +68,7 @@ def make_chart_hip1(df):
         plt.xticks([r + (barWidth/2) for r in range(len(syscalls))], syscalls)
         num += 1
     plt.legend()
-    plt.savefig('reports/hip1/chart.png', dpi = 1200)
+    plt.savefig('reports/hip1/chart.png', dpi = 300)
 
 def make_boxplot_hip2(data, tool):
     pltdata = {}
@@ -91,4 +91,4 @@ def make_boxplot_hip2(data, tool):
     axs[1][1].boxplot(pltdata['posix_spawnp'], labels=np.unique(data.depth), showfliers=False)
 
     fig.suptitle("Boxplots da distribuição do tempo de cada\nsyscall de acordo com o número de processos segundo o " + tool)
-    plt.savefig('reports/hip1/boxplot-' + tool + '.png', dpi = 1200)
+    plt.savefig('reports/hip1/boxplot-' + tool + '.png', dpi = 300)
