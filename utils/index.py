@@ -18,6 +18,8 @@ def main():
     print("Salvando gráfico")
     plt.figure(figsize=(12,5))
     h1.make_chart_hip1(h1_df)
+    h1.make_boxplot_hip2(h1_df_raw, 'strace')
+    h1.make_boxplot_hip2(h1_df_raw, 'perf')
     print("Processando hipotese 2...")
     h2_df_raw = pd.DataFrame.from_dict(h2.process_hip2())
     print("Gerando CSV de resultado")

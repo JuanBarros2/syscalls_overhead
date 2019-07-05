@@ -69,3 +69,26 @@ def make_chart_hip1(df):
         num += 1
     plt.legend()
     plt.savefig('reports/hip1/chart.png', dpi = 1200)
+
+def make_boxplot_hip2(data, tool):
+    pltdata = {}
+
+    i = 10
+    for syscall in np.unique(data.syscall):
+        pltdata[syscall] = []
+        for depth in np.unique(data.depth):
+            pltdata[syscall].append(data.loc[(data['depth'] == depth) & (data['tool'] == tool) & (data['syscall'] == syscall)].time)
+            i *= 10
+            
+    fig, axs = plt.subplots(2, 2, figsize=(8, 8), sharex=True)
+    axs[0][0].set_title('clone')
+    axs[0][0].boxplot(pltdata['clone'], labels=np.unique(data.depth), showfliers=False)
+    axs[0][1].set_title('execvp')
+    axs[0][1].boxplot(pltdata['execvp'], labels=np.unique(data.depth), showfliers=False)
+    axs[1][0].set_title('fork')
+    axs[1][0].boxplot(pltdata['fork'], labels=np.unique(data.depth), showfliers=False)
+    axs[1][1].set_title('posix_spawnp')
+    axs[1][1].boxplot(pltdata['posix_spawnp'], labels=np.unique(data.depth), showfliers=False)
+
+    fig.suptitle("Boxplots da distribuição do tempo de cada\nsyscall de acordo com o número de processos segundo o " + tool)
+    plt.savefig('reports/hip1/boxplot-' + tool + '.png', dpi = 1200)
