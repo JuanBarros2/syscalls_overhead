@@ -11,8 +11,8 @@ bibliotecas padrão de linguagem C. Para realizar os experimentos, partimos de
 quatro perguntas:
 
 - *A quantidade de memória alocada por um processo influencia em tempo de execução da Syscall?*
+- *A quantidade de processos em execução influencia no tempo de execução da syscall?*
 - *A quantidade de arquivos abertos em memória influencia o tempo das system calls?*
-- 
 - *O tempo de execução das syscalls são prejudicados pelo tempo de pesquisa de arquivo executável?*
 
 
