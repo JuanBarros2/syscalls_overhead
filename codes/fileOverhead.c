@@ -26,7 +26,6 @@ void createFiles(int files, char syscall[]) {
     struct stat st = {0};
 
     if(stat(PATH_NAME, &st) == -1){
-        printf("Diretorio criado\n");
         mkdir(PATH_NAME, 0700);
     }
 
@@ -67,10 +66,7 @@ void createFiles(int files, char syscall[]) {
     for(int i = 0; i<files; i++){
         fclose(array[i]);
     }
-
-    printf("Syscall executada!\n");   
     remove_directory(PATH_NAME);
-    printf("Diretório removido\n");
     
 }
 
